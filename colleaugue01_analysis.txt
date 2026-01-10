@@ -1,0 +1,48 @@
+Based on the documents provided and the technical requirements for CPR0002783, here is the complete analysis and mapping. 
+This change aims to extend the "long-term unavailability" tracking logic from the German branch (DE) to the French branch (FR) 
+within the pharmos.outbound.csc_core_applications package.1. CPR Analysis & DocumentationThe objective is 
+to prevent products marked as long-term unavailable from being included in subsequent delivery positions. 
+This process is already established for Germany and requires specific adaptations for France.Analysis SummaryBusiness Context: 
+A major incident on July 1, 2025, highlighted the need to automate the exclusion of long-term unavailable products in 
+the French market to maintain delivery accuracy.Process Impact: The system must identify articles in 
+the cscservice unavailability table and automatically bypass them during the creation of delivery positions for FR.Key Dependencies:
+ Requires coordination with the PINT department for database data flow and Citrix/Windows teams for potential frontend impact.2. 
+ Correspondence Analysis & Evidence from CodeThis section maps the requirements from the CPR description to the necessary technical 
+ changes in the core application logic.Requirement DescriptionTechnical Evidence / Implementation StepVerification of DE Logic
+ Analyze existing routines in cscservice that populate the unavailability table for German articles.
+ FR-Specific Criteria
+ Adapt the logic to include French branch codes (e.g., branch-specific stock status) when evaluating long-term unavailability.
+ Automatic Exclusion
+ Update the outbound delivery position generation logic to query the unavailability table for FR branch orders.
+ Application Package
+ Implementation must occur within pharmos.outbound.csc_core_applications under the CPR0002783 branch.3. 
+ Generated Analysis Files
+ You can use the content below to create your .md and .docx versions.CPR_Analysis_Details.mdMarkdown# 
+ Analysis for CPR0002783: Trace Long-term Unavailable Products (FR)
+
+## 1. Business Context
+Products marked as long-term unavailable should not be used for subsequent delivery positions. 
+This process, currently functional for Germany, 
+is being extended to France to prevent delivery failures and resolve issues identified during the 01.07.2025 incident.
+
+## 2. Process & Scope
+- **Verification:** Review the existing cscservice logic for tracking unavailable products.
+- **Enablement:** Update the outbound core applications to recognize and process FR branch data.
+- **Tailoring:** Modify article inclusion criteria to meet French-specific supply chain requirements.
+
+## 3. Impacted Systems
+- **Package:** pharmos.outbound.csc_core_applications
+- **Git Branch:** CPR0002783
+- **External Dependencies:** PINT (Data integrity), Citrix/Windows (Frontend visibility).
+Correspondence_Evidence.mdMarkdown# Technical Correspondence & Code Evidence
+
+## Requirement: Logic Extension to FR
+**Requirement:** Update corresponding part to enable it for FR as well.
+**Evidence:** The source code in `csc_core_apps` must be modified to include branch-specific checks for France, ensuring the delivery position generation logic filters against the unavailability table.
+
+## Requirement: Automated Filtering
+**Requirement:** In case of long-term unavailability, products should not be used for subsequent delivery positions.
+**Evidence:** Implementation of a database join or service-level filter in the outbound logic that cross-references order articles with the `cscservice` unavailability list.
+Next Steps & Requested InputsTo finalize the implementation details, please provide:FR Article Criteria: The specific stock thresholds or timeframes that qualify an article for the "long-term unavailable" status in France.
+Access to Code Source: If specific logic files (e.g., .c, .sql, or .java) are available, 
+I can provide the exact line changes needed for the FR branch integration.

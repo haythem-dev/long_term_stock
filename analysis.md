@@ -1,46 +1,45 @@
 # Analysis Report: CPR0002783 - Trace Long-term Unavailable Products
 
 ## Overview
-This analysis covers the transition and tracing of long-term unavailable products within the CSC (Core Service Components) system. The goal is to prevent these products from being used for subsequent delivery positions, ensuring better fulfillment reliability.
+This analysis covers the implementation of a tracing mechanism for long-term unavailable products (Long Term Lack - LTL) within the CSC (Core Service Components) system. The project focuses on extending existing German (DE) logic to the French (FR) market to prevent delivery failures, following a major incident on July 1, 2025.
 
 ## CPR Description (CPR0002783)
-- **Goal**: Implement and adapt tracing for products that are unavailable for extended periods (Long Term Lack - LTL).
-- **Context**: An automatic process for handling long-term unavailable products exists for Germany (DE) and now needs to be adapted for France (FR).
+- **Goal**: Prevent products marked as long-term unavailable from being used for subsequent delivery positions.
+- **Context**: An automatic process for handling long-term unavailable products exists for Germany and needs tailoring for France.
 - **Specifics**: 
-  - Identification of criteria for "long term unavailable" articles in France.
-  - Prevention of these articles from being included in new delivery positions.
-  - Related to a major incident on July 1, 2025.
-- **Key Contacts**: Björn Bischof for incident details and specific FR criteria.
+  - Verification of existing `cscservice` logic for tracking unavailable products.
+  - Updating outbound core applications to recognize and process FR branch data.
+  - Tailoring article inclusion criteria to meet French-specific supply chain requirements.
+- **Key Contacts**: Björn Bischof (Incident details), PINT department (Data flow), Citrix/Windows teams (Frontend impact).
 
 ## Source Code Analysis
-The system uses a sophisticated C++ backend for core inventory and order logic.
+The codebase is a multi-tier enterprise application using C++ for core services and C# for batch utilities.
 
-### Long Term Lack (LTL) Logic
-The core logic resides in `libcsc` and `pxverbund`:
-- **Repository**: `libcsc/stockbooking/longtermlack/longtermlackrepository.cpp` handles the check `isLongTermLack(articleNo)`.
-- **Database Table**: `longtermlack` (Informix/SQL) stores flagged articles.
-- **Validation**: `pxverbund/libsrc/itmstock.cpp` contains the business logic for stock checks, specifically bypassing or enforcing LTL checks based on delivery types (`MaxDispo`, `MaxNachliefern`).
-- **Thrift Handlers**: Services like `OrderHandler` and `MSV3Handler` propagate these flags to client applications.
+### Long Term Lack (LTL) Implementation
+- **Core Repository**: `libcsc/stockbooking/longtermlack/longtermlackrepository.cpp` manages the LTL state check.
+- **Database Layer**: `longtermlack` table in the Informix/PostgreSQL database stores flagged articles.
+- **Validation Points**:
+  - `pxverbund/libsrc/itmstock.cpp`: Core stock check logic.
+  - `pxverbund/libsrc/pxstockbulkinquiry.cpp`: Bulk inquiry filtering.
+  - `OrderHandler` / `MSV3Handler`: Thrift services for propagating LTL status.
 
-### Country-Specific Adaptations (DE vs FR)
-- **Current State**: Logic is "already established in Germany."
-- **FR Requirements**: The "criteria for putting articles in this table" need to be tailored for France. This likely involves:
-  - Modifying the batch/trigger that populates the `longtermlack` table.
-  - Adding country/branch filters in the LTL check logic within `pxverbund`.
-  - Updating `itmstock.cpp` or related order entry components (`pxoerestrictions.hpp`) to respect FR-specific business rules.
+### France-Specific Adaptations
+Based on technical analysis from team members (Colleague 01 and Colleague 02):
+- **Branch Logic**: The logic must be updated to include French branch codes (e.g., branch-specific stock status) when evaluating unavailability.
+- **Automated Filtering**: Implementation of service-level filters in the outbound delivery position generation logic to query the `cscservice` unavailability table for FR branch orders.
+- **Criteria**: FR-specific article criteria (stock thresholds/timeframes) must be defined and integrated into the `longtermlack` table population routines.
 
 ## Full Template Analysis
-- **Architecture**: Micro-services architecture using Apache Thrift for RPC.
-- **Persistence**: `pxdb` layer provides a C++ interface to an Informix/PostgreSQL database.
-- **Order Flow**: Order Import (`ibtorderimport`) -> Validation (`kscserver`) -> Stock Booking (`pxverbund`) -> Order Closing (`aaorderclose`).
-- **Tracing**: Long-term lack status is checked during order entry and stock reservation to prevent "ghost" orders for unavailable stock.
+- **Architecture**: Modular services communicating via Apache Thrift.
+- **System Impact**: 
+  - **Package**: `pharmos.outbound.csc_core_applications`
+  - **Dependencies**: PINT for data integrity, Citrix/Windows for frontend visibility.
+- **Process Flow**: Order Import -> Validation -> LTL Check (FR specific) -> Delivery Position Generation.
 
-## Implementation Roadmap for France
-1.  **Define FR Criteria**: Consult with stakeholders to determine the specific article attributes or stock thresholds that trigger LTL status in France.
-2.  **Update Database/Logic**: 
-    - Adjust `longtermlacksqlmapper.cpp` if new columns are needed.
-    - Implement country-conditional logic in `itmstock.cpp` to apply the LTL check for FR branches.
-3.  **Validation**: Test via `test_libcsc_stockbooking.cpp` by mocking FR-specific article states.
+## Conclusion & Next Steps
+The implementation of CPR0002783 for France requires extending the `pxdb` query logic to support FR branch filtering and ensuring the `cscservice` unavailability table is correctly cross-referenced during delivery position creation.
 
-## Conclusion
-Adapting CPR0002783 for France requires localized configuration of the LTL identification criteria while leveraging the existing robust C++ repository and checking framework.
+### Actions:
+1.  Finalize FR article criteria for LTL status.
+2.  Update C++ stock booking routines to enforce FR branch checks.
+3.  Coordinate with PINT for database schema alignment if required for FR-specific metadata.
