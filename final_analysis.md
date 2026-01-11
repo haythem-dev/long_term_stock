@@ -1,68 +1,51 @@
-# Final Technical Analysis: CPR0002783 - Trace Long-term Unavailable Products (DE/FR)
+# Refined Technical Analysis: CPR0002783 - Trace Long-term Unavailable Products (DE/FR)
 
-## 1. SQL Inspection Results
+## 1. Integrated Findings (Colleague03 + SQL Inspection)
 
-### Table: `longtermlack` (DE & FR)
-The schema is identical on both servers:
-- **articleno** (int)
-- **messagecode** (int)
-- **enabled** (smallint)
+### 1.1 Data Model Verification
+*   **Table `longtermlack`**: Confirmed on both DE and FR servers with columns `articleno`, `messagecode`, and `enabled`.
+*   **Country Identifiers**: Colleague03's analysis identifies that `pxSession` already has constants for `COUNTRY_FRANCE` ("FR") and `COUNTRY_FRANCE_PREWHOLE` ("PF"). This is critical for triggering country-specific logic.
+*   **Source Data**: Unavailability is determined by several "Preparers" (e.g., `ArticlesWithoutStockPreparer`, `PseudoArticlesPreparer`). These preparers populate the source table before it's moved into `longtermlack`.
 
-**Finding**: There is **no branch or country column** in the current `longtermlack` table. This confirms that the table is likely branch-independent within a specific server instance or represents a global unavailability list for that database.
+### 1.2 France-Specific Logic
+For the French market, the "tailored criteria" involve:
+*   **PZN Management**: Specific handling of pharmaceutical identification numbers.
+*   **Activation Tags**: Using `artikelaktiv` and `kzaktivpassiv` to determine long-term status.
+*   **Incident Context (01.07.2025)**: The requirement is to ensure that products flagged via these French-specific tags are excluded from `tkdauftragpos` (Order Positions) during the delivery phase.
 
-### Table: `filiale` (Branch)
-Both servers contain the `filiale` table with:
-- **filialnr** (smallint)
-- **name** (char)
-- **regionno** (smallint)
+## 2. Refined Architecture
 
-### Table: `kdauftragpos` (Order Positions)
-- **artikel_nr** (int)
-- **codeblocage** (char) - *Potentially useful for French-specific blocking.*
+### 2.1 Branch-Aware Repository
+The `LongTermLackRepository` must be updated to accept a country or branch context.
+*   **Old Query**: `SELECT count(*) FROM longtermlack WHERE articleno = ? AND enabled > 0`
+*   **New Query**: Should support a branch/country differentiator if we add a column, or use the `messagecode` as a proxy if schema changes are deferred.
 
-## 2. Implementation Design for France
+### 2.2 Integration Point: `itmstock.cpp`
+The core logic resides in `itmstock.cpp`. We will use the `pxSession` country code to apply France-specific unavailability rules.
 
-### Current Logic (DE)
-The German implementation uses a global check on the `longtermlack` table. Since the table lacks a branch column, any entry in this table blocks the article for all branches on that server.
-
-### Proposed Changes for France Integration
-To meet the requirement of "tailoring criteria for France," we must implement one of the following:
-
-#### Option A: Database Schema Extension (Recommended)
-Add a `branch_code` column to the `longtermlack` table.
-```sql
-ALTER TABLE longtermlack ADD branch_code SMALLINT;
-```
-This allows the `LongTermLackRepository` to filter by the current order's branch.
-
-#### Option B: Logic-Based Filtering (Application Level)
-If schema changes are restricted, we can use the `messagecode` or a specific range of article numbers to differentiate between DE and FR unavailability rules within the existing table.
-
-## 3. Code Adjustments
-
-### `libcsc/stockbooking/longtermlack/longtermlacksqlmapper.cpp`
-Update the `getSelectSQL` to include branch awareness:
 ```cpp
-// After CPR Implementation
-const basar::VarString LongTermLackSQLMapper::getSelectSQL(const basar::Int16 branchCode) {
-    std::stringstream sql;
-    sql << "SELECT count(*) AS " << s_NumberOfLacksColumn.c_str() 
-        << " FROM longtermlack "
-        << " WHERE articleno = ? AND (branch_code = " << branchCode << " OR branch_code IS NULL) AND enabled > 0;";
-    return sql.str();
-}
-```
-
-### `pxverbund/libsrc/itmstock.cpp`
-Inject the current branch context into the LTL check:
-```cpp
-if (RestrictionType_LongTermLackCheck == 3) {
-    if (ltlRepo->isLongTermLack(item.articleNo, currentBranchNo)) {
-        // Apply France-specific incident logic (Ref: 01.07.2025)
-        return Status_LongTermUnavailable;
+// Logic Refinement
+if ( RestrictionType_LongTermLackCheck == 3 ) {
+    const basar::VarString& countryCode = session.getCountryCode();
+    if ( countryCode == pxSession::COUNTRY_FRANCE ) {
+        // France-specific criteria (PZN, Activation Tags)
+        if ( ltlRepo->isLongTermLackFR(item.articleNo) ) {
+            return Status_LongTermUnavailable;
+        }
+    } else {
+        // Default DE logic
+        if ( ltlRepo->isLongTermLack(item.articleNo) ) {
+            return Status_LongTermUnavailable;
+        }
     }
 }
 ```
 
+## 3. Implementation Roadmap (Updated)
+
+1.  **Repository Extension**: Update `LongTermLackSQLMapper` to include `branch_code` in the SELECT if the schema is updated, or implement `isLongTermLackFR` based on specific `messagecode` ranges.
+2.  **Session Integration**: Leverage `pxSession::COUNTRY_FRANCE` to branch the logic in `itmstock.cpp`.
+3.  **Data Flow**: Ensure the `LongTermLackInserter` (identified in colleague's analysis) correctly populates the French server's `longtermlack` table using the French-specific preparers.
+
 ## 4. Conclusion
-The SQL inspection confirms that the infrastructure is ready for the logic extension. The primary technical task is to transition the `longtermlack` check from a global article-based filter to a branch-aware filter, ensuring that the French branch can independently manage its unavailability criteria as requested by the CPR.
+The architecture is now solidified. We have identified the necessary session-level country checks and the database interaction points. The French implementation will run parallel to the German one, using the same table structure but with filtered logic triggered by the "FR" country code.
