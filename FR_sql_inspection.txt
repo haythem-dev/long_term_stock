@@ -1,0 +1,168 @@
+tabel filiale
+=============
+metadata
+--------
+ColumnIndex	getColumnName	getColumnTypeName	getPrecision	getScale	isNullable	getTableName	getSchemaName	getCatalogName	getColumnClassName	getColumnDisplaySize	getColumnLabel	getColumnType	isAutoIncrement	isCaseSensitive	isCurrency	isDefinitelyWritable	isReadOnly	isSearchable	isSigned	isWritable
+1	filialnr	smallint	5	0	0	filiale	 	 	java.lang.Short	5	filialnr	5	false	false	false	true	false	true	true	true
+2	filial_art	char	1	0	0	filiale	 	 	java.lang.String	1	filial_art	1	false	false	false	true	false	true	false	true
+3	name	char	30	0	0	filiale	 	 	java.lang.String	30	name	1	false	false	false	true	false	true	false	true
+4	standort_kurz	char	2	0	0	filiale	 	 	java.lang.String	2	standort_kurz	1	false	false	false	true	false	true	false	true
+5	standort_lang	char	15	0	0	filiale	 	 	java.lang.String	15	standort_lang	1	false	false	false	true	false	true	false	true
+6	strasse	char	30	0	0	filiale	 	 	java.lang.String	30	strasse	1	false	false	false	true	false	true	false	true
+7	postleitzahl	char	10	0	0	filiale	 	 	java.lang.String	10	postleitzahl	1	false	false	false	true	false	true	false	true
+8	postfach	char	10	0	0	filiale	 	 	java.lang.String	10	postfach	1	false	false	false	true	false	true	false	true
+9	plz_postfach	char	7	0	0	filiale	 	 	java.lang.String	7	plz_postfach	1	false	false	false	true	false	true	false	true
+10	ort	char	30	0	0	filiale	 	 	java.lang.String	30	ort	1	false	false	false	true	false	true	false	true
+11	bundesland	char	6	0	0	filiale	 	 	java.lang.String	6	bundesland	1	false	false	false	true	false	true	false	true
+12	vorwahl	char	10	0	0	filiale	 	 	java.lang.String	10	vorwahl	1	false	false	false	true	false	true	false	true
+13	telnr	char	20	0	0	filiale	 	 	java.lang.String	20	telnr	1	false	false	false	true	false	true	false	true
+14	faxnr	char	25	0	0	filiale	 	 	java.lang.String	25	faxnr	1	false	false	false	true	false	true	false	true
+15	edifakt_version	int	10	0	0	filiale	 	 	java.lang.Integer	10	edifakt_version	4	false	false	false	true	false	true	true	true
+16	mail_nr_1	char	8	0	0	filiale	 	 	java.lang.String	8	mail_nr_1	1	false	false	false	true	false	true	false	true
+17	mail_nr_2	char	8	0	0	filiale	 	 	java.lang.String	8	mail_nr_2	1	false	false	false	true	false	true	false	true
+18	volumen_artikel	int	10	0	0	filiale	 	 	java.lang.Integer	10	volumen_artikel	4	false	false	false	true	false	true	true	true
+19	lager_kost_proz	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	lager_kost_proz	3	false	false	false	true	false	true	true	true
+20	bestell_kosten	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	bestell_kosten	3	false	false	false	true	false	true	true	true
+21	mwst_1	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_1	3	false	false	false	true	false	true	true	true
+22	mwst_2	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_2	3	false	false	false	true	false	true	true	true
+23	mwst_1_alt	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_1_alt	3	false	false	false	true	false	true	true	true
+24	mwst_2_alt	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_2_alt	3	false	false	false	true	false	true	true	true
+25	datum_mwst	int	10	0	0	filiale	 	 	java.lang.Integer	10	datum_mwst	4	false	false	false	true	false	true	true	true
+26	versand_text	char	60	0	0	filiale	 	 	java.lang.String	60	versand_text	1	false	false	false	true	false	true	false	true
+27	bganr	int	10	0	0	filiale	 	 	java.lang.Integer	10	bganr	4	false	false	false	true	false	true	true	true
+28	verz_tage	int	10	0	0	filiale	 	 	java.lang.Integer	10	verz_tage	4	false	false	false	true	false	true	true	true
+29	bankzins	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	bankzins	3	false	false	false	true	false	true	true	true
+30	warenaus_abgabe	char	1	0	0	filiale	 	 	java.lang.String	1	warenaus_abgabe	1	false	false	false	true	false	true	false	true
+31	warenaus_bestell	char	1	0	0	filiale	 	 	java.lang.String	1	warenaus_bestell	1	false	false	false	true	false	true	false	true
+32	neuheitenregal	char	10	0	0	filiale	 	 	java.lang.String	10	neuheitenregal	1	false	false	false	true	false	true	false	true
+33	kuehlzelle	char	1	0	0	filiale	 	 	java.lang.String	1	kuehlzelle	1	false	false	false	true	false	true	false	true
+34	grenze_a	int	10	0	0	filiale	 	 	java.lang.Integer	10	grenze_a	4	false	false	false	true	false	true	true	true
+35	grenze_b	int	10	0	0	filiale	 	 	java.lang.Integer	10	grenze_b	4	false	false	false	true	false	true	true	true
+36	grenze_c	int	10	0	0	filiale	 	 	java.lang.Integer	10	grenze_c	4	false	false	false	true	false	true	true	true
+37	grenze_d	int	10	0	0	filiale	 	 	java.lang.Integer	10	grenze_d	4	false	false	false	true	false	true	true	true
+38	vorzieh_tage	int	10	0	0	filiale	 	 	java.lang.Integer	10	vorzieh_tage	4	false	false	false	true	false	true	true	true
+39	max_wochen_bvor	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	max_wochen_bvor	3	false	false	false	true	false	true	true	true
+40	max_wochen_kuehl	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	max_wochen_kuehl	3	false	false	false	true	false	true	true	true
+41	max_wochen_volu	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	max_wochen_volu	3	false	false	false	true	false	true	true	true
+42	max_wochen_opiat	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	max_wochen_opiat	3	false	false	false	true	false	true	true	true
+43	max_wochen_gefahr	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	max_wochen_gefahr	3	false	false	false	true	false	true	true	true
+44	rechnertyp	char	1	0	0	filiale	 	 	java.lang.String	1	rechnertyp	1	false	false	false	true	false	true	false	true
+45	proz_nf_auf	int	10	0	0	filiale	 	 	java.lang.Integer	10	proz_nf_auf	4	false	false	false	true	false	true	true	true
+46	proz_nf_ab	int	10	0	0	filiale	 	 	java.lang.Integer	10	proz_nf_ab	4	false	false	false	true	false	true	true	true
+47	bganr_ek	int	10	0	0	filiale	 	 	java.lang.Integer	10	bganr_ek	4	false	false	false	true	false	true	true	true
+48	closed_from	int	10	0	0	filiale	 	 	java.lang.Integer	10	closed_from	4	false	false	false	true	false	true	true	true
+49	closed_until	int	10	0	0	filiale	 	 	java.lang.Integer	10	closed_until	4	false	false	false	true	false	true	true	true
+50	lagerortlen	smallint	5	0	0	filiale	 	 	java.lang.Short	5	lagerortlen	5	false	false	false	true	false	true	true	true
+51	personalrabatt	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	personalrabatt	3	false	false	false	true	false	true	true	true
+52	procentername	char	16	0	0	filiale	 	 	java.lang.String	16	procentername	1	false	false	false	true	false	true	false	true
+53	mwst_3	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_3	3	false	false	false	true	false	true	true	true
+54	mwst_4	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_4	3	false	false	false	true	false	true	true	true
+55	mwst_5	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_5	3	false	false	false	true	false	true	true	true
+56	mwst_3_alt	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_3_alt	3	false	false	false	true	false	true	true	true
+57	mwst_4_alt	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_4_alt	3	false	false	false	true	false	true	true	true
+58	mwst_5_alt	decimal	5	2	0	filiale	 	 	java.math.BigDecimal	5	mwst_5_alt	3	false	false	false	true	false	true	true	true
+59	procenterlocation	char	16	0	0	filiale	 	 	java.lang.String	16	procenterlocation	1	false	false	false	true	false	true	false	true
+60	balance1	char	16	0	0	filiale	 	 	java.lang.String	16	balance1	1	false	false	false	true	false	true	false	true
+61	balance2	char	16	0	0	filiale	 	 	java.lang.String	16	balance2	1	false	false	false	true	false	true	false	true
+62	regionno	smallint	5	0	0	filiale	 	 	java.lang.Short	5	regionno	5	false	false	false	true	false	true	true	true
+
+===============================
+tabel longtermlack:
+metadata:
+---------
+ColumnIndex	getColumnName	getColumnTypeName	getPrecision	getScale	isNullable	getTableName	getSchemaName	getCatalogName	getColumnClassName	getColumnDisplaySize	getColumnLabel	getColumnType	isAutoIncrement	isCaseSensitive	isCurrency	isDefinitelyWritable	isReadOnly	isSearchable	isSigned	isWritable
+1	articleno	int	10	0	0	longtermlack	 	 	java.lang.Integer	10	articleno	4	false	false	false	true	false	true	true	true
+2	messagecode	int	10	0	0	longtermlack	 	 	java.lang.Integer	10	messagecode	4	false	false	false	true	false	true	true	true
+3	enabled	smallint	5	0	0	longtermlack	 	 	java.lang.Short	5	enabled	5	false	false	false	true	false	true	true	true
+
+
+===============================
+tabel kdauftragpos:
+metadata:
+---------
+ColumnIndex	getColumnName	getColumnTypeName	getPrecision	getScale	isNullable	getTableName	getSchemaName	getCatalogName	getColumnClassName	getColumnDisplaySize	getColumnLabel	getColumnType	isAutoIncrement	isCaseSensitive	isCurrency	isDefinitelyWritable	isReadOnly	isSearchable	isSigned	isWritable
+1	kdauftragnr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	kdauftragnr	4	false	false	false	true	false	true	true	true
+2	posnr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	posnr	4	false	false	false	true	false	true	true	true
+3	artikel_nr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	artikel_nr	4	false	false	false	true	false	true	true	true
+4	postyp	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	postyp	5	false	false	false	true	false	true	true	true
+5	geraettyp	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	geraettyp	5	false	false	false	true	false	true	true	true
+6	fehlermenge	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	fehlermenge	5	false	false	false	true	false	true	true	true
+7	fehlerartikel	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	fehlerartikel	5	false	false	false	true	false	true	true	true
+8	etposschalter1	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter1	4	false	false	false	true	false	true	true	true
+9	etposschalter2	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter2	4	false	false	false	true	false	true	true	true
+10	etposschalter3	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter3	4	false	false	false	true	false	true	true	true
+11	etposschalter4	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter4	4	false	false	false	true	false	true	true	true
+12	etposschalter5	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter5	4	false	false	false	true	false	true	true	true
+13	etposschalter6	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter6	4	false	false	false	true	false	true	true	true
+14	mengebestellt	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengebestellt	4	false	false	false	true	false	true	true	true
+15	mengebestaetigt	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengebestaetigt	4	false	false	false	true	false	true	true	true
+16	mengegeliefert	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengegeliefert	4	false	false	false	true	false	true	true	true
+17	mengeabgebucht	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengeabgebucht	4	false	false	false	true	false	true	true	true
+18	mengenatra	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengenatra	4	false	false	false	true	false	true	true	true
+19	mengenatrabasis	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengenatrabasis	4	false	false	false	true	false	true	true	true
+20	mengenatragrossh	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengenatragrossh	4	false	false	false	true	false	true	true	true
+21	mengenatraherst	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengenatraherst	4	false	false	false	true	false	true	true	true
+22	preisekapo	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisekapo	3	false	false	false	true	false	true	true	true
+23	preisvkapo	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisvkapo	3	false	false	false	true	false	true	true	true
+24	preisekaponetto	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisekaponetto	3	false	false	false	true	false	true	true	true
+25	preisekgrosso	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisekgrosso	3	false	false	false	true	false	true	true	true
+26	preisekgrossona	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisekgrossona	3	false	false	false	true	false	true	true	true
+27	rabattfestdm	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	rabattfestdm	3	false	false	false	true	false	true	true	true
+28	preisfest	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisfest	3	false	false	false	true	false	true	true	true
+29	rabattfest	decimal	7	2	0	kdauftragpos	 	 	java.math.BigDecimal	7	rabattfest	3	false	false	false	true	false	true	true	true
+30	preisprozent	decimal	5	2	0	kdauftragpos	 	 	java.math.BigDecimal	5	preisprozent	3	false	false	false	true	false	true	true	true
+31	kobehaeltnr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	kobehaeltnr	4	false	false	false	true	false	true	true	true
+32	rabatthilfe	char	1	0	0	kdauftragpos	 	 	java.lang.String	1	rabatthilfe	1	false	false	false	true	false	true	false	true
+33	rabattfaehig	char	2	0	0	kdauftragpos	 	 	java.lang.String	2	rabattfaehig	1	false	false	false	true	false	true	false	true
+34	artbestnachupd	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	artbestnachupd	4	false	false	false	true	false	true	true	true
+35	uhrzeitbestnachupd	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	uhrzeitbestnachupd	4	false	false	false	true	false	true	true	true
+36	datumverfall	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	datumverfall	4	false	false	false	true	false	true	true	true
+37	mengegutschrift	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengegutschrift	4	false	false	false	true	false	true	true	true
+38	lagerbereichnr	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	lagerbereichnr	5	false	false	false	true	false	true	true	true
+39	stationnr	char	2	0	0	kdauftragpos	 	 	java.lang.String	2	stationnr	1	false	false	false	true	false	true	false	true
+40	lagerfachnr	char	10	0	0	kdauftragpos	 	 	java.lang.String	10	lagerfachnr	1	false	false	false	true	false	true	false	true
+41	zuzahlung	char	1	0	0	kdauftragpos	 	 	java.lang.String	1	zuzahlung	1	false	false	false	true	false	true	false	true
+42	bemerkungen	varchar	240	0	0	kdauftragpos	 	 	java.lang.String	240	bemerkungen	12	false	false	false	true	false	true	false	true
+43	etartklasse1	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etartklasse1	4	false	false	false	true	false	true	true	true
+44	etartschalter1	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etartschalter1	4	false	false	false	true	false	true	true	true
+45	etartschalter2	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etartschalter2	4	false	false	false	true	false	true	true	true
+46	etartschalter3	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etartschalter3	4	false	false	false	true	false	true	true	true
+47	contsplitmenge	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	contsplitmenge	4	false	false	false	true	false	true	true	true
+48	sendestatus	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	sendestatus	5	false	false	false	true	false	true	true	true
+49	hinweis	char	2	0	0	kdauftragpos	 	 	java.lang.String	2	hinweis	1	false	false	false	true	false	true	false	true
+50	wannennr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	wannennr	4	false	false	false	true	false	true	true	true
+51	mengevorausbezug	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengevorausbezug	4	false	false	false	true	false	true	true	true
+52	batchposnr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	batchposnr	4	false	false	false	true	false	true	true	true
+53	bewegungsart	char	1	0	0	kdauftragpos	 	 	java.lang.String	1	bewegungsart	1	false	false	false	true	false	true	false	true
+54	salestaxrate	decimal	5	2	0	kdauftragpos	 	 	java.math.BigDecimal	5	salestaxrate	3	false	false	false	true	false	true	true	true
+55	kdauftragbestellnr	char	9	0	0	kdauftragpos	 	 	java.lang.String	9	kdauftragbestellnr	1	false	false	false	true	false	true	false	true
+56	codeblocage	char	1	0	0	kdauftragpos	 	 	java.lang.String	1	codeblocage	1	false	false	false	true	false	true	false	true
+57	preisekapofree	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisekapofree	3	false	false	false	true	false	true	true	true
+58	linkposnr	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	linkposnr	4	false	false	false	true	false	true	true	true
+59	preis_typ	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	preis_typ	5	false	false	false	true	false	true	true	true
+60	article_no_pack	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	article_no_pack	4	false	false	false	true	false	true	true	true
+61	preisfaktur	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisfaktur	3	false	false	false	true	false	true	true	true
+62	maxtargetno	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	maxtargetno	5	false	false	false	true	false	true	true	true
+63	containerlevel	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	containerlevel	5	false	false	false	true	false	true	true	true
+64	refundvalue	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	refundvalue	3	false	false	false	true	false	true	true	true
+65	promotion_no	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	promotion_no	5	false	false	false	true	false	true	true	true
+66	promotyp	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	promotyp	5	false	false	false	true	false	true	true	true
+67	code_type	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	code_type	5	false	false	false	true	false	true	true	true
+68	article_code	char	25	0	0	kdauftragpos	 	 	java.lang.String	25	article_code	1	false	false	false	true	false	true	false	true
+69	problemstate	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	problemstate	5	false	false	false	true	false	true	true	true
+70	etposschalter7	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter7	4	false	false	false	true	false	true	true	true
+71	etposschalter8	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	etposschalter8	4	false	false	false	true	false	true	true	true
+72	subgeraettyp	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	subgeraettyp	5	false	false	false	true	false	true	true	true
+73	kzpriso	char	1	0	0	kdauftragpos	 	 	java.lang.String	1	kzpriso	1	false	false	false	true	false	true	false	true
+74	businesstypeno	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	businesstypeno	5	false	false	false	true	false	true	true	true
+75	touridibt	char	6	0	0	kdauftragpos	 	 	java.lang.String	6	touridibt	1	false	false	false	true	false	true	false	true
+76	ibttourweekday	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	ibttourweekday	5	false	false	false	true	false	true	true	true
+77	ibttype	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	ibttype	5	false	false	false	true	false	true	true	true
+78	isdayibt	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	isdayibt	5	false	false	false	true	false	true	true	true
+79	ibttypeid	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	ibttypeid	5	false	false	false	true	false	true	true	true
+80	purchaserelevantqty	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	purchaserelevantqty	4	false	false	false	true	false	true	true	true
+81	mengebestellt_org	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengebestellt_org	4	false	false	false	true	false	true	true	true
+82	mengebestelltnatra	int	10	0	0	kdauftragpos	 	 	java.lang.Integer	10	mengebestelltnatra	4	false	false	false	true	false	true	true	true
+83	natracategory	smallint	5	0	0	kdauftragpos	 	 	java.lang.Short	5	natracategory	5	false	false	false	true	false	true	true	true
+84	natrapharmacygroup	char	3	0	0	kdauftragpos	 	 	java.lang.String	3	natrapharmacygroup	1	false	false	false	true	false	true	false	true
+85	preisekagp	decimal	9	2	0	kdauftragpos	 	 	java.math.BigDecimal	9	preisekagp	3	false	false	false	true	false	true	true	true
