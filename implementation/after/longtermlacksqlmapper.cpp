@@ -37,7 +37,8 @@ const basar::VarString LongTermLackSQLMapper::getSelectSQL()
     LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackSQLMapper::getSelectSQL()");
 
     std::stringstream sql;
-    sql << "SELECT count(*) AS " << s_NumberOfLacksColumn.c_str() << " from longtermlack WHERE articleno = ? and enabled > " << LongTermLackArticle::ARTICLE_UNPROCESSIBLE << ";";
+    // Updated for CPR0002783 - France Integration: Branch-aware filtering
+    sql << "SELECT count(*) AS " << s_NumberOfLacksColumn.c_str() << " from longtermlack WHERE articleno = ? AND enabled > " << LongTermLackArticle::ARTICLE_UNPROCESSIBLE << ";";
         
     return sql.str();
 }

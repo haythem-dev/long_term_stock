@@ -15,12 +15,12 @@ namespace stockbooking
 
 LongTermLackRepository::LongTermLackRepository()
 {
-	LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::LongTermLackRepository()");
+        LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::LongTermLackRepository()");
 }
 
 LongTermLackRepository::~LongTermLackRepository()
 {
-	LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::~LongTermLackRepository()");
+        LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::~LongTermLackRepository()");
 
     m_CheckerLongTermLackAccessor.reset();
     m_DeleteLongTermLackAccessor.reset();
@@ -28,13 +28,13 @@ LongTermLackRepository::~LongTermLackRepository()
 
 void LongTermLackRepository::injectCheckerLongTermLackAccessor(persistence::IAccessorPtr accessor)
 {
-	LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::injectSelectLongTermLackAccessor()");
+        LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::injectSelectLongTermLackAccessor()");
     m_CheckerLongTermLackAccessor = accessor;
 }
 
 void LongTermLackRepository::injectDeleteLongTermLackAccessor(persistence::IAccessorPtr accessor)
 {
-	LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::injectDeleteLongTermLackAccessor()");
+        LOG4CPLUS_TRACE_METHOD(libcsc::LoggerPool::getLoggerStockBooking(), "LongTermLackRepository::injectDeleteLongTermLackAccessor()");
     m_DeleteLongTermLackAccessor = accessor;
 }
 
@@ -66,6 +66,7 @@ bool LongTermLackRepository::isLongTermLack( const basar::Int32 articleNo ) cons
     basar::Decimal numberOfLacks;
     try 
     {
+        // Integration Note (CPR0002783): In the future, this can be extended to accept branchNo for France specific checks.
         basar::db::sql::ResultsetRef resultset = 
             m_CheckerLongTermLackAccessor->select(LongTermLackSQLMapper::getSelectSQL(), LongTermLackSQLMapper::getSelectSqlParameterBinder(articleNo));
         
