@@ -1,0 +1,224 @@
+. /software/etc/profile_prz
+
+
+if [ $2 = 5 ]
+then
+    /transfer/tools/winmail -e ksc.hanau@phoenixgroup.eu \
+   -c "u.hanau@phoenixgroup.eu;R.POLAT@phoenixgroup.eu" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 6 ]
+then
+    /transfer/tools/winmail -e h.richert@phoenixgroup.eu \
+ -c "u.schumacher@phoenixgroup.eu;je.hoffmann@phoenixgroup.eu" \
+ -b $1 \
+ -d $1 \
+ -dos \
+ -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 8 ]
+then
+    /transfer/tools/winmail -e ksc.herne@phoenixgroup.eu \
+ -c "a.neumann@phoenixgroup.eu;maren.klein@phoenixgroup.eu" \
+ -b $1 \
+ -d $1 \
+ -dos \
+ -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 9 ]
+then
+    /transfer/tools/winmail -e ksc.herne@phoenixgroup.eu \
+ -c "a.neumann;maren.klein;l.skerra;k.riedmayer" \
+ -b $1 \
+ -d $1 \
+ -dos \
+ -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 21 ]
+then
+    /transfer/tools/winmail -e r.einkauf@hagedastumpf.de \
+        -c "r.einkauf@hagedastumpf.de" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 31 ]
+then
+    /transfer/tools/winmail -e h.richert@phoenixgroup.eu \
+ -c "u.schumacher@phoenixgroup.eu;je.hoffmann@phoenixgroup.eu" \
+ -b $1 \
+ -d $1 \
+ -dos \
+ -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 33 ]
+then
+    /transfer/tools/winmail -e ksc.oldenburg@phoenixgroup.eu \
+ -b $1 \
+ -d $1 \
+ -dos \
+ -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 40 ]
+then
+    /transfer/tools/winmail -e j.pollmeier@phoenixgroup.eu \
+	    -c ksc.dispoabteilung.bielefeld@phoenixgroup.eu \
+	    -b $1 \
+	    -d $1 \
+	    -dos \
+	    -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 44 ]
+then
+    /transfer/tools/winmail -e m.kovacevic@phoenixgroup.eu \
+        -c "a.erle@phoenixgroup.eu;m.rudolf@phoenixgroup.eu;s.daigorath@phoenixgroup.eu;s.geierhos@phoenixgroup.eu" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 46 ]
+then
+    /transfer/tools/winmail -e u.kimmich@phoenixgroup.eu \
+	    -c m.guenther@phoenixgroup.eu \
+	    -b $1 \
+	    -d $1 \
+	    -dos \
+	    -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 51 ]
+then
+    /transfer/tools/winmail -e u.schneider-schmidt@phoenixgroup.eu \
+        -c "i.fischer-volk@phoenixgroup.eu;m.goebel@phoenixgroup.eu" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 52 ]
+then
+    /transfer/tools/winmail -e u.schneider-schmidt@phoenixgroup.eu \
+            -c "i.fischer-volk@phoenixgroup.eu;m.goebel@phoenixgroup.eu" \
+            -b $1 \
+            -d $1 \
+            -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 54 ]
+then
+    /transfer/tools/winmail -e c.schuetz@phoenixgroup.eu \
+        -c "d.zulauf;c.rudat;s.hetzel" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 56 ]
+then
+    /transfer/tools/winmail -e ksc.hanau@phoenixgroup.eu \
+        -c "R.POLAT@phoenixgroup.eu" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 57 ]
+then
+    /transfer/tools/winmail -e m.kovacevic@phoenixgroup.eu \
+            -c p.muenster@phoenixgroup.eu \
+            -c einkauf.muenchen@phoenixgroup.eu \
+            -b $1 \
+            -d $1 \
+            -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 58 ]
+then
+    /transfer/tools/winmail -e u.schneider-schmidt@phoenixgroup.eu \
+        -c "i.fischer-volk@phoenixgroup.eu;m.goebel@phoenixgroup.eu" \
+        -b $1 \
+        -d $1 \
+        -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 59 ]
+then
+    /transfer/tools/winmail -e h.richert@phoenixgroup.eu \
+ -c "u.schumacher@phoenixgroup.eu;je.hoffmann@phoenixgroup.eu" \
+            -b $1 \
+            -d $1 \
+            -dos \
+            -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 70 ]
+then
+    /transfer/tools/winmail -e j.pollmeier@phoenixgroup.eu \
+	    -c ksc.dispoabteilung.bielefeld@phoenixgroup.eu \
+	    -b $1 \
+	    -d $1 \
+	    -dos \
+	    -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 78 ]
+then
+    /transfer/tools/winmail -e ksc.dispoabteilung.hannover@phoenixgroup.eu \
+	    -c ksc.hannover@phoenixgroup.eu \
+	    -c ksc.oldenburg@phoenixgroup.eu \
+	    -b $1 \
+	    -d $1 \
+	    -dos \
+	    -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 81 ]
+then
+    /transfer/tools/winmail -e d.jacob@phoenixgroup.eu \
+            -c i.hepner@phoenixgroup.eu \
+            -b $1 \
+            -d $1 \
+            -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 82 ]
+then
+    /transfer/tools/winmail -e d.jacob@phoenixgroup.eu \
+            -c i.hepner@phoenixgroup.eu \
+            -b $1 \
+            -d $1 \
+            -dos \
+        -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+if [ $2 = 66 ]
+then
+    /transfer/tools/winmail -e r.imschweiler@phoenixgroup.eu \
+	    -b $1 \
+	    -d $1 \
+	    -dos \
+	    -t /software/wss/de/ksc/server/ini/anredeaa.txt
+fi
+
+cat $(1} > /transfer/mail/druckaa/$(basename ${1}).${2}.$(date '+%Y%m%d%H%M%S') 2> /transfer/mail/druckaa/error.${2}.$(date '+%Y%m%d%H%M%S')

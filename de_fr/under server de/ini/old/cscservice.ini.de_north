@@ -1,0 +1,13 @@
+;
+;               Order Entry Server initialization parameters.
+;
+[Generic]
+MessageFile        = $INI_PATH/message.txt
+
+[Session]
+DataSource         = ode21@ode21_shm
+DeviceName         = ZZZZ
+DeviceType         = 2
+Country            = DE
+
+[Dummy]

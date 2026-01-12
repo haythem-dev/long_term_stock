@@ -1,0 +1,4401 @@
+;                 KSC SERVER CANNED MESSAGE FILE (INTERNATIONALE VERSION).
+;
+; NACHRICHTENNUMMERN SIND IM FOLGENDEN FORMAT ORGANISIERT :
+;       FF  = FUNKTIONSKREIS/SUBSYSTEM
+;       NNN = TEXTNUMMER
+;       LL  = LANGUAGE
+;
+;       LL = 0    = GERMANY
+;       LL = 1    = FRANCE
+;
+;
+;              FUNKTIONSKREIS 2N : GENERELLE SERVER-NACHRICHTEN.
+;
+; 20 NNN : ORDER TRANSMISSION INTERFACE (XMIT) GERMAN
+;
+[20 00100]
+VERSUCH, EINEN AUFTRAG ZU EROEFFNEN, OBWOHL KEINE VERBINDUNG ZU EINEM GERAET BESTEHT.
+[20 00200]
+VERSUCH, EINE AUFTRAGSFUNKTION AUSZUFUEHREN, OBWOHL KEIN AUFTRAG EROEFFNET WURDE.
+[20 00300]
+KUNDE HAT SICH MIT FALSCHER NUMMER GEMELDET: %s
+[20 00400]
+KUNDE NICHT VORHANDEN
+[20 00500]
+FUER DIE AUFTRAGSART %s GIBT ES KEINE SUBAUFTRAGSART
+[20 00600]
+AUFTRAGSART %s NICHT ERLAUBT
+[20 00700]
+AUFTRAGSART FUER MSV3 NICHT VEREINBART
+[20 00800]
+MSV3 DOPPELTE UEBERTRAGUNG %s
+[20 00900]
+MSV3 DOPPELTER AUFTRAG %s
+[20 01000]
+MSV3 AUFTRAG STORNIERT AUFGRUND DEFEKT
+[20 01100]
+MSV3 UNBEKANNTES BESTELLFENSTER %d
+;
+;              FUNKTIONSKREIS 2N : GENERELLE SERVER-NACHRICHTEN.
+;
+; 20 NNN : ORDER TRANSMISSION INTERFACE (XMIT) FRENCH
+;
+[20 00101]
+VERSUCH, EINEN AUFTRAG ZU EROEFFNEN, OBWOHL KEINE VERBINDUNG ZU EINEM GERAET BESTEHT.
+[20 00201]
+VERSUCH, EINE AUFTRAGSFUNKTION AUSZUFUEHREN, OBWOHL KEIN AUFTRAG EROEFFNET WURDE.
+[20 00301]
+KUNDE HAT SICH MIT FALSCHER NUMMER GEMELDET: %s
+[20 00401]
+KUNDE NICHT VORHANDEN
+[20 00501]
+FUER DIE AUFTRAGSART %s GIBT ES KEINE SUBAUFTRAGSART
+[20 00601]
+Type d'ordre %s pas permis.
+;
+;              FUNKTIONSKREIS 2N : GENERELLE SERVER-NACHRICHTEN.
+;
+; 20 NNN : ORDER TRANSMISSION INTERFACE (XMIT) CTOATIA
+;
+[20 00102]
+VERSUCH, EINEN AUFTRAG ZU EROEFFNEN, OBWOHL KEINE VERBINDUNG ZU EINEM GERAET BESTEHT.
+[20 00202]
+VERSUCH, EINE AUFTRAGSFUNKTION AUSZUFUEHREN, OBWOHL KEIN AUFTRAG EROEFFNET WURDE.
+[20 00302]
+KUNDE HAT SICH MIT FALSCHER NUMMER GEMELDET: %s
+[20 00402]
+KUNDE NICHT VORHANDEN
+[20 00502]
+FUER DIE AUFTRAGSART %s GIBT ES KEINE SUBAUFTRAGSART
+[20 00602]
+AUFTRAGSART %s NICHT ERLAUBT
+;
+;              FUNKTIONSKREIS 2N : GENERELLE SERVER-NACHRICHTEN.
+;
+; 20 NNN : ORDER TRANSMISSION INTERFACE (XMIT) BULGARIA
+;
+[20 00105]
+VERSUCH, EINEN AUFTRAG ZU EROEFFNEN, OBWOHL KEINE VERBINDUNG ZU EINEM GERAET BESTEHT.
+[20 00205]
+VERSUCH, EINE AUFTRAGSFUNKTION AUSZUFUEHREN, OBWOHL KEIN AUFTRAG EROEFFNET WURDE.
+[20 00305]
+KUNDE HAT SICH MIT FALSCHER NUMMER GEMELDET: %s
+[20 00405]
+KUNDE NICHT VORHANDEN
+[20 00505]
+FUER DIE AUFTRAGSART %s GIBT ES KEINE SUBAUFTRAGSART
+[20 00605]
+AUFTRAGSART %s NICHT ERLAUBT
+[20 00705]
+AUFTRAGSART FUER MSV3 NICHT VEREINBART
+[20 00805]
+MSV3 DOPPELTE UEBERTRAGUNG %s
+[20 00905]
+MSV3 DOPPELTER AUFTRAG %s
+[20 01005]
+MSV3 AUFTRAG STORNIERT AUFGRUND DEFEKT
+[20 01105]
+MSV3 UNBEKANNTES BESTELLFENSTER %d
+;
+; 21 NNN : INTERNE SERVER-FUNKTIONEN
+;
+[21 00100]
+LOCKMANAGER LIEFERTE FATALEN FEHLER %d BEI FUNKTION LOCK().
+[21 00200]
+LOCKMANAGER LIEFERTE FATALEN FEHLER %d BEI FUNKTION UNLOCK().
+;
+;
+;              FUNKTIONSKREIS 3N : NACHRICHTEN DER AUFTRAGERFASSUNGS-OBJEKTE.
+;
+; 30 NNN : KUNDENAUFTRAG   (GERMAN)
+;
+[30 00100]
+AUFTRAG MIT DER NUMMER %d NICHT GEFUNDEN.
+[30 00200]
+AUFTRAG %d BEREITS EROEFFNET.
+[30 00300]
+KANN AUFTRAG %d NICHT OEFFNEN, AUFTRAG IST IN ARBEIT.
+[30 00400]
+KANN AUFTRAG %d NICHT OEFFNEN, KUNDE FUER DIESEN AUFTRAG NICHT VORHANDEN.
+[30 00500]
+AUFTRAG %d WURDE NICHT EROEFFNET.
+[30 00600]
+AUFTRAGART %s FUER KUNDE %d NICHT ERLAUBT.
+[30 00700]
+KOMBINATION VON AUFTRAGART %s , KOMMISIONIERUNGSART %c UND BUCHUNGSART %c UNGUELTIG.
+[30 00800]
+AENDERUNG DER AUFTRAGART NICHT MEHR MOEGLICH.
+[30 00900]
+AENDERUNG/WEITERERFASSUNG VON AUFTRAG %d NICHT MOEGLICH, AUFTRAG STORNIERT ODER NICHT MEHR AENDERBAR.
+[30 01000]
+AENDERUNG VON AUFTRAG %d NICHT MOEGLICH, ERFASSUNG (NOCH) NICHT ABGESCHLOSSEN.
+[30 01100]
+KANN AUFTRAG %d NICHT OEFFNEN, BEARBEITUNGSART %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01200]
+KANN STATUS FUER AUFTRAG %d NICHT AENDERN, STATUS %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01300]
+AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NUR ZUR ANZEIGE EROEFFNET.
+[30 01400]
+UNGUELTIGER STORNO-CODE FUER AUFTRAG %d.
+[30 01500]
+BESTANDS-BUCHUNGSART %c UNBEKANNT.
+[30 01600]
+KOMMISSIONIERUNGSART %c UNBEKANNT.
+[30 01700]
+VALUTA-DATUM FEHLERHAFT, KEIN GUELTIGES DATUM-FORMAT.
+[30 01800]
+VALUTA-DATUM IST KLEINER ALS DAS HEUTIGE DATUM.
+[30 01900]
+FUER DEN KUNDEN %d IST KEINE VALUTIERUNG MOEGLICH.
+[30 02000]
+FUER DIE AUFTRAGSART %s IST KEINE VALUTIERUNG MOEGLICH.
+[30 02100]
+MAXIMALE VALUTIERUNG FUER AUFTRAGSART %s: %d MONAT(E).
+[30 02200]
+DIE TOUR %s IST NICHT GUELTIG.
+[30 02300]
+AUFTRAGSEREIGNIS MIT AUFTRAGSNUMMER %d, DATUM %d UND ZEIT %d NICHT GEFUNDEN.
+[30 02400]
+AUFTRAGSBEMERKUNG MIT AUFTRAGSNUMMER %d, BEMERKUNGSART %d UND BEMERKUNGSNUMMER %d NICHT GEFUNDEN.
+[30 02500]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, AUFTRAG NICHT ZU ERFASSUNG EROEFFNET.
+[30 02600]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, KOMMISSIONIERUNGSART IST 'KEINE KOMMISSIONIERUNG'.
+[30 02700]
+ES SIND KEINE TOUREN MEHR FUER DIESEN KUNDEN GEPLANT.
+[30 02800]
+DIE TOUR %s KANN WEGEN ZEITUEBERSCHREITUNG NICHT ZUGEORDNET WERDEN.
+[30 02900]
+DIE ERFASSUNG VON AUFTRAEGEN IST FUER KUNDENGRUPPE %s NICHT ERLAUBT.
+[30 03000]
+KEINE ALTERNATIVE LIEFERFILIALEN GEFUNDEN.
+[30 03100]
+FATALER FEHLER, KANN AUFTRAG %d NICHT WEITER BEARBEITEN. UNDEFINIERTE AUFTRAGSPERRE.
+[30 03200]
+AUFTRAG ZURUECKGESTELLT WEGEN UMBUCHEN.
+[30 03300]
+AUFTRAG ZURUECKGESTELLT: UEBERTRAGUNG NACH 99 ABGEBROCHEN.
+[30 03400]
+AUFTRAG %d NICHT MEHR IN ERFASSUNG.
+[30 03500]
+AUFTRAG MIT DER NUMMER %d AUF %s NICHT GEFUNDEN.
+[30 03600]
+ENTFERNTER AUFTRAG CONNECT FEHLER : %s .
+[30 03700]
+ENTFERNTER AUFTRAG OPEN FEHLER : %s .
+[30 03800]
+ENTFERNTER AUFTRAG TYP FEHLER : %s .
+[30 03900]
+ENTFERNTER AUFTRAG POSITION FEHLER : %s .
+[30 04000]
+ENTFERNTER AUFTRAG CLOSE FEHLER : %s .
+[30 04100]
+ENTFERNTER AUFTRAG DISCONNECT FEHLER : %s .
+[30 04200]
+DOPPELTE BESTELLUNG.
+[30 04300]
+KREDITLIMIT ERREICHT
+[30 04400]
+AUFTRAGSABSCHLUSS NICHT ERLAUBT
+[30 04500]
+KUNDE %d FUER AE GESPERRT.
+[30 04600]
+KEINE AUFTRAGSNUMMER FUER KUNDE %d BEKOMMEN.
+[30 04700]
+FEHLER BEIM BUCHEN RANGEARTIKEL %d IN AUFTRAG %d
+[30 04800]
+AUFTRAGSWERT ZU NIEDRIG
+[30 04900]
+KREDITLIMIT IST UEBERSCHRITTEN UM:
+[30 05000]
+RABATTKONTO UEBERSCHRITTEN UM: %.2lf
+[30 05100]
+KREDITLIMIT UEBERSCHRITTEN UM: %.2lf
+[30 05200]
+AUFTRAG IN BARAUFTRAG GEAENDERT WEGEN KREDITLIMITUEBERSCHREITUNG
+[30 05300]
+KEINE RABATTWERTE IM GEWAEHLTEN ZEITRAUM VORHANDEN
+[30 05400]
+RABATTKONTO IM GEWAEHLTEN ZEITRAUM AUSGESCHOEPFT
+[30 05500]
+RABATTAUFTRAG AUSSERHALB DES ZEITFENSTERS
+[30 05600]
+KEINE VERZOEGERTE AUSLIEFERUNG BEI AUFTRAGART %s
+[30 05700]
+KEINE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05800]
+ZUVIELE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05900]
+CREMA MAIL KONNTE VIA LIBMAIL FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06000]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06100]
+Pruefung Kreditlimit: Auftrag %ld, IDF %ld, %s, %s %s %s
+[30 06200]
+Sehr geehrte Damen und Herren,\n\n
+[30 06300]
+Es gibt fuer Auftrag %ld fuer Kunde %s, %s-%s %s eine Ueberschreitung des Kreditlimits.\n\n
+[30 06400]
+Kreditlimit:  %s EUR\n
+[30 06500]
+Beansprucht:  %s EUR ( %.2f %% )\n
+[30 06600]
+Auftragswert: %s EUR\n\n
+[30 06700]
+Bitte entscheiden sie ueber eine Auslieferung des Auftrags unter: \n\n
+[30 06800]
+%s \n\n
+[30 06900]
+Vielen Dank
+[30 07000]
+Warnung. Das derzeit noch verfuegbare Kreditlimit bei Partner %s (%ld) ist zu %.2f %% ausgeschoepft. \n\n
+[30 07100]
+Das aktuelle Limit betraegt %s EUR. \n\n
+[30 07200]
+Mit freundlichen Grueﬂen
+[30 07300]
+KEINE PROZENTWERTE FUER EMAILVERSANDT GEFUNDEN.
+[30 07400]
+Warnung Kreditlimit Partner %ld %s
+[30 07500]
+AUFTRAG OEFFNEN FUER KUNDE %d NICHT ERLAUBT
+[30 07600]
+Auftragsartwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07700]
+Kundenwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07800]
+Filialwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07900]
+Tour hat keine BTM/K¸hlartikel-Erlaubnis
+[30 08000]
+Tour ist keine Verbundtour
+[30 08100]
+Keine Verbundfilialkonfiguration vorhanden
+[30 08200]
+%ld Stimmen fehlen noch um den Auftrag %s!
+[30 08300]
+%ld von %ld Stimmen fehlen noch. %ld stimmten fuer Freigabe, %ld stimmten f¸r Storno.
+[30 08400]
+freigeben
+[30 08500]
+stornieren
+[30 08600]
+Warnung. Der Kreditlimit-Warnbetrag von %.2f wurde bei Partner %s (%ld) ¸berschritten. Aktueller Betrag: %.2f. \n\n
+[30 08700]
+RetCode %ld
+[30 08800]
+%s: Level %ld Type %ld SentTo %d : %s
+[30 08900]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09000]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 09100]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09200]
+CREMA Partner VZs f¸r Partner %ld konnten nicht geladen werden.
+[30 09300]
+CREMA Cross DB Eintrag konnte nicht selektiert werden.
+[30 09400]
+CREMA Email f¸r Kunde %ld konnte nach Verarbeitung nicht geloescht werden.
+[30 09500]
+Abstimmung: Auftrag %ld, IDF %ld, %s, %s
+[30 09600]
+Sehr geehrte Damen und Herren, \n\n
+
+f¸r Auftrag %ld (Kunde %ld, %s) ¸ber %s %.2f sind unterschiedliche Entscheidungen getroffen worden. Dies mit dem Resultat, dass der Auftrag nach wie vor blockiert ist. \n
+Wir mˆchten die Genehmigenden daher bitten, die Erfassung zu pr¸fen, sich abzustimmen und die Entscheidung so anzupassen, dass der Auftrag abgeschlossen oder storniert werden kann. \n\n
+
+%s  \n\n
+
+Besten Dank!
+[30 09700]
+EUR
+[30 09800]
+Freigabe: Auftrag %ld, IDF %ld, %s, %s
+[30 09900]
+Sehr geehrte Damen und Herren, \n\n
+
+der Auftrag %ld (Kunde %ld, %s) wurde am %s %s %s erfolgreich von Benutzer %s aufgrund \"%s\" geschlossen. \n\n
+
+Mit freundlichen Gruessen.
+[30 10000]
+Stornierung: Auftrag %ld, IDF %ld, %s, %s
+[30 10100]
+Sehr geehrte Damen und Herren, \n\n
+
+der Auftrag %ld (Kunde %ld, %s) wurde am %s %s %s erfolgreich von Benutzer %s aufgrund \"%s\" storniert. \n\n
+
+Mit freundlichen Gruessen.
+[30 10200]
+um
+;
+;              Funktionskreis 3n : Nachrichten der Auftragerfassungs-Objekte.
+; 30 nnn : ORDRE DE CLIENT   (FRENCH)
+;
+[30 00101]
+Pas trouve l'ordre no. %d.
+[30 00201]
+Ordre %d dej‡ ouvert.
+[30 00301]
+Pas possible d'ouvrir ordre %d, ordre est en traitement.
+[30 00401]
+Pas possible d'ouvrir ordre %d, pas de client existant pour cet ordre.
+[30 00501]
+Ordre %d n'a pas ete ouvert.
+[30 00601]
+Type d'ordre %s pour client %d pas permis.
+[30 00701]
+Combination de type d'ordre %s, type de commi %c et type d'enregistrement %c pas valable.
+[30 00801]
+Modification de type d'ordre plus posible.
+[30 00901]
+Modification/Continuation de saisie de l'ordre %d pas possible, ordre annule ou plus modifiable.
+[30 01001]
+Modification de l'ordre %d pas possible, saisie pas (encore) pas achevee.
+[30 01101]
+Pas possible d'ouvrir ordre %d, type de traitement %d est inconnu.
+Cela est une erreur de programmation.
+[30 01201]
+Pas possible de modifier statut pour ordre %d, statut %d est inconnu.
+Cela est une erreur de programmation.
+[30 01301]
+Ordre %d pas modifiable.
+Soit l'ordre est annule, dej‡ acheve, ou il n'a ete ouvert que pour indication.
+[30 01401]
+Code annulation invalable pour ordre %d.
+[30 01501]
+Type d'enregistration de stock %c inconnu.
+[30 01601]
+Type de commi %c inconnu.
+[30 01701]
+Date de validite fausse, format de date pas valable.
+[30 01801]
+Date de validite est plus petite que la date actuelle.
+[30 01901]
+Pas d'evaluation possible pour client %d.
+[30 02001]
+Pas d'evaluation possible pour type d'ordre %s.
+[30 02101]
+Evaluation maximale pour type d'ordre %s: %d mois.
+[30 02201]
+Le tour %s n'est pas valable.
+[30 02301]
+Pas trouve d'evenement d'ordre avec no. d'ordre, date %d et heure %d.
+[30 02401]
+Pas trouve de remarque d'ordre avec no d'ordre %d, type de remarque %d et no. de remarque %d.
+[30 02501]
+Pas de choix de tours possible pour cet ordre, ordre pas ouvert pour saisie.
+[30 02601]
+Pas de choix de tours possible pour cet ordre, type de commi est "pas de commi".
+[30 02701]
+Plus de tours prevus pur ce client.
+[30 02801]
+Le tour %s ne peut pas etre attribue pour cause de depassement de temps.
+[30 02901]
+La saisie d'ordres n'est pas permis pour le groupe de client %s.
+[30 03001]
+Pas trouve de succursales de livraison alternatives.
+[30 03101]
+Erreur fatale, ne peut pas continuer de traiter ordre %d. Blocage d'ordre non defini.
+[30 03201]
+Ordre place en attente pour cause de modification d'enregistration.
+[30 03301]
+Ordre place en attente: Transfert interrompu apres 99.
+[30 03401]
+Ordre %d plus en saisie.
+[30 03501]
+Ordre avec le no. %d pas trouve sur %s.
+[30 03601]
+Ordre elimine connect faute: %s.
+[30 03701]
+Ordre elimine open faute: %s.
+[30 03801]
+Ordre elimine type faute: %s.
+[30 03901]
+Ordre elimine position faute : %s.
+[30 04001]
+Ordre elimine close faute: %s.
+[30 04101]
+Ordre elimine disconnect faute: %s.
+[30 04201]
+Commande double.
+[30 04301]
+Limite de credit atteint..
+[30 04401]
+Conclusion d'ordre pas permis.
+[30 04501]
+Client %d bloque pour saisie d'ordre.
+[30 04601]
+Pas requ de no. de commande pour client %d.
+[30 04701]
+faute lors de enregistration d'article %d en commande  %d
+[30 04801]
+Auftragswert zu niedrig
+[30 04901]
+LA LIMITE DE CREDIT EST DEPASSEE :
+[30 05001]
+RABATTKONTO UEBERSCHRITTEN UM: %d
+[30 05101]
+LA LIMITE DE CREDIT EST DEPASSEE : %.2lf
+[30 05201]
+AUFTRAG IN BARAUFTRAG GEAENDERT WEGEN KREDITLIMITUEBERSCHREITUNG
+[30 05301]
+KEINE RABATTWERTE IM GEWAEHLTEN ZEITRAUM VORHANDEN
+[30 05401]
+RABATTKONTO IM GEWAEHLTEN ZEITRAUM AUSGESCHOEPFT
+[30 05501]
+RABATTAUFTRAG AUSSERHALB DES ZEITFENSTERS
+[30 05601]
+KEINE VERZOEGERTE AUSLIEFERUNG BEI AUFTRAGART %s
+[30 05701]
+Aucune donnÈe trouvÈe DE %.2f POURCENTAGE.
+[30 05801]
+DONN…ES TROP trouvÈ pour %.2f POURCENTAGE.
+[30 05901]
+CREMA libmail PAR EMAIL A ETE POUR LE CONTRAT AVEC %ld %.2f POURCENTAGE pas pu Ítre envoyÈ.
+[30 06001]
+MAIL CREMA pourrait par CONTRAT AVEC %ld %.2f POURCENTAGE pas pu Ítre envoyÈ.
+[30 06101]
+Test limite de crÈdit Ordre %ld, IDF %ld, %s, %s %s %s
+[30 06201]
+Chers Messieurs, \n \n
+[30 06301]
+Il ya %ld emploi pour le client %s,%s%-s %s dÈpasse la limite de crÈdit. \n \n
+[30 06401]
+Limite de crÈdit: %s EUR \n
+[30 06501]
+RÈclamÈ:  %s EUR ( %.2f %% ) \n
+[30 06601]
+La valeur du contrat: %s EUR \n\n
+[30 06701]
+S'il vous plaÓt choisir une livraison dans le cadre du contrat: \n\n
+[30 06801]
+%s \n\n
+[30 06901]
+merci beaucoup
+[30 07001]
+Avertissement. La limite de crÈdit actuellement disponible chez le partenaire %s (%ld) est exploitÈe ‡ %.2f %%. \n\n
+[30 07101]
+La limite actuelle est de %s EUR. \n\n
+[30 07201]
+Cordialement
+[30 07301]
+VALEURS NON POURCENTAGE livraison du courrier TROUV…S.
+[30 07401]
+Avertissement limite de crÈdit partenaire %ld %s 
+[30 07501]
+Auftrag oeffnen fuer Kunde %d nicht erlaubt
+[30 07601]
+Auftragsartwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07701]
+Kundenwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07801]
+Filialwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07901]
+Tour has no permission for narcotics or cool articles
+[30 08001]
+Tour cannot be used for IBT
+[30 08101]
+No IBT branch configuration available
+[30 08201]
+%ld des votes  manquent encore pour la commande %s!
+[30 08301]
+%ld de %ld des votes manquent encore. %ld Ètait correct pour la libÈration, %ld Ètait correct pour l'extourne
+[30 08401]
+libÈrer
+[30 08501]
+extourner
+[30 08601]
+Avertissement. Le montant de mise en garde de la limite de crÈdit de %.2f a ÈtÈ dÈpassÈ pour le partenaire %s (%ld). Montant actuel : %.2f. \n\n
+[30 08701]
+RetCode %ld
+[30 08801]
+%s: Level %ld Type %ld SentTo %d : %s
+[30 08901]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09001]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 09101]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09201]
+CREMA Partner VZs f¸r Partner %ld konnten nicht geladen werden.
+[30 09301]
+CREMA Cross DB Eintrag konnte nicht selektiert werden.
+[30 09401]
+CREMA Email f¸r Kunde %ld konnte nach Verarbeitung nicht geloescht werden.
+[30 09501]
+vote: Ordre %ld, IDF %ld, %s, %s
+[30 09601]
+Mesdames, Messieurs, \n\n
+
+pour L'ordre %ld (client %ld, %s) concernant %s %.2f diffÈrentes dÈcisions ont ÈtÈ prises. Ceci, avec comme rÈsultat, que  l'ordre a ÈtÈ bloquÈ comme auparavant. \n
+Aussi, nous prions les personnes autorisÈes de contrÙler la saisie, de se concerter et d'adapter leur dÈcision afin que l'ordre puisse Ítre clÙturÈ ou extournÈ \n\n
+
+%s  \n\n
+
+Avec nos remerciements !
+[30 09701]
+EUR 
+[30 09801]
+liberation: Ordre %ld, IDF %ld, %s, %s
+[30 09901]
+Mesdames, Messieurs, \n\n
+
+L'ordre %ld, client %ld, %s a libÈration avec succËs par l'utilisateur %s %s %s le %s en raison de %s \n\n
+
+Meilleures salutations.
+[30 10001]
+annulation: Ordre %ld, IDF %ld, %s, %s 
+[30 10101]
+Mesdames, Messieurs, \n\n
+
+L'ordre %ld, client %ld, %s a annulation avec succËs  par l'utilisateur %s %s %s le %s en raison de %s \n\n
+
+Meilleures salutations.
+[30 10201]
+‡
+;
+;
+;              FUNKTIONSKREIS 3N : NACHRICHTEN DER AUFTRAGERFASSUNGS-OBJEKTE.
+;
+; 30 NNN : KUNDENAUFTRAG   (Croatia)
+;
+[30 00102]
+AUFTRAG MIT DER NUMMER %d NICHT GEFUNDEN.
+[30 00202]
+AUFTRAG %d BEREITS EROEFFNET.
+[30 00302]
+KANN AUFTRAG %d NICHT OEFFNEN, AUFTRAG IST IN ARBEIT.
+[30 00402]
+KANN AUFTRAG %d NICHT OEFFNEN, KUNDE FUER DIESEN AUFTRAG NICHT VORHANDEN.
+[30 00502]
+AUFTRAG %d WURDE NICHT EROEFFNET.
+[30 00602]
+AUFTRAGART %s FUER KUNDE %d NICHT ERLAUBT.
+[30 00702]
+KOMBINATION VON AUFTRAGART %s , KOMMISIONIERUNGSART %c UND BUCHUNGSART %c UNGUELTIG.
+[30 00802]
+AENDERUNG DER AUFTRAGART NICHT MEHR MOEGLICH.
+[30 00902]
+AENDERUNG/WEITERERFASSUNG VON AUFTRAG %d NICHT MOEGLICH, AUFTRAG STORNIERT ODER NICHT MEHR AENDERBAR.
+[30 01002]
+AENDERUNG VON AUFTRAG %d NICHT MOEGLICH, ERFASSUNG (NOCH) NICHT ABGESCHLOSSEN.
+[30 01102]
+KANN AUFTRAG %d NICHT OEFFNEN, BEARBEITUNGSART %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01202]
+KANN STATUS FUER AUFTRAG %d NICHT AENDERN, STATUS %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01302]
+AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NUR ZUR ANZEIGE EROEFFNET.
+[30 01402]
+UNGUELTIGER STORNO-CODE FUER AUFTRAG %d.
+[30 01502]
+BESTANDS-BUCHUNGSART %c UNBEKANNT.
+[30 01602]
+KOMMISSIONIERUNGSART %c UNBEKANNT.
+[30 01702]
+VALUTA-DATUM FEHLERHAFT, KEIN GUELTIGES DATUM-FORMAT.
+[30 01802]
+VALUTA-DATUM IST KLEINER ALS DAS HEUTIGE DATUM.
+[30 01902]
+FUER DEN KUNDEN %d IST KEINE VALUTIERUNG MOEGLICH.
+[30 02002]
+FUER DIE AUFTRAGSART %s IST KEINE VALUTIERUNG MOEGLICH.
+[30 02102]
+MAXIMALE VALUTIERUNG FUER AUFTRAGSART %s: %d MONAT(E).
+[30 02202]
+DIE TOUR %s IST NICHT GUELTIG.
+[30 02302]
+AUFTRAGSEREIGNIS MIT AUFTRAGSNUMMER %d, DATUM %d UND ZEIT %d NICHT GEFUNDEN.
+[30 02402]
+AUFTRAGSBEMERKUNG MIT AUFTRAGSNUMMER %d, BEMERKUNGSART %d UND BEMERKUNGSNUMMER %d NICHT GEFUNDEN.
+[30 02502]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, AUFTRAG NICHT ZU ERFASSUNG EROEFFNET.
+[30 02602]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, KOMMISSIONIERUNGSART IST 'KEINE KOMMISSIONIERUNG'.
+[30 02702]
+ES SIND KEINE TOUREN MEHR FUER DIESEN KUNDEN GEPLANT.
+[30 02802]
+DIE TOUR %s KANN WEGEN ZEITUEBERSCHREITUNG NICHT ZUGEORDNET WERDEN.
+[30 02902]
+DIE ERFASSUNG VON AUFTRAEGEN IST FUER KUNDENGRUPPE %s NICHT ERLAUBT.
+[30 03002]
+KEINE ALTERNATIVE LIEFERFILIALEN GEFUNDEN.
+[30 03102]
+FATALER FEHLER, KANN AUFTRAG %d NICHT WEITER BEARBEITEN. UNDEFINIERTE AUFTRAGSPERRE.
+[30 03202]
+AUFTRAG ZURUECKGESTELLT WEGEN UMBUCHEN.
+[30 03302]
+AUFTRAG ZURUECKGESTELLT: UEBERTRAGUNG NACH 99 ABGEBROCHEN.
+[30 03402]
+AUFTRAG %d NICHT MEHR IN ERFASSUNG.
+[30 03502]
+AUFTRAG MIT DER NUMMER %d AUF %s NICHT GEFUNDEN.
+[30 03602]
+ENTFERNTER AUFTRAG CONNECT FEHLER : %s .
+[30 03702]
+ENTFERNTER AUFTRAG OPEN FEHLER : %s .
+[30 03802]
+ENTFERNTER AUFTRAG TYP FEHLER : %s .
+[30 03902]
+ENTFERNTER AUFTRAG POSITION FEHLER : %s .
+[30 04002]
+ENTFERNTER AUFTRAG CLOSE FEHLER : %s .
+[30 04102]
+ENTFERNTER AUFTRAG DISCONNECT FEHLER : %s .
+[30 04202]
+DOPPELTE BESTELLUNG.
+[30 04302]
+KREDITLIMIT ERREICHT
+[30 04402]
+AUFTRAGSABSCHLUSS NICHT ERLAUBT
+[30 04502]
+KUNDE %d FUER AE GESPERRT.
+[30 04602]
+KEINE AUFTRAGSNUMMER FUER KUNDE %d BEKOMMEN.
+[30 04702]
+FEHLER BEIM BUCHEN RANGEARTIKEL %d IN AUFTRAG %d
+[30 04802]
+AUFTRAGSWERT ZU NIEDRIG
+[30 04902]
+KREDITLIMIT IST UEBERSCHRITTEN UM:
+[30 05002]
+RABATTKONTO UEBERSCHRITTEN UM: %s
+[30 05102]
+KREDITLIMIT UEBERSCHRITTEN UM: %.2lf
+[30 05202]
+AUFTRAG IN BARAUFTRAG GEAENDERT WEGEN KREDITLIMITUEBERSCHREITUNG
+[30 05302]
+KEINE RABATTWERTE IM GEWAEHLTEN ZEITRAUM VORHANDEN
+[30 05402]
+RABATTKONTO IM GEWAEHLTEN ZEITRAUM AUSGESCHOEPFT
+[30 05502]
+RABATTAUFTRAG AUSSERHALB DES ZEITFENSTERS
+[30 05602]
+KEINE VERZOEGERTE AUSLIEFERUNG BEI AUFTRAGART %s
+[30 05702]
+KEINE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05802]
+ZUVIELE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05902]
+CREMA MAIL KONNTE VIA LIBMAIL FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06002]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06102]
+Pruefung Kreditlimit: Auftrag %ld, IDF %ld, %s, %s %s %s
+[30 06202]
+Sehr geehrte Damen und Herren,\n\n
+[30 06302]
+Es gibt fuer Auftrag %ld fuer Kunde %s, %s-%s %s eine Ueberschreitung des Kreditlimits.\n\n
+[30 06402]
+Kreditlimit:  %s EUR\n
+[30 06502]
+Beansprucht:  %s EUR ( %.2f %% )\n
+[30 06602]
+Auftragswert: %s EUR\n\n
+[30 06702]
+Bitte entscheiden sie ueber eine Auslieferung des Auftrags unter: \n\n
+[30 06802]
+%s \n\n
+[30 06902]
+Vielen Dank
+[30 07002]
+Warnung. Das derzeit noch verfuegbare Kreditlimit bei Partner %s (%ld) ist zu %.2f %% ausgeschoepft. \n\n
+[30 07102]
+Das aktuelle Limit betraegt %s EUR. \n\n
+[30 07202]
+Mit freundlichen Grueﬂen
+[30 07302]
+KEINE PROZENTWERTE FUER EMAILVERSANDT GEFUNDEN.
+[30 07402]
+Warnung Kreditlimit Partner %ld %s
+[30 07502]
+Auftrag oeffnen fuer Kunde %d nicht erlaubt
+[30 07602]
+Auftragsartwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07702]
+Kundenwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07802]
+Filialwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07902]
+Tour has no permission for narcotics or cool articles
+[30 08002]
+Tour cannot be used for IBT
+[30 08102]
+No IBT branch configuration available
+[30 08202]
+%ld Stimmen fehlen noch um den Auftrag %s!
+[30 08302]
+%ld von %ld Stimmen fehlen noch. %ld stimmten fuer Freigabe, %ld stimmten f¸r Storno.
+[30 08402]
+freigeben
+[30 08502]
+stornieren
+[30 08602]
+Warnung. Der Kreditlimit-Warnbetrag von %.2f wurde bei Partner %s (%ld) ¸berschritten. Aktueller Betrag: %.2f. \n\n
+[30 08702]
+RetCode %ld
+[30 08802]
+%s: Level %ld Type %ld SentTo %d : %s
+[30 08902]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09002]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 09102]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09202]
+CREMA Partner VZs f¸r Partner %ld konnten nicht geladen werden.
+[30 09302]
+CREMA Cross DB Eintrag konnte nicht selektiert werden.
+[30 09402]
+CREMA Email f¸r Kunde %ld konnte nach Verarbeitung nicht geloescht werden.
+[30 09502]
+Abstimmung: Auftrag %ld, IDF %ld, %s, %s
+[30 09602]
+Sehr geehrte Damen und Herren, \n\n
+
+f¸r Auftrag %ld (Kunde %ld, %s) ¸ber %s %.2f sind unterschiedliche Entscheidungen getroffen worden. Dies mit dem Resultat, dass der Auftrag nach wie vor blockiert ist. \n
+Wir mˆchten die Genehmigenden daher bitten, die Erfassung zu pr¸fen, sich abzustimmen und die Entscheidung so anzupassen, dass der Auftrag abgeschlossen oder storniert werden kann. \n\n
+
+%s  \n\n
+
+Besten Dank!
+[30 09702]
+EUR
+[30 09802]
+Freigabe: Auftrag %ld, IDF %ld, %s, %s
+[30 09902]
+Sehr geehrte Damen und Herren, \n\n
+
+der Auftrag %ld (Kunde %ld, %s) wurde am %s %s %s erfolgreich von Benutzer %s aufgrund \"%s\" geschlossen. \n\n
+
+Mit freundlichen Gruessen.
+[30 10002]
+Stornierung: Auftrag %ld, IDF %ld, %s, %s
+[30 10102]
+Sehr geehrte Damen und Herren, \n\n
+
+der Auftrag %ld (Kunde %ld, %s) wurde am %s %s %s erfolgreich von Benutzer %s aufgrund \"%s\" storniert. \n\n
+
+Mit freundlichen Gruessen.
+[30 10202]
+um
+;
+;
+;              FUNKTIONSKREIS 3N : NACHRICHTEN DER AUFTRAGERFASSUNGS-OBJEKTE.
+;
+; 30 NNN : KUNDENAUFTRAG   (SWISS/GERMAN)
+;
+[30 00103]
+AUFTRAG MIT DER NUMMER %d NICHT GEFUNDEN.
+[30 00203]
+AUFTRAG %d BEREITS EROEFFNET.
+[30 00303]
+KANN AUFTRAG %d NICHT OEFFNEN, AUFTRAG IST IN ARBEIT.
+[30 00403]
+KANN AUFTRAG %d NICHT OEFFNEN, KUNDE FUER DIESEN AUFTRAG NICHT VORHANDEN.
+[30 00503]
+AUFTRAG %d WURDE NICHT EROEFFNET.
+[30 00603]
+AUFTRAGART %s FUER KUNDE %d NICHT ERLAUBT.
+[30 00703]
+KOMBINATION VON AUFTRAGART %s , KOMMISIONIERUNGSART %c UND BUCHUNGSART %c UNGUELTIG.
+[30 00803]
+AENDERUNG DER AUFTRAGART NICHT MEHR MOEGLICH.
+[30 00903]
+AENDERUNG/WEITERERFASSUNG VON AUFTRAG %d NICHT MOEGLICH, AUFTRAG STORNIERT ODER NICHT MEHR AENDERBAR.
+[30 01003]
+AENDERUNG VON AUFTRAG %d NICHT MOEGLICH, ERFASSUNG (NOCH) NICHT ABGESCHLOSSEN.
+[30 01103]
+KANN AUFTRAG %d NICHT OEFFNEN, BEARBEITUNGSART %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01203]
+KANN STATUS FUER AUFTRAG %d NICHT AENDERN, STATUS %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01303]
+AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NUR ZUR ANZEIGE EROEFFNET.
+[30 01403]
+UNGUELTIGER STORNO-CODE FUER AUFTRAG %d.
+[30 01503]
+BESTANDS-BUCHUNGSART %c UNBEKANNT.
+[30 01603]
+KOMMISSIONIERUNGSART %c UNBEKANNT.
+[30 01703]
+VALUTA-DATUM FEHLERHAFT, KEIN GUELTIGES DATUM-FORMAT.
+[30 01803]
+VALUTA-DATUM IST KLEINER ALS DAS HEUTIGE DATUM.
+[30 01903]
+FUER DEN KUNDEN %d IST KEINE VALUTIERUNG MOEGLICH.
+[30 02003]
+FUER DIE AUFTRAGSART %s IST KEINE VALUTIERUNG MOEGLICH.
+[30 02103]
+MAXIMALE VALUTIERUNG FUER AUFTRAGSART %s: %d MONAT(E).
+[30 02203]
+DIE TOUR %s IST NICHT GUELTIG.
+[30 02303]
+AUFTRAGSEREIGNIS MIT AUFTRAGSNUMMER %d, DATUM %d UND ZEIT %d NICHT GEFUNDEN.
+[30 02403]
+AUFTRAGSBEMERKUNG MIT AUFTRAGSNUMMER %d, BEMERKUNGSART %d UND BEMERKUNGSNUMMER %d NICHT GEFUNDEN.
+[30 02503]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, AUFTRAG NICHT ZU ERFASSUNG EROEFFNET.
+[30 02603]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, KOMMISSIONIERUNGSART IST 'KEINE KOMMISSIONIERUNG'.
+[30 02703]
+ES SIND KEINE TOUREN MEHR FUER DIESEN KUNDEN GEPLANT.
+[30 02803]
+DIE TOUR %s KANN WEGEN ZEITUEBERSCHREITUNG NICHT ZUGEORDNET WERDEN.
+[30 02903]
+DIE ERFASSUNG VON AUFTRAEGEN IST FUER KUNDENGRUPPE %s NICHT ERLAUBT.
+[30 03003]
+KEINE ALTERNATIVE LIEFERFILIALEN GEFUNDEN.
+[30 03103]
+FATALER FEHLER, KANN AUFTRAG %d NICHT WEITER BEARBEITEN. UNDEFINIERTE AUFTRAGSPERRE.
+[30 03203]
+AUFTRAG ZURUECKGESTELLT WEGEN UMBUCHEN.
+[30 03303]
+AUFTRAG ZURUECKGESTELLT: UEBERTRAGUNG NACH 99 ABGEBROCHEN.
+[30 03403]
+AUFTRAG %d NICHT MEHR IN ERFASSUNG.
+[30 03503]
+AUFTRAG MIT DER NUMMER %d AUF %s NICHT GEFUNDEN.
+[30 03603]
+ENTFERNTER AUFTRAG CONNECT FEHLER : %s .
+[30 03703]
+ENTFERNTER AUFTRAG OPEN FEHLER : %s .
+[30 03803]
+ENTFERNTER AUFTRAG TYP FEHLER : %s .
+[30 03903]
+ENTFERNTER AUFTRAG POSITION FEHLER : %s .
+[30 04003]
+ENTFERNTER AUFTRAG CLOSE FEHLER : %s .
+[30 04103]
+ENTFERNTER AUFTRAG DISCONNECT FEHLER : %s .
+[30 04203]
+DOPPELTE BESTELLUNG.
+[30 04303]
+KREDITLIMIT ERREICHT
+[30 04403]
+AUFTRAGSABSCHLUSS NICHT ERLAUBT
+[30 04503]
+KUNDE %d FUER AE GESPERRT.
+[30 04603]
+KEINE AUFTRAGSNUMMER FUER KUNDE %d BEKOMMEN.
+[30 04703]
+FEHLER BEIM BUCHEN RANGEARTIKEL %d IN AUFTRAG %d
+[30 04803]
+AUFTRAGSWERT ZU NIEDRIG
+[30 04903]
+KREDITLIMIT IST UEBERSCHRITTEN UM:
+[30 05003]
+RABATTKONTO UEBERSCHRITTEN UM: %s
+[30 05103]
+KREDITLIMIT UEBERSCHRITTEN UM: %.2lf
+[30 05203]
+AUFTRAG IN BARAUFTRAG GEAENDERT WEGEN KREDITLIMITUEBERSCHREITUNG
+[30 05303]
+KEINE RABATTWERTE IM GEWAEHLTEN ZEITRAUM VORHANDEN
+[30 05403]
+RABATTKONTO IM GEWAEHLTEN ZEITRAUM AUSGESCHOEPFT
+[30 05503]
+RABATTAUFTRAG AUSSERHALB DES ZEITFENSTERS
+[30 05603]
+KEINE VERZOEGERTE AUSLIEFERUNG BEI AUFTRAGART %s
+[30 05703]
+KEINE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05803]
+ZUVIELE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05903]
+CREMA MAIL KONNTE VIA LIBMAIL FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06003]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06103]
+Pruefung Kreditlimit: Auftrag %ld, IDF %ld, %s, %s %s %s
+[30 06203]
+Sehr geehrte Damen und Herren,\n\n
+[30 06303]
+Es gibt fuer Auftrag %ld fuer Kunde %s, %s-%s %s eine Ueberschreitung des Kreditlimits.\n\n
+[30 06403]
+Kreditlimit:  %s CHF\n
+[30 06503]
+Beansprucht:  %s CHF ( %.2f %% )\n
+[30 06603]
+Auftragswert: %s CHF\n\n
+[30 06703]
+Bitte entscheiden sie ueber eine Auslieferung des Auftrags unter: \n\n
+[30 06803]
+%s \n\n
+[30 06903]
+Vielen Dank
+[30 07003]
+Warnung. Das derzeit noch verfuegbare Kreditlimit bei Partner %s (%ld) ist zu %.2f %% ausgeschoepft. \n\n
+[30 07103]
+Das aktuelle Limit betraegt %s CHF. \n\n
+[30 07203]
+Mit freundlichen Grueﬂen
+[30 07303]
+KEINE PROZENTWERTE FUER EMAILVERSANDT GEFUNDEN.
+[30 07403]
+Warnung Kreditlimit Partner %ld %s
+[30 07503]
+Auftrag oeffnen fuer Kunde %d nicht erlaubt
+[30 07603]
+Auftragsartwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07703]
+Kundenwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07803]
+Filialwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07903]
+Tour has no permission for narcotics or cool articles
+[30 08003]
+Tour cannot be used for IBT
+[30 08103]
+No IBT branch configuration available
+[30 08203]
+%ld Stimmen fehlen noch um den Auftrag %s!
+[30 08303]
+%ld von %ld Stimmen fehlen noch. %ld stimmten fuer Freigabe, %ld stimmten f¸r Storno.
+[30 08403]
+freigeben
+[30 08503]
+stornieren
+[30 08603]
+Warnung. Der Kreditlimit-Warnbetrag von %.2f wurde bei Partner %s (%ld) ¸berschritten. Aktueller Betrag: %.2f. \n\n
+[30 08703]
+RetCode %ld
+[30 08803]
+%s: Level %ld Type %ld SentTo %d : %s
+[30 08903]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09003]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 09103]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09203]
+CREMA Partner VZs f¸r Partner %ld konnten nicht geladen werden.
+[30 09303]
+CREMA Cross DB Eintrag konnte nicht selektiert werden.
+[30 09403]
+CREMA Email f¸r Kunde %ld konnte nach Verarbeitung nicht geloescht werden.
+[30 09503]
+Abstimmung: Auftrag %ld, IDF %ld, %s, %s
+[30 09603]
+Sehr geehrte Damen und Herren, \n\n
+
+f¸r Auftrag %ld (Kunde %ld, %s) ¸ber %s %.2f sind unterschiedliche Entscheidungen getroffen worden. Dies mit dem Resultat, dass der Auftrag nach wie vor blockiert ist. \n
+Wir mˆchten die Genehmigenden daher bitten, die Erfassung zu pr¸fen, sich abzustimmen und die Entscheidung so anzupassen, dass der Auftrag abgeschlossen oder storniert werden kann. \n\n
+
+%s  \n\n
+
+Besten Dank!
+[30 09703]
+CHF
+[30 09803]
+Freigabe: Auftrag %ld, IDF %ld, %s, %s
+[30 09903]
+Sehr geehrte Damen und Herren, \n\n
+
+der Auftrag %ld (Kunde %ld, %s) wurde am %s %s %s erfolgreich von Benutzer %s aufgrund \"%s\" geschlossen. \n\n
+
+Mit freundlichen Gruessen.
+[30 10003]
+Stornierung: Auftrag %ld, IDF %ld, %s, %s
+[30 10103]
+Sehr geehrte Damen und Herren, \n\n
+
+der Auftrag %ld (Kunde %ld, %s) wurde am %s %s %s erfolgreich von Benutzer %s aufgrund \"%s\" storniert. \n\n
+
+Mit freundlichen Gruessen.
+[30 10203]
+um
+;
+;
+;              Funktionskreis 3n : Nachrichten der Auftragerfassungs-Objekte.
+; 30 nnn : ORDRE DE CLIENT   (SWISS/French)
+;
+[30 00104]
+Pas trouve l'ordre no. %d.
+[30 00204]
+Ordre %d dej‡ ouvert.
+[30 00304]
+Pas possible d'ouvrir ordre %d, ordre est en traitement.
+[30 00404]
+Pas possible d'ouvrir ordre %d, pas de client existant pour cet ordre.
+[30 00504]
+Ordre %d n'a pas ete ouvert.
+[30 00604]
+Type d'ordre %s pour client %d pas permis.
+[30 00704]
+Combination de type d'ordre %s, type de commi %c et type d'enregistrement %c pas valable.
+[30 00804]
+Modification de type d'ordre plus posible.
+[30 00904]
+Modification/Continuation de saisie de l'ordre %d pas possible, ordre annule ou plus modifiable.
+[30 01004]
+Modification de l'ordre %d pas possible, saisie pas (encore) pas achevee.
+[30 01104]
+Pas possible d'ouvrir ordre %d, type de traitement %d est inconnu.
+Cela est une erreur de programmation.
+[30 01204]
+Pas possible de modifier statut pour ordre %d, statut %d est inconnu.
+Cela est une erreur de programmation.
+[30 01304]
+Ordre %d pas modifiable.
+Soit l'ordre est annule, dej‡ acheve, ou il n'a ete ouvert que pour indication.
+[30 01404]
+Code annulation invalable pour ordre %d.
+[30 01504]
+Type d'enregistration de stock %c inconnu.
+[30 01604]
+Type de commi %c inconnu.
+[30 01704]
+Date de validite fausse, format de date pas valable.
+[30 01804]
+Date de validite est plus petite que la date actuelle.
+[30 01904]
+Pas d'evaluation possible pour client %d.
+[30 02004]
+Pas d'evaluation possible pour type d'ordre %s.
+[30 02104]
+Evaluation maximale pour type d'ordre %s: %d mois.
+[30 02204]
+Le tour %s n'est pas valable.
+[30 02304]
+Pas trouve d'evenement d'ordre avec no. d'ordre, date %d et heure %d.
+[30 02404]
+Pas trouve de remarque d'ordre avec no d'ordre %d, type de remarque %d et no. de remarque %d.
+[30 02504]
+Pas de choix de tours possible pour cet ordre, ordre pas ouvert pour saisie.
+[30 02604]
+Pas de choix de tours possible pour cet ordre, type de commi est "pas de commi".
+[30 02704]
+Plus de tours prevus pur ce client.
+[30 02804]
+Le tour %s ne peut pas etre attribue pour cause de depassement de temps.
+[30 02904]
+La saisie d'ordres n'est pas permis pour le groupe de client %s.
+[30 03004]
+Pas trouve de succursales de livraison alternatives.
+[30 03104]
+Erreur fatale, ne peut pas continuer de traiter ordre %d. Blocage d'ordre non defini.
+[30 03204]
+Ordre place en attente pour cause de modification d'enregistration.
+[30 03304]
+Ordre place en attente: Transfert interrompu apres 99.
+[30 03404]
+Ordre %d plus en saisie.
+[30 03504]
+Ordre avec le no. %d pas trouve sur %s.
+[30 03604]
+Ordre elimine connect faute: %s.
+[30 03704]
+Ordre elimine open faute: %s.
+[30 03804]
+Ordre elimine type faute: %s.
+[30 03904]
+Ordre elimine position faute : %s.
+[30 04004]
+Ordre elimine close faute: %s.
+[30 04104]
+Ordre elimine disconnect faute: %s.
+[30 04204]
+Commande double.
+[30 04304]
+Limite de credit atteint..
+[30 04404]
+Conclusion d'ordre pas permis.
+[30 04504]
+Client %d bloque pour saisie d'ordre.
+[30 04604]
+Pas requ de no. de commande pour client %d.
+[30 04704]
+faute lors de enregistration d'article %d en commande  %d
+[30 04804]
+Auftragswert zu niedrig
+[30 04904]
+KREDITLIMIT IST UEBERSCHRITTEN UM:
+[30 05004]
+RABATTKONTO UEBERSCHRITTEN UM: %s
+[30 05104]
+KREDITLIMIT UEBERSCHRITTEN UM: %.2lf
+[30 05204]
+AUFTRAG IN BARAUFTRAG GEAENDERT WEGEN KREDITLIMITUEBERSCHREITUNG
+[30 05304]
+KEINE RABATTWERTE IM GEWAEHLTEN ZEITRAUM VORHANDEN
+[30 05404]
+RABATTKONTO IM GEWAEHLTEN ZEITRAUM AUSGESCHOEPFT
+[30 05504]
+RABATTAUFTRAG AUSSERHALB DES ZEITFENSTERS
+[30 05604]
+KEINE VERZOEGERTE AUSLIEFERUNG BEI AUFTRAGART %s
+[30 05704]
+Aucune donnÈe trouvÈe DE %.2f POURCENTAGE.
+[30 05804]
+DONN…ES TROP trouvÈ pour %.2f POURCENTAGE.
+[30 05904]
+CREMA libmail PAR EMAIL A ETE POUR LE CONTRAT AVEC %ld %.2f POURCENTAGE pas pu Ítre envoyÈ.
+[30 06004]
+MAIL CREMA pourrait par CONTRAT AVEC %ld %.2f POURCENTAGE pas pu Ítre envoyÈ.
+[30 06004]
+MAIL CREMA pourrait par CONTRAT AVEC %ld %.2f POURCENTAGE pas pu Ítre envoyÈ.
+[30 06104]
+Test limite de crÈdit Ordre %ld, IDF %ld, %s, %s %s %s
+[30 06204]
+Chers Messieurs, \n \n
+[30 06304]
+Il ya %ld emploi pour le client %s,%s%-s %s dÈpasse la limite de crÈdit. \n \n
+[30 06404]
+Limite de crÈdit: %s CHF \n
+[30 06504]
+RÈclamÈ:  %s CHF ( %.2f %% ) \n
+[30 06604]
+La valeur du contrat: %s CHF \n\n
+[30 06704]
+S'il vous plaÓt choisir une livraison dans le cadre du contrat: \n\n
+[30 06804]
+%s \n\n
+[30 06904]
+merci beaucoup
+[30 07004]
+Avertissement. La limite de crÈdit actuellement disponible chez le partenaire %s (%ld) est exploitÈe ‡ %.2f %%. \n\n
+[30 07104]
+La limite actuelle est de %s CHF. \n\n
+[30 07204]
+Cordialement
+[30 07304]
+VALEURS NON POURCENTAGE livraison du courrier TROUV…S.
+[30 07404]
+Avertissement limite de crÈdit partenaire %ld %s 
+[30 07504]
+Auftrag oeffnen fuer Kunde %d nicht erlaubt
+[30 07604]
+Auftragsartwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07704]
+Kundenwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07804]
+Filialwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07904]
+Tour has no permission for narcotics or cool articles
+[30 08004]
+Tour cannot be used for IBT
+[30 08104]
+No IBT branch configuration available
+[30 08204]
+%ld des votes  manquent encore pour la commande %s!
+[30 08304]
+%ld de %ld des votes manquent encore. %ld Ètait correct pour la libÈration, %ld Ètait correct pour líextourne
+[30 08404]
+libÈrer
+[30 08504]
+extourner
+[30 08604]
+Avertissement. Le montant de mise en garde de la limite de crÈdit de %.2f a ÈtÈ dÈpassÈ pour le partenaire %s (%ld). Montant actuel : %.2f. \n\n
+[30 08704]
+RetCode %ld
+[30 08804]
+%s: Level %ld Type %ld SentTo %d : %s
+[30 08904]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09004]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 09104]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09204]
+CREMA Partner VZs f¸r Partner %ld konnten nicht geladen werden.
+[30 09304]
+CREMA Cross DB Eintrag konnte nicht selektiert werden.
+[30 09404]
+CREMA Email f¸r Kunde %ld konnte nach Verarbeitung nicht geloescht werden.
+[30 09504]
+vote: Ordre %ld, IDF %ld, %s, %s
+[30 09604]
+Mesdames, Messieurs, \n\n
+
+pour L'ordre %ld (client %ld, %s) concernant %s %.2f diffÈrentes dÈcisions ont ÈtÈ prises. Ceci, avec comme rÈsultat, que  l'ordre a ÈtÈ bloquÈ comme auparavant. \n
+Aussi, nous prions les personnes autorisÈes de contrÙler la saisie, de se concerter et d'adapter leur dÈcision afin que l'ordre puisse Ítre clÙturÈ ou extournÈ \n\n
+
+%s  \n\n
+
+Avec nos remerciements !
+[30 09704]
+CHF 
+[30 09804]
+liberation: Ordre %ld, IDF %ld, %s, %s
+[30 09904]
+Mesdames, Messieurs, \n\n
+
+L'ordre %ld, client %ld, %s a libÈration avec succËs par l'utilisateur %s %s %s le %s en raison de %s  \n\n
+
+Meilleures salutations.
+[30 10004]
+annulation: Ordre %ld, IDF %ld, %s, %s 
+[30 10104]
+Mesdames, Messieurs, \n\n
+
+L'ordre %ld, client %ld, %s a annulation avec succËs  par l'utilisateur %s %s %s le %s en raison de %s \n\n
+
+Meilleures salutations.
+[30 10204]
+‡
+;
+;              FUNKTIONSKREIS 3N : NACHRICHTEN DER AUFTRAGERFASSUNGS-OBJEKTE.
+;
+; 30 NNN : KUNDENAUFTRAG   (Bulgaria)
+;
+[30 00105]
+AUFTRAG MIT DER NUMMER %d NICHT GEFUNDEN.
+[30 00205]
+AUFTRAG %d BEREITS EROEFFNET.
+[30 00305]
+KANN AUFTRAG %d NICHT OEFFNEN, AUFTRAG IST IN ARBEIT.
+[30 00405]
+KANN AUFTRAG %d NICHT OEFFNEN, KUNDE FUER DIESEN AUFTRAG NICHT VORHANDEN.
+[30 00505]
+AUFTRAG %d WURDE NICHT EROEFFNET.
+[30 00605]
+AUFTRAGART %s FUER KUNDE %d NICHT ERLAUBT.
+[30 00705]
+KOMBINATION VON AUFTRAGART %s , KOMMISIONIERUNGSART %c UND BUCHUNGSART %c UNGUELTIG.
+[30 00805]
+AENDERUNG DER AUFTRAGART NICHT MEHR MOEGLICH.
+[30 00905]
+AENDERUNG/WEITERERFASSUNG VON AUFTRAG %d NICHT MOEGLICH, AUFTRAG STORNIERT ODER NICHT MEHR AENDERBAR.
+[30 01005]
+AENDERUNG VON AUFTRAG %d NICHT MOEGLICH, ERFASSUNG (NOCH) NICHT ABGESCHLOSSEN.
+[30 01105]
+KANN AUFTRAG %d NICHT OEFFNEN, BEARBEITUNGSART %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01205]
+KANN STATUS FUER AUFTRAG %d NICHT AENDERN, STATUS %d IST UNBEKANNT.
+DIES IST EIN PROGRAMMIERFEHLER.
+[30 01305]
+AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NUR ZUR ANZEIGE EROEFFNET.
+[30 014005]
+UNGUELTIGER STORNO-CODE FUER AUFTRAG %d.
+[30 01505]
+BESTANDS-BUCHUNGSART %c UNBEKANNT.
+[30 01605]
+KOMMISSIONIERUNGSART %c UNBEKANNT.
+[30 01705]
+VALUTA-DATUM FEHLERHAFT, KEIN GUELTIGES DATUM-FORMAT.
+[30 01805]
+VALUTA-DATUM IST KLEINER ALS DAS HEUTIGE DATUM.
+[30 01905]
+FUER DEN KUNDEN %d IST KEINE VALUTIERUNG MOEGLICH.
+[30 02005]
+FUER DIE AUFTRAGSART %s IST KEINE VALUTIERUNG MOEGLICH.
+[30 02105]
+MAXIMALE VALUTIERUNG FUER AUFTRAGSART %s: %d MONAT(E).
+[30 02205]
+DIE TOUR %s IST NICHT GUELTIG.
+[30 02305]
+AUFTRAGSEREIGNIS MIT AUFTRAGSNUMMER %d, DATUM %d UND ZEIT %d NICHT GEFUNDEN.
+[30 02405]
+AUFTRAGSBEMERKUNG MIT AUFTRAGSNUMMER %d, BEMERKUNGSART %d UND BEMERKUNGSNUMMER %d NICHT GEFUNDEN.
+[30 02505]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, AUFTRAG NICHT ZU ERFASSUNG EROEFFNET.
+[30 02605]
+KEINE TOURENAUSWAHL FUER DIESEN AUFTRAG MOEGLICH, KOMMISSIONIERUNGSART IST 'KEINE KOMMISSIONIERUNG'.
+[30 02705]
+ES SIND KEINE TOUREN MEHR FUER DIESEN KUNDEN GEPLANT.
+[30 02805]
+DIE TOUR %s KANN WEGEN ZEITUEBERSCHREITUNG NICHT ZUGEORDNET WERDEN.
+[30 02905]
+DIE ERFASSUNG VON AUFTRAEGEN IST FUER KUNDENGRUPPE %s NICHT ERLAUBT.
+[30 03005]
+KEINE ALTERNATIVE LIEFERFILIALEN GEFUNDEN.
+[30 03105]
+FATALER FEHLER, KANN AUFTRAG %d NICHT WEITER BEARBEITEN. UNDEFINIERTE AUFTRAGSPERRE.
+[30 03205]
+AUFTRAG ZURUECKGESTELLT WEGEN UMBUCHEN.
+[30 03305]
+AUFTRAG ZURUECKGESTELLT: UEBERTRAGUNG NACH 99 ABGEBROCHEN.
+[30 03405]
+AUFTRAG %d NICHT MEHR IN ERFASSUNG.
+[30 03505]
+AUFTRAG MIT DER NUMMER %d AUF %s NICHT GEFUNDEN.
+[30 03605]
+ENTFERNTER AUFTRAG CONNECT FEHLER : %s .
+[30 03705]
+ENTFERNTER AUFTRAG OPEN FEHLER : %s .
+[30 03805]
+ENTFERNTER AUFTRAG TYP FEHLER : %s .
+[30 03905]
+ENTFERNTER AUFTRAG POSITION FEHLER : %s .
+[30 04005]
+ENTFERNTER AUFTRAG CLOSE FEHLER : %s .
+[30 04105]
+ENTFERNTER AUFTRAG DISCONNECT FEHLER : %s .
+[30 04205]
+DOPPELTE BESTELLUNG.
+[30 04305]
+KREDITLIMIT ERREICHT
+[30 04405]
+AUFTRAGSABSCHLUSS NICHT ERLAUBT
+[30 04505]
+KUNDE %d FUER AE GESPERRT.
+[30 04605]
+KEINE AUFTRAGSNUMMER FUER KUNDE %d BEKOMMEN.
+[30 04705]
+FEHLER BEIM BUCHEN RANGEARTIKEL %d IN AUFTRAG %d
+[30 04805]
+AUFTRAGSWERT ZU NIEDRIG
+[30 04905]
+KREDITLIMIT IST UEBERSCHRITTEN UM:
+[30 05005]
+RABATTKONTO UEBERSCHRITTEN UM: %.2lf
+[30 05105]
+KREDITLIMIT UEBERSCHRITTEN UM: %.2lf
+[30 05205]
+AUFTRAG IN BARAUFTRAG GEAENDERT WEGEN KREDITLIMITUEBERSCHREITUNG
+[30 05305]
+KEINE RABATTWERTE IM GEWAEHLTEN ZEITRAUM VORHANDEN
+[30 05405]
+RABATTKONTO IM GEWAEHLTEN ZEITRAUM AUSGESCHOEPFT
+[30 05505]
+RABATTAUFTRAG AUSSERHALB DES ZEITFENSTERS
+[30 05605]
+KEINE VERZOEGERTE AUSLIEFERUNG BEI AUFTRAGART %s
+[30 05705]
+KEINE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05805]
+ZUVIELE SMTP GRUPPENDATEN MIT %.2f PROZENT GEFUNDEN.
+[30 05905]
+CREMA MAIL KONNTE VIA LIBMAIL FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06005]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 06105]
+øﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld, IDF %ld, %s - ›’‘ﬁ·‚–‚ÍÁ’› €ÿ‹ÿ‚
+[30 06205]
+∑‘‡–“’Ÿ‚’,   \n \n
+[30 06305]
+∏‹– ﬂ‡’“ÿË–“–›’ ›– ⁄‡’‘ÿ‚›ÿÔ €ÿ‹ÿ‚ ◊– ﬂﬁ‡ÍÁ⁄– %ld , ◊– ⁄€ÿ’›‚ · IDF %ld %s : \n \n
+[30 06405]
+ªÿ‹ÿ‚ K1:  %s €“ \n
+[30 06505]
+ªÿ‹ÿ‚ K2:  %s €“ \n
+[30 06605]
+¡‚ﬁŸ›ﬁ·‚ ›– ﬂﬁ‡ÍÁ⁄–‚–   %s €“ \n\n
+[30 06705]
+ºﬁ€Ô, “◊’‹’‚’ ‡’Ë’›ÿ’ ◊– ‘ﬁ·‚–“⁄– ›– ﬂﬁ‡ÍÁ⁄–‚–: \n\n
+[30 06805]
+%s \n\n
+[30 06905]
+¡ ›–Ÿ-‘ﬁ—‡ÿ ﬂﬁ÷’€–›ÿÔ!
+[30 07005]
+Warnung. Das derzeit noch verfuegbare Kreditlimit bei Partner %s (%ld) ist zu %.2f %% ausgeschoepft. \n\n
+[30 07105]
+Das aktuelle Limit betraegt %s BGN. \n\n
+[30 07205]
+¡ ›–Ÿ-‘ﬁ—‡ÿ ﬂﬁ÷’€–›ÿÔ!
+[30 07305]
+KEINE PROZENTWERTE FUER EMAILVERSANDT GEFUNDEN.
+[30 07405]
+Warnung Kreditlimit Partner %ld %s
+[30 07505]
+AUFTRAG OEFFNEN FUER KUNDE %d NICHT ERLAUBT
+[30 07605]
+Auftragsartwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07705]
+Kundenwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07805]
+Filialwechsel nicht erlaubt wegen bereits verarbeiteten Verbundpositionen.
+[30 07905]
+Tour hat keine BTM/K¸hlartikel-Erlaubnis
+[30 08005]
+Tour ist keine Verbundtour
+[30 08105]
+Keine Verbundfilialkonfiguration vorhanden
+[30 08205]
+%ld Stimmen fehlen noch um den Auftrag %s!
+[30 08305]
+%ld von %ld Stimmen fehlen noch. %ld stimmten fuer Freigabe, %ld stimmten f¸r Storno.
+[30 08405]
+freigeben
+[30 08505]
+stornieren
+[30 08605]
+Warnung. Der Kreditlimit-Warnbetrag von %.2f wurde bei Partner %s (%ld) ¸berschritten. Aktueller Betrag: %.2f. \n\n
+[30 08705]
+RetCode %ld
+[30 08805]
+%s: Level %ld Type %ld SentTo %d : %s
+[30 08905]
+CREMA MAIL KONNTE FUER AUFTRAG %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09005]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT %.2f PROZENT NICHT GESENDET WERDEN.
+[30 09105]
+CREMA MAIL KONNTE FUER PARTNER %ld MIT DEM BETRAG %ld NICHT GESENDET WERDEN.
+[30 09205]
+CREMA Partner VZs f¸r Partner %ld konnten nicht geladen werden.
+[30 09305]
+CREMA Cross DB Eintrag konnte nicht selektiert werden.
+[30 09405]
+CREMA Email f¸r Kunde %ld konnte nach Verarbeitung nicht geloescht werden.
+[30 09505]
+Abstimmung: Auftrag %ld, IDF %ld, %s, %s
+[30 09605]
+Sehr geehrte Damen und Herren, \n\n
+
+f¸r Auftrag %ld (Kunde %ld, %s) ¸ber %s %.2f sind unterschiedliche Entscheidungen getroffen worden. Dies mit dem Resultat, dass der Auftrag nach wie vor blockiert ist. \n
+Wir mˆchten die Genehmigenden daher bitten, die Erfassung zu pr¸fen, sich abzustimmen und die Entscheidung so anzupassen, dass der Auftrag abgeschlossen oder storniert werden kann. \n\n
+
+%s  \n\n
+
+Besten Dank!
+[30 09705]
+BGN
+[30 09805]
+øﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld, IDF %ld, %s - æ‘ﬁ—‡’›– “ —‡ﬁŸ
+[30 09905]
+∑‘‡–“’Ÿ‚’,  \n\n
+‹ﬁ€Ô ‘– —Í‘’‚’ ÿ›‰ﬁ‡‹ÿ‡–›ÿ, Á’ ﬂﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld, ›– ⁄€ÿ’›‚ · IDF %ld %s ’ æ‘ﬁ—‡’›– “ —‡ﬁŸ ﬁ‚ ﬁ‚‘’€ ⁄‡’‘ÿ‚’› ⁄ﬁ›‚‡ﬁ€.   \n
+%s  \n
+%s  \n
+       
+¡ ›–Ÿ-‘ﬁ—‡ÿ ﬂﬁ÷’€–›ÿÔ!  \n
+[30 10005]
+øﬁ‡ÍÁ⁄– ›ﬁ‹’‡  %ld, IDF %ld, %s - æ‚⁄–◊–›–
+[30 10105]
+∑‘‡–“’Ÿ‚’,  \n\n 
+‹ﬁ€Ô ‘– —Í‘’‚’ ÿ›‰ﬁ‡‹ÿ‡–›ÿ, Á’ ﬂﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld, ›– ⁄€ÿ’›‚ · IDF %ld %s ’ æ‚⁄–◊–›– ﬁ‚ ﬁ‚‘’€ ⁄‡’‘ÿ‚’› ⁄ﬁ›‚‡ﬁ€. \n
+%s \n
+%s \n
+       
+¡ ›–Ÿ-‘ﬁ—‡ÿ ﬂﬁ÷’€–›ÿÔ! \n
+[30 10205]
+at
+[30 10405]
+‹ﬁ€Ô ‘– —Í‘’‚’ ÿ›‰ﬁ‡‹ÿ‡–›ÿ, Á’ ﬂﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld ,›– ⁄€ÿ’›‚ · IDF %ld %s ’ —€ﬁ⁄ÿ‡–›– ◊– ‡–◊”€’÷‘–›’ ﬁ‚ ⁄‡’‘ÿ‚’› ⁄ﬁ›‚‡ﬁ€,
+ﬂﬁ‡–‘ÿ ›’‘ﬁ·‚–‚ÍÁ’› ⁄‡’‘ÿ‚’› €ÿ‹ÿ‚.\n \n
+[30 10505]
+øﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld, IDF %ld, %s - æ‘ﬁ—‡’›– ›– ⁄‡’‘ÿ‚  
+[30 10605]
+∑‘‡–“’Ÿ‚’,  \n\n
+‹ﬁ€Ô ‘– —Í‘’‚’ ÿ›‰ﬁ‡‹ÿ‡–›ÿ, Á’ ﬂﬁ‡ÍÁ⁄– ›ﬁ‹’‡ %ld, ›– ⁄€ÿ’›‚ · IDF %ld %s ’ æ‘ﬁ—‡’›– ›– ⁄‡’‘ÿ‚ ﬁ‚ ﬁ‚‘’€ ⁄‡’‘ÿ‚’› ⁄ﬁ›‚‡ﬁ€.   \n
+%s  \n
+%s  \n
+       
+¡ ›–Ÿ-‘ﬁ—‡ÿ ﬂﬁ÷’€–›ÿÔ!  \n
+;
+;
+; 31 NNN : AUFTRAGSPOSITIONS-OBJEKTE
+;
+[31 00100]
+POSITION %d IN AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DIE POSITION STORNIERT ODER NICHT ERFASST.
+[31 00200]
+FUER AUFTRAG %d KOENNEN KEINE WEITEREN POSITIONEN ERFASST WERDEN.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NICHT ZUR ERWEITERUNG EROEFFNET.
+[31 00300]
+POSITION %d IN AUFTRAG %d BEREITS KOMMISSIONIERT, BESTELLMENGEN SIND NICHT MEHR AENDERBAR.
+[31 00400]
+POSITION %d IN AUFTRAG %d NOCH NICHT KOMMISSIONIERT, LIEFERMENGE NOCH NICHT AENDERBAR.
+[31 00500]
+EINGABE VON NATURALRABATT BEI AUFTRAGART %s NICHT ZULAESSIG.
+[31 00600]
+WERT NUR AENDERBAR BEI POSITONEN MIT GUELTIGEM ARTIKEL.
+[31 00700]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN MIT WERT.
+[31 00800]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN.
+[31 00900]
+UNGUELTIGE ZEICHEN IN ARTIKELNUMMER, ARTIKEL NICHT GEFUNDEN.
+[31 01000]
+ARTIKELNUMMER FEHLT.
+[31 01100]
+UNGUELTIGE ZEICHEN IN BESTELLMENGE.
+[31 01200]
+BESTELLMENGE FEHLT.
+[31 01300]
+DISPO-ARTIKELPOSITION %d IM AUFTRAG %d NICHT GEFUNDEN.
+[31 01400]
+ARTIKELBEZEICHNUNG FEHLT ODER IST UNGUELTIG.
+[31 01500]
+BITTE APOTHEKEN-EINKAUFSPREIS EINGEBEN.
+[31 01600]
+APOTHEKEN-EINKAUFSPREIS MUSS GROESSER ALS GROSSO-EINKAUFSPREIS SEIN.
+[31 01700]
+BITTE GROSSO-EINKAUFSPREIS EINGEBEN.
+[31 01800]
+ARTIKEL IST NICHT RABATTIERFAEHIG, WENN EIN DIREKT-RABATT EINGEGEBEN WURDE.
+[31 01900]
+ENTWEDER DIREKT-RABATT IN DM ODER IN PROZENT, BEIDE ANGABEN SIND NICHT ERLAUBT.
+[31 02000]
+RABATTSATZ IN PROZENT UEBERSCHREITET HANDELSSPANNE ODER ZULAESSIGEN HOECHSTWERT.
+[31 02100]
+DIREKT-RABATT IN DM ZU HOCH, UEBERSCHREITET HANDELSSPANNE.
+[31 02200]
+BUCHUNGSTYP UNGUELTIG.
+[31 02300]
+MWST-SCHLUESSEL MUSS %d (VOLL) ODER %d (HALB) SEIN.
+[31 02400]
+MENGE %d UNGUELTIG.
+[31 02500]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT.
+[31 02600]
+AUSWEICHARTIKEL FUER %d
+[31 02700]
+NACHLIEFERUNG
+[31 02800]
+FEHLER BEIM SCHREIBEN ARTIKELKONTO: AUFTRAG %d, ARTIKELNUMMER %d.
+[31 02900]
+BTM-AUSLIEFERUNG MORGEN UEBER GESONDERTEN AUFTRAG.
+[31 03000]
+BESTELLMENGE ZU GROSS EINGEGEBEN.
+[31 03100]
+EVENTUELL DISPONIEREN.
+[31 03200]
+ARTIKEL: %d MAXIMALE ABGABE: %d.
+[31 03300]
+PZN %d ARTIKEL NICHT GEFUEHRT.
+[31 03400]
+ARTIKEL: %d LAGERDIFFERENCE.
+[31 03500]
+APOTHEKEN-EINKAUFSPREIS DARF NICHT KLEINER GROSSO-EINKAUFSPREIS SEIN.
+[31 03600]
+KEINE BEZUGSBER.FUER: %d.
+[31 03700]
+MENGENKONTIGENT FUER ARTIKEL  %d VERBRAUCHT.
+[31 03800]
+DISPONIEREN BEI AUFTRAGSART %d NICHT ERLAUBT.
+[31 03900]
+AUSLIEFERUNG AM %s.
+[31 04000]
+KUNDE  %d HAT KEIN AUSKUNFTSBERECHTIGUNG
+[31 04100]
+KEIN DISCOUNT EINTRAG FUER ARTIKEL %d GEFUNDEN
+[31 04200]
+WIRD NACHGELIEFERT
+[31 04300]
+AUSLIEFERUNG M. AUFTRAG %d
+[31 04400]
+AUSLIEFERUNG M. AUFTRAG %s
+[31 04500]
+ARTIKEL %s DARF NICHT PER DAFUE ODER XML BESTELLT WERDEN
+[31 04600]
+VERBUND MIT AUFTRAG: %s
+[31 04700]
+KEINE BTMs BEI AUFTRAGSART NR
+[31 04800]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT (STOTINKI).
+[31 04900]
+SUBSTITUIERT FUER: %d
+[31 05000]
+POSITIONSWERT FUER POSTITION: %d UBERSCHRITTEN
+[31 05100]
+VERBUNDPOSITION %d IST SCHON VERARBEITET
+[31 05200]
+VERBUNDPOSITION %d IST IN FILIALE %d GEBUCHT
+[31 05300]
+ARTIKEL %d IST NICHT IN TENDER ENTHALTEN
+[31 05400]
+BESTELLMENGE FUER TENDERPOSITION UEBERSCHRITTEN
+[31 05500]
+KDAUFTRAGNR %d POSNR %d AUF %s NICHT GEFUNDEN
+[31 05600]
+SERVICENUMMER UNGUELTIG %d
+[31 05700]
+DER PRODUKTPREIS IST NICHT KONFORM ZU NHIFPREIS, REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05800]
+DER PRODUKTPREIS IST NICHT KONFORM ZU REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05900]
+DER REGISTRIERTE PREIS DES PRODUKTS WURDE GEL÷SCHT.
+[31 06000]
+DER PRODUKTPREIS IST H÷HER ALS DER MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+;
+;
+; 31 nnn : Auftragspositions-Objekte
+; 31 nnn : Objets dispositions d'ordre
+;
+[31 00101]
+Position %d dans ordre %d plus modifiable.
+Soit position est annulee ou pas saisie.
+[31 00201]
+Pour ordre %d aucune autre position ne peut etre saisie.
+Soit l'ordre est annule, dej‡ traite ou n'a pas ete ouvert pour elargissement.
+[31 00301]
+Position %d dans ordre %d dej‡ en commi, quantites commandes plus modifiables.
+[31 00401]
+Position %d dans ordre %d dej‡ en commi, quantite livraison encore pas modifiable.
+[31 00501]
+Entree de rabais pour type d'ordre %s pas admis.
+[31 00601]
+Valeur modifiable que pour positions avec articles valables.
+[31 00701]
+Valeur modifiable que pour positions de texte avec valeur.
+[31 00801]
+Valeur modifiable que pour positions de texte.
+[31 00901]
+Signes invalides dans numero d'article, pas trouve d'article.
+[31 01001]
+No. d'article manque.
+[31 01101]
+Signe invalide dans quantite de commande.
+[31 01201]
+Quantite de commande manque.
+[31 01301]
+Pas trouve position d'article dispo %d dans ordre %d.
+[31 01401]
+Designation d'article manque ou est pas valable.
+[31 01501]
+Svp entrer pris d'achat pharmacie.
+[31 01601]
+Pris d'achat pharmacie doit etre plus grand que prix d'achat gros.
+[31 01701]
+Svp entrer prix d'achat gros.
+[31 01801]
+Article pas soumis au rabais, quand un rabais direct a ete entre.
+[31 01901]
+Soit entrer rabais direct en SFr ou en pourcent, les deux indications sont pas permis.
+[31 02001]
+Taux de rabais in pourcent depasse la marge commerciale ou la valeur maximale admise.
+[31 02101]
+Rabais directe en SFr trop eleve, depasse marge commerciale.
+[31 02201]
+Type d'enregistrement pas valable.
+[31 02301]
+Cle TVA doit etre %d (entiere) ou %d (demi).
+[31 02401]
+Quantite pas valable.
+[31 02501]
+Pas d'autorisation pour achat de ce produit.
+[31 02601]
+Article remplace code %d
+[31 02701]
+Livraison reliquat
+[31 02801]
+Erreur lors d'ecriture du compte d'article: ordre %d, no d'article %d.
+[31 02901]
+Livraison stup. demain avec ordre separe.
+[31 03001]
+Entree de quantite de commande trop grande.
+[31 03101]
+Eventuellement disposer.
+[31 03201]
+Article: %d livraison maximale %d.
+[31 03301]
+Article pas dans assortiment.
+[31 03401]
+Article: %d stock difference.
+[31 03501]
+Le prix d'achat de pharmacie ne peut pas etre plus petit que prix d'achat gros.
+[31 03601]
+Pas d'autorisat.pour: %d.
+[31 03701]
+Quantite utilisee en %d par article.
+[31 03801]
+Dispo pas permis avec type d'ordre %d.
+[31 03901]
+Livraison le %s.
+[31 04001]
+Client %d n'a pas d'autorisation pour information
+[31 04101]
+pas trouve de donnees discount pour article  %d
+[31 04201]
+SER LIVRE ULTERIEUREMENT
+[31 04301]
+LIVRAISON AVEC COMMANDE %d
+[31 04401]
+LIVRAISON AVEC COMMANDE %s
+[31 04501]
+ARTIKEL %s DARF NICHT PER DAFUE ODER XML BESTELLT WERDEN
+[31 04601]
+SUIVRA AVEC COMMANDE: %s
+[31 04701]
+KEINE BTMs BEI AUFTRAGSART NR
+[31 04801]
+Pas d'autorisation pour achat de ce produit (STOTINKI).
+[31 04901]
+SUBSTITUIERT FUER: %d
+[31 05001]
+POSITIONSWERT FUER POSTITION: %d UBERSCHRITTEN
+[31 05101]
+VERBUNDPOSITION %d IST SCHON VERARBEITET
+[31 05201]
+VERBUNDPOSITION %d IST IN FILIALE %d GEBUCHT
+[31 05301]
+ARTIKEL %d IST NICHT IN TENDER ENTHALTEN
+[31 05401]
+BESTELLMENGE FUER TENDERPOSITION UEBERSCHRITTEN
+[31 05501]
+KDAUFTRAGNR %d POSNR %d AUF %s NICHT GEFUNDEN
+[31 05601]
+SERVICENUMMER UNGUELTIG %d
+[31 05701]
+DER PRODUKTPREIS IST NICHT KONFORM ZU NHIFPREIS, REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05801]
+DER PRODUKTPREIS IST NICHT KONFORM ZU REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05901]
+DER REGISTRIERTE PREIS DES PRODUKTS WURDE GEL÷SCHT.
+[31 06001]
+DER PRODUKTPREIS IST H÷HER ALS DER MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+;
+;
+; 31 NNN : AUFTRAGSPOSITIONS-OBJEKTE  (Croatia)
+;
+[31 00102]
+POSITION %d IN AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DIE POSITION STORNIERT ODER NICHT ERFASST.
+[31 00202]
+FUER AUFTRAG %d KOENNEN KEINE WEITEREN POSITIONEN ERFASST WERDEN.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NICHT ZUR ERWEITERUNG EROEFFNET.
+[31 00302]
+POSITION %d IN AUFTRAG %d BEREITS KOMMISSIONIERT, BESTELLMENGEN SIND NICHT MEHR AENDERBAR.
+[31 00402]
+POSITION %d IN AUFTRAG %d NOCH NICHT KOMMISSIONIERT, LIEFERMENGE NOCH NICHT AENDERBAR.
+[31 00502]
+EINGABE VON NATURALRABATT BEI AUFTRAGART %s NICHT ZULAESSIG.
+[31 00602]
+WERT NUR AENDERBAR BEI POSITONEN MIT GUELTIGEM ARTIKEL.
+[31 00702]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN MIT WERT.
+[31 00802]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN.
+[31 00902]
+UNGUELTIGE ZEICHEN IN ARTIKELNUMMER, ARTIKEL NICHT GEFUNDEN.
+[31 01002]
+ARTIKELNUMMER FEHLT.
+[31 01102]
+UNGUELTIGE ZEICHEN IN BESTELLMENGE.
+[31 01202]
+BESTELLMENGE FEHLT.
+[31 01302]
+DISPO-ARTIKELPOSITION %d IM AUFTRAG %d NICHT GEFUNDEN.
+[31 01402]
+ARTIKELBEZEICHNUNG FEHLT ODER IST UNGUELTIG.
+[31 01502]
+BITTE APOTHEKEN-EINKAUFSPREIS EINGEBEN.
+[31 01602]
+APOTHEKEN-EINKAUFSPREIS MUSS GROESSER ALS GROSSO-EINKAUFSPREIS SEIN.
+[31 01702]
+BITTE GROSSO-EINKAUFSPREIS EINGEBEN.
+[31 01802]
+ARTIKEL IST NICHT RABATTIERFAEHIG, WENN EIN DIREKT-RABATT EINGEGEBEN WURDE.
+[31 01902]
+ENTWEDER DIREKT-RABATT IN DM ODER IN PROZENT, BEIDE ANGABEN SIND NICHT ERLAUBT.
+[31 02002]
+RABATTSATZ IN PROZENT UEBERSCHREITET HANDELSSPANNE ODER ZULAESSIGEN HOECHSTWERT.
+[31 02102]
+DIREKT-RABATT IN DM ZU HOCH, UEBERSCHREITET HANDELSSPANNE.
+[31 02202]
+BUCHUNGSTYP UNGUELTIG.
+[31 02302]
+MWST-SCHLUESSEL MUSS %d (VOLL) ODER %d (HALB) SEIN.
+[31 02402]
+MENGE %d UNGUELTIG.
+[31 02502]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT.
+[31 02602]
+Zamjenski artikl za %d
+[31 02702]
+NACHLIEFERUNG
+[31 02802]
+FEHLER BEIM SCHREIBEN ARTIKELKONTO: AUFTRAG %d, ARTIKELNUMMER %d.
+[31 02902]
+BTM-AUSLIEFERUNG MORGEN UEBER GESONDERTEN AUFTRAG.
+[31 03002]
+BESTELLMENGE ZU GROSS EINGEGEBEN.
+[31 03102]
+EVENTUELL DISPONIEREN.
+[31 03202]
+ARTIKEL: %d MAXIMALE ABGABE: %d.
+[31 03302]
+PZN %d Artikl nije pronaden.
+[31 03402]
+ARTIKEL: %d LAGERDIFFERENCE.
+[31 03502]
+APOTHEKEN-EINKAUFSPREIS DARF NICHT KLEINER GROSSO-EINKAUFSPREIS SEIN.
+[31 03602]
+KEINE BEZUGSBER.FUER: %d.
+[31 03702]
+MENGENKONTIGENT FUER ARTIKEL  %d VERBRAUCHT.
+[31 03802]
+DISPONIEREN BEI AUFTRAGSART %d NICHT ERLAUBT.
+[31 03902]
+AUSLIEFERUNG AM %s.
+[31 04002]
+KUNDE  %d HAT KEIN AUSKUNFTSBERECHTIGUNG
+[31 04102]
+KEIN DISCOUNT EINTRAG FUER ARTIKEL %d GEFUNDEN
+[31 04202]
+WIRD NACHGELIEFERT
+[31 04302]
+Knjizeno na nalog za dostavu %d
+[31 04402]
+Knjizeno na nalog za dostavu %s
+[31 04502]
+ARTIKEL %s DARF NICHT PER DAFUE ODER XML BESTELLT WERDEN
+[31 04602]
+VERBUND MIT AUFTRAG: %s
+[31 04702]
+KEINE BTMs BEI AUFTRAGSART NR
+[31 04802]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT (STOTINKI).
+[31 04902]
+SUBSTITUIERT FUER: %d
+[31 05002]
+POSITIONSWERT FUER POSTITION: %d UBERSCHRITTEN
+[31 05102]
+VERBUNDPOSITION %d IST SCHON VERARBEITET
+[31 05202]
+VERBUNDPOSITION %d IST IN FILIALE %d GEBUCHT
+[31 05302]
+ARTIKEL %d IST NICHT IN TENDER ENTHALTEN
+[31 05402]
+BESTELLMENGE FUER TENDERPOSITION UEBERSCHRITTEN
+[31 05502]
+KDAUFTRAGNR %d POSNR %d AUF %s NICHT GEFUNDEN
+[31 05602]
+SERVICENUMMER UNGUELTIG %d
+[31 05702]
+DER PRODUKTPREIS IST NICHT KONFORM ZU NHIFPREIS, REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05802]
+DER PRODUKTPREIS IST NICHT KONFORM ZU REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05902]
+DER REGISTRIERTE PREIS DES PRODUKTS WURDE GEL÷SCHT.
+[31 06002]
+DER PRODUKTPREIS IST H÷HER ALS DER MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+;
+;
+; 31 NNN : AUFTRAGSPOSITIONS-OBJEKTE SWISS/GERMAN
+;
+[31 00103]
+POSITION %d IN AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DIE POSITION STORNIERT ODER NICHT ERFASST.
+[31 00203]
+FUER AUFTRAG %d KOENNEN KEINE WEITEREN POSITIONEN ERFASST WERDEN.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NICHT ZUR ERWEITERUNG EROEFFNET.
+[31 00303]
+POSITION %d IN AUFTRAG %d BEREITS KOMMISSIONIERT, BESTELLMENGEN SIND NICHT MEHR AENDERBAR.
+[31 00403]
+POSITION %d IN AUFTRAG %d NOCH NICHT KOMMISSIONIERT, LIEFERMENGE NOCH NICHT AENDERBAR.
+[31 00503]
+EINGABE VON NATURALRABATT BEI AUFTRAGART %s NICHT ZULAESSIG.
+[31 00603]
+WERT NUR AENDERBAR BEI POSITONEN MIT GUELTIGEM ARTIKEL.
+[31 00703]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN MIT WERT.
+[31 00803]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN.
+[31 00903]
+UNGUELTIGE ZEICHEN IN ARTIKELNUMMER, ARTIKEL NICHT GEFUNDEN.
+[31 01003]
+ARTIKELNUMMER FEHLT.
+[31 01103]
+UNGUELTIGE ZEICHEN IN BESTELLMENGE.
+[31 01203]
+BESTELLMENGE FEHLT.
+[31 01303]
+DISPO-ARTIKELPOSITION %d IM AUFTRAG %d NICHT GEFUNDEN.
+[31 01403]
+ARTIKELBEZEICHNUNG FEHLT ODER IST UNGUELTIG.
+[31 01503]
+BITTE APOTHEKEN-EINKAUFSPREIS EINGEBEN.
+[31 01603]
+APOTHEKEN-EINKAUFSPREIS MUSS GROESSER ALS GROSSO-EINKAUFSPREIS SEIN.
+[31 01703]
+BITTE GROSSO-EINKAUFSPREIS EINGEBEN.
+[31 01803]
+ARTIKEL IST NICHT RABATTIERFAEHIG, WENN EIN DIREKT-RABATT EINGEGEBEN WURDE.
+[31 01903]
+ENTWEDER DIREKT-RABATT IN DM ODER IN PROZENT, BEIDE ANGABEN SIND NICHT ERLAUBT.
+[31 02003]
+RABATTSATZ IN PROZENT UEBERSCHREITET HANDELSSPANNE ODER ZULAESSIGEN HOECHSTWERT.
+[31 02103]
+DIREKT-RABATT IN DM ZU HOCH, UEBERSCHREITET HANDELSSPANNE.
+[31 02203]
+BUCHUNGSTYP UNGUELTIG.
+[31 02303]
+MWST-SCHLUESSEL MUSS %d (VOLL) ODER %d (HALB) SEIN.
+[31 02403]
+MENGE %d UNGUELTIG.
+[31 02503]
+KEINE BEZUGSBERECHTIGUNG
+[31 02603]
+ERSATZARTIKEL FUER %d
+[31 02703]
+NACHLIEFERUNG
+[31 02803]
+FEHLER BEIM SCHREIBEN ARTIKELKONTO: AUFTRAG %d, ARTIKELNUMMER %d.
+[31 02903]
+BTM-AUSLIEFERUNG MORGEN UEBER GESONDERTEN AUFTRAG.
+[31 03003]
+BESTELLMENGE ZU GROSS EINGEGEBEN.
+[31 03103]
+EVENTUELL DISPONIEREN.
+[31 03203]
+ARTIKEL: %d MAXIMALE ABGABE: %d.
+[31 03303]
+PZN %d ARTIKEL NICHT GEFUEHRT.
+[31 03403]
+ARTIKEL: %d LAGERDIFFERENCE.
+[31 03503]
+APOTHEKEN-EINKAUFSPREIS DARF NICHT KLEINER GROSSO-EINKAUFSPREIS SEIN.
+[31 03603]
+KEINE BEZUGSBER.FUER: %d.
+[31 03703]
+MENGENKONTIGENT FUER ARTIKEL  %d VERBRAUCHT.
+[31 03803]
+DISPONIEREN BEI AUFTRAGSART %d NICHT ERLAUBT.
+[31 03903]
+VERZOEGERTE AUSLIEFERUNG %s.
+[31 04003]
+KUNDE  %d HAT KEIN AUSKUNFTSBERECHTIGUNG
+[31 04103]
+KEIN DISCOUNT EINTRAG FUER ARTIKEL %d GEFUNDEN
+[31 04203]
+WIRD NACHGELIEFERT
+[31 04303]
+AUSLIEFERUNG M. AUFTRAG %d
+[31 04403]
+AUSLIEFERUNG M. AUFTRAG %s
+[31 04503]
+ARTIKEL %s DARF NICHT PER DAFUE ODER XML BESTELLT WERDEN
+[31 04603]
+VERBUND MIT AUFTRAG: %s
+[31 04703]
+KEINE BTMs BEI AUFTRAGSART NR
+[31 04803]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT (STOTINKI).
+[31 04903]
+SUBSTITUIERT FUER: %d
+[31 05003]
+POSITIONSWERT FUER POSTITION: %d UBERSCHRITTEN
+[31 05103]
+VERBUNDPOSITION %d IST SCHON VERARBEITET
+[31 05203]
+VERBUNDPOSITION %d IST IN FILIALE %d GEBUCHT
+[31 05303]
+ARTIKEL %d IST NICHT IN TENDER ENTHALTEN
+[31 05403]
+BESTELLMENGE FUER TENDERPOSITION UEBERSCHRITTEN
+[31 05503]
+KDAUFTRAGNR %d POSNR %d AUF %s NICHT GEFUNDEN
+[31 05603]
+SERVICENUMMER UNGUELTIG %d
+[31 05703]
+DER PRODUKTPREIS IST NICHT KONFORM ZU NHIFPREIS, REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05803]
+DER PRODUKTPREIS IST NICHT KONFORM ZU REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05903]
+DER REGISTRIERTE PREIS DES PRODUKTS WURDE GEL÷SCHT.
+[31 06003]
+DER PRODUKTPREIS IST H÷HER ALS DER MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+;
+;
+; 31 nnn : Auftragspositions-Objekte SWISS/FRENCH
+; 31 nnn : Objets dispositions d'ordre
+;
+[31 00104]
+Position %d dans ordre %d plus modifiable.
+Soit position est annulee ou pas saisie.
+[31 00204]
+Pour ordre %d aucune autre position ne peut etre saisie.
+Soit l'ordre est annule, dej‡ traite ou n'a pas ete ouvert pour elargissement.
+[31 00304]
+Position %d dans ordre %d dej‡ en commi, quantites commandes plus modifiables.
+[31 00404]
+Position %d dans ordre %d dej‡ en commi, quantite livraison encore pas modifiable.
+[31 00504]
+Entree de rabais pour type d'ordre %s pas admis.
+[31 00604]
+Valeur modifiable que pour positions avec articles valables.
+[31 00704]
+Valeur modifiable que pour positions de texte avec valeur.
+[31 00804]
+Valeur modifiable que pour positions de texte.
+[31 00904]
+Signes invalides dans numero d'article, pas trouve d'article.
+[31 01004]
+No. d'article manque.
+[31 01104]
+Signe invalide dans quantite de commande.
+[31 01204]
+Quantite de commande manque.
+[31 01304]
+Pas trouve position d'article dispo %d dans ordre %d.
+[31 01404]
+Designation d'article manque ou est pas valable.
+[31 01504]
+Svp entrer pris d'achat pharmacie.
+[31 01604]
+Pris d'achat pharmacie doit etre plus grand que prix d'achat gros.
+[31 01704]
+Svp entrer prix d'achat gros.
+[31 01804]
+Article pas soumis au rabais, quand un rabais direct a ete entre.
+[31 01904]
+Soit entrer rabais direct en SFr ou en pourcent, les deux indications sont pas permis.
+[31 02004]
+Taux de rabais in pourcent depasse la marge commerciale ou la valeur maximale admise.
+[31 02104]
+Rabais directe en SFr trop eleve, depasse marge commerciale.
+[31 02204]
+Type d'enregistrement pas valable.
+[31 02304]
+Cle TVA doit etre %d (entiere) ou %d (demi).
+[31 02404]
+Quantite pas valable.
+[31 02504]
+Vente non autorisee.
+[31 02604]
+Article remplace code %d
+[31 02704]
+Livraison reliquat
+[31 02804]
+Erreur lors d'ecriture du compte d'article: ordre %d, no d'article %d.
+[31 02904]
+Livraison stup. demain avec ordre separe.
+[31 03004]
+Entree de quantite de commande trop grande.
+[31 03104]
+Eventuellement disposer.
+[31 03204]
+Article: %d livraison maximale %d.
+[31 03304]
+ART. %d INCONNU
+[31 03404]
+Article: %d stock difference.
+[31 03504]
+Le prix d'achat de pharmacie ne peut pas etre plus petit que prix d'achat gros.
+[31 03604]
+Pas d'autorisat.pour: %d.
+[31 03704]
+Quantite utilisee en %d par article.
+[31 03804]
+Dispo pas permis avec type d'ordre %d.
+[31 03904]
+Livraison differee %s.
+[31 04004]
+Client %d n'a pas d'autorisation pour information
+[31 04104]
+pas trouve de donnees discount pour article  %d
+[31 04204]
+SER LIVRE ULTERIEUREMENT
+[31 04304]
+LIVRAISON AVEC COMMANDE %d
+[31 04404]
+LIVRAISON AVEC COMMANDE %s
+[31 04504]
+ARTIKEL %s DARF NICHT PER DAFUE ODER XML BESTELLT WERDEN
+[31 04604]
+SUIVRA AVEC COMMANDE: %s
+[31 04704]
+KEINE BTMs BEI AUFTRAGSART NR
+[31 04804]
+Pas d'autorisation pour achat de ce produit (STOTINKI).
+[31 04904]
+SUBSTITUIERT FUER: %d
+[31 05004]
+POSITIONSWERT FUER POSTITION: %d UBERSCHRITTEN
+[31 05104]
+VERBUNDPOSITION %d IST SCHON VERARBEITET
+[31 05204]
+VERBUNDPOSITION %d IST IN FILIALE %d GEBUCHT
+[31 05304]
+ARTIKEL %d IST NICHT IN TENDER ENTHALTEN
+[31 05404]
+BESTELLMENGE FUER TENDERPOSITION UEBERSCHRITTEN
+[31 05504]
+KDAUFTRAGNR %d POSNR %d AUF %s NICHT GEFUNDEN
+[31 05604]
+SERVICENUMMER UNGUELTIG %d
+[31 05704]
+DER PRODUKTPREIS IST NICHT KONFORM ZU NHIFPREIS, REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05804]
+DER PRODUKTPREIS IST NICHT KONFORM ZU REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05904]
+DER REGISTRIERTE PREIS DES PRODUKTS WURDE GEL÷SCHT.
+[31 06004]
+DER PRODUKTPREIS IST H÷HER ALS DER MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+;
+;
+; 31 NNN : AUFTRAGSPOSITIONS-OBJEKTE (Bulgaria)
+;
+[31 00105]
+POSITION %d IN AUFTRAG %d NICHT AENDERBAR.
+ENTWEDER IST DIE POSITION STORNIERT ODER NICHT ERFASST.
+[31 00205]
+FUER AUFTRAG %d KOENNEN KEINE WEITEREN POSITIONEN ERFASST WERDEN.
+ENTWEDER IST DER AUFTRAG STORNIERT, BEREITS ABGEWICKELT, ODER ER WURDE NICHT ZUR ERWEITERUNG EROEFFNET.
+[31 00305]
+POSITION %d IN AUFTRAG %d BEREITS KOMMISSIONIERT, BESTELLMENGEN SIND NICHT MEHR AENDERBAR.
+[31 00405]
+POSITION %d IN AUFTRAG %d NOCH NICHT KOMMISSIONIERT, LIEFERMENGE NOCH NICHT AENDERBAR.
+[31 00505]
+EINGABE VON NATURALRABATT BEI AUFTRAGART %s NICHT ZULAESSIG.
+[31 00605]
+WERT NUR AENDERBAR BEI POSITONEN MIT GUELTIGEM ARTIKEL.
+[31 00705]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN MIT WERT.
+[31 00805]
+WERT NUR AENDERBAR BEI TEXTPOSITIONEN.
+[31 00905]
+UNGUELTIGE ZEICHEN IN ARTIKELNUMMER, ARTIKEL NICHT GEFUNDEN.
+[31 01005]
+ARTIKELNUMMER FEHLT.
+[31 01105]
+UNGUELTIGE ZEICHEN IN BESTELLMENGE.
+[31 01205]
+BESTELLMENGE FEHLT.
+[31 01305]
+DISPO-ARTIKELPOSITION %d IM AUFTRAG %d NICHT GEFUNDEN.
+[31 01405]
+ARTIKELBEZEICHNUNG FEHLT ODER IST UNGUELTIG.
+[31 01505]
+BITTE APOTHEKEN-EINKAUFSPREIS EINGEBEN.
+[31 01605]
+APOTHEKEN-EINKAUFSPREIS MUSS GROESSER ALS GROSSO-EINKAUFSPREIS SEIN.
+[31 01705]
+BITTE GROSSO-EINKAUFSPREIS EINGEBEN.
+[31 01805]
+ARTIKEL IST NICHT RABATTIERFAEHIG, WENN EIN DIREKT-RABATT EINGEGEBEN WURDE.
+[31 01905]
+ENTWEDER DIREKT-RABATT IN DM ODER IN PROZENT, BEIDE ANGABEN SIND NICHT ERLAUBT.
+[31 02005]
+RABATTSATZ IN PROZENT UEBERSCHREITET HANDELSSPANNE ODER ZULAESSIGEN HOECHSTWERT.
+[31 02105]
+DIREKT-RABATT IN DM ZU HOCH, UEBERSCHREITET HANDELSSPANNE.
+[31 02205]
+BUCHUNGSTYP UNGUELTIG.
+[31 02305]
+MWST-SCHLUESSEL MUSS %d (VOLL) ODER %d (HALB) SEIN.
+[31 02405]
+MENGE %d UNGUELTIG.
+[31 02505]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT.
+[31 02605]
+AUSWEICHARTIKEL FUER %d
+[31 02705]
+NACHLIEFERUNG
+[31 02805]
+FEHLER BEIM SCHREIBEN ARTIKELKONTO: AUFTRAG %d, ARTIKELNUMMER %d.
+[31 02905]
+BTM-AUSLIEFERUNG MORGEN UEBER GESONDERTEN AUFTRAG.
+[31 03005]
+BESTELLMENGE ZU GROSS EINGEGEBEN.
+[31 03105]
+EVENTUELL DISPONIEREN.
+[31 03205]
+ARTIKEL: %d MAXIMALE ABGABE: %d.
+[31 03305]
+PZN %d ARTIKEL NICHT GEFUEHRT.
+[31 03405]
+ARTIKEL: %d LAGERDIFFERENCE.
+[31 03505]
+APOTHEKEN-EINKAUFSPREIS DARF NICHT KLEINER GROSSO-EINKAUFSPREIS SEIN.
+[31 03605]
+KEINE BEZUGSBER.FUER: %d.
+[31 03705]
+MENGENKONTIGENT FUER ARTIKEL  %d VERBRAUCHT.
+[31 03805]
+DISPONIEREN BEI AUFTRAGSART %d NICHT ERLAUBT.
+[31 03905]
+AUSLIEFERUNG AM %s.
+[31 04005]
+KUNDE  %d HAT KEIN AUSKUNFTSBERECHTIGUNG
+[31 04105]
+KEIN DISCOUNT EINTRAG FUER ARTIKEL %d GEFUNDEN
+[31 04205]
+WIRD NACHGELIEFERT
+[31 04305]
+AUSLIEFERUNG M. AUFTRAG %d
+[31 04405]
+AUSLIEFERUNG M. AUFTRAG %s
+[31 04505]
+ARTIKEL %s DARF NICHT PER DAFUE ODER XML BESTELLT WERDEN
+[31 04605]
+VERBUND MIT AUFTRAG: %s
+[31 04705]
+KEINE BTMs BEI AUFTRAGSART NR
+[31 04805]
+KEINE BEZUGSBERECHTIGUNG FUER DIESES PRODUKT (STOTINKI).
+[31 04905]
+SUBSTITUIERT FUER: %d
+[31 05005]
+POSITIONSWERT FUER POSTITION: %d UBERSCHRITTEN
+[31 05105]
+VERBUNDPOSITION %d IST SCHON VERARBEITET
+[31 05205]
+VERBUNDPOSITION %d IST IN FILIALE %d GEBUCHT
+[31 05305]
+ARTIKEL %d IST NICHT IN TENDER ENTHALTEN
+[31 05405]
+BESTELLMENGE FUER TENDERPOSITION UEBERSCHRITTEN
+[31 05505]
+KDAUFTRAGNR %d POSNR %d AUF %s NICHT GEFUNDEN
+[31 05605]
+SERVICENUMMER UNGUELTIG %d
+[31 05705]
+DER PRODUKTPREIS IST NICHT KONFORM ZU NHIFPREIS, REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05805]
+DER PRODUKTPREIS IST NICHT KONFORM ZU REFERENZ-PREIS UND MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+[31 05905]
+DER REGISTRIERTE PREIS DES PRODUKTS WURDE GEL÷SCHT.
+[31 06005]
+DER PRODUKTPREIS IST H÷HER ALS DER MWP. 
+KONTAKTIEREN SIE BITTE IHREN SUPERVISOR.
+;
+;
+; 32 NNN : KUNDEN-OBJEKTE
+;
+[32 00100]
+KUNDE MIT DER NUMMER %d NICHT GEFUNDEN.
+[32 00200]
+KONDITIONSGRUPPE %d NICHT GEFUNDEN.
+[32 00300]
+KEINE KONDITIONSGRUPPEN FUER KUNDE %d GEFUNDEN.
+[32 00400]
+KONDITIONEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00500]
+SCHALTER/MERKMALE FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00600]
+BETRIEBSZEITEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00700]
+KUNDENGRUPPE MIT DER NUMMER %s NICHT GEFUNDEN.
+[32 00800]
+BETRIEBSZEIT FUER DEN KUNDEN %d UND DEN TAGESTYP %s NICHT GEFUNDEN.
+[32 00900]
+AUFTRAGART %s UNBEKANNT.
+[32 01000]
+KEINE VERBUNDZEITEN FUER KUNDE %d UND TAGESTYP %s GEFUNDEN.
+[32 01100]
+KEINE VERBUNDZEITEN FUER KUNDE %d GEFUNDEN.
+[32 01200]
+KREDITLIMIT UEBERPRUEFEN.
+[32 01300]
+KEINE KONDITIONEN FUER KUNDE %d AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01400]
+KEINE EINTRAG FUER AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01500]
+EINKAUFSGRUPPE %s FUER KUNDE %d  UND SUBAUFTRAGSART %s FEHLT
+[32 01600]
+KUNDE %d  FILIALE %d FUER AE GESPERRT
+;
+; 32 nnn : Kunden-Objekte
+; 32 nnn : Objets clients
+;
+[32 00101]
+Pas trouve client avec le no. %d.
+[32 00201]
+Pas trouve groupe de conditions %d.
+[32 00301]
+Pas trouve de groupe de conditions pour client %d.
+[32 00401]
+Pas trouve de conditions pour client %d.
+[32 00501]
+Pas trouve de bouton(??? bin ich nicht ganz sicher)/caracteristique pour client %d.
+[32 00601]
+Pas trouve d'heures de travail pour client %d.
+[32 00701]
+Pas trouve de groupe de client avec no. %s.
+[32 00801]
+Pas trouve d'heures de travail %d et le type de jour %s pour client.
+[32 00901]
+Type d'ordre %s inconnu.
+[32 01001]
+Pas trouve d'heures intersucc. pour client %d et type de jour %s.
+[32 01101]
+Pas trouve d'heures intersucc. pour client %d.
+[32 01201]
+Examiner limite de credit.
+[32 01301]
+KEINE KONDITIONEN FUER KUNDE %d AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01401]
+KEINE EINTRAG FUER AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01501]
+EINKAUFSGRUPPE %s FUER KUNDE %d  UND SUBAUFTRAGSART %s FEHLT
+[32 01601]
+KUNDE %d  FILIALE %d FUER AE GESPERRT
+;
+;
+;
+; 32 NNN : KUNDEN-OBJEKTE(Croatia)
+;
+[32 00102]
+KUNDE MIT DER NUMMER %d NICHT GEFUNDEN.
+[32 00202]
+KONDITIONSGRUPPE %d NICHT GEFUNDEN.
+[32 00302]
+KEINE KONDITIONSGRUPPEN FUER KUNDE %d GEFUNDEN.
+[32 00402]
+KONDITIONEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00502]
+SCHALTER/MERKMALE FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00602]
+BETRIEBSZEITEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00702]
+KUNDENGRUPPE MIT DER NUMMER %s NICHT GEFUNDEN.
+[32 00802]
+BETRIEBSZEIT FUER DEN KUNDEN %d UND DEN TAGESTYP %s NICHT GEFUNDEN.
+[32 00902]
+AUFTRAGART %s UNBEKANNT.
+[32 01002]
+KEINE VERBUNDZEITEN FUER KUNDE %d UND TAGESTYP %s GEFUNDEN.
+[32 01102]
+KEINE VERBUNDZEITEN FUER KUNDE %d GEFUNDEN.
+[32 01202]
+KREDITLIMIT UEBERPRUEFEN.
+[32 01302]
+KEINE KONDITIONEN FUER KUNDE %d AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01402]
+KEINE EINTRAG FUER AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01502]
+EINKAUFSGRUPPE %s FUER KUNDE %d  UND SUBAUFTRAGSART %s FEHLT
+[32 01602]
+KUNDE %d  FILIALE %d FUER AE GESPERRT
+;
+;
+;
+;
+; 32 NNN : KUNDEN-OBJEKTE SWISS/GERMAN
+;
+[32 00103]
+KUNDE MIT DER NUMMER %d NICHT GEFUNDEN.
+[32 00203]
+KONDITIONSGRUPPE %d NICHT GEFUNDEN.
+[32 00303]
+KEINE KONDITIONSGRUPPEN FUER KUNDE %d GEFUNDEN.
+[32 00403]
+KONDITIONEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00503]
+SCHALTER/MERKMALE FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00603]
+BETRIEBSZEITEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00703]
+KUNDENGRUPPE MIT DER NUMMER %s NICHT GEFUNDEN.
+[32 00803]
+BETRIEBSZEIT FUER DEN KUNDEN %d UND DEN TAGESTYP %s NICHT GEFUNDEN.
+[32 00903]
+AUFTRAGART %s UNBEKANNT.
+[32 01003]
+KEINE VERBUNDZEITEN FUER KUNDE %d UND TAGESTYP %s GEFUNDEN.
+[32 01103]
+KEINE VERBUNDZEITEN FUER KUNDE %d GEFUNDEN.
+[32 01203]
+KREDITLIMIT UEBERPRUEFEN.
+[32 01303]
+KEINE KONDITIONEN FUER KUNDE %d AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01403]
+KEINE EINTRAG FUER AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01503]
+EINKAUFSGRUPPE %s FUER KUNDE %d  UND SUBAUFTRAGSART %s FEHLT
+[32 01603]
+KUNDE %d  FILIALE %d FUER AE GESPERRT
+;
+; 32 nnn : Kunden-Objekte  SWISS/FRENCH
+; 32 nnn : Objets clients
+;
+[32 00104]
+Pas trouve client avec le no. %d.
+[32 00204]
+Pas trouve groupe de conditions %d.
+[32 00304]
+Pas trouve de groupe de conditions pour client %d.
+[32 00404]
+Pas trouve de conditions pour client %d.
+[32 00504]
+Pas trouve de bouton(??? bin ich nicht ganz sicher)/caracteristique pour client %d.
+[32 00604]
+Pas trouve d'heures de travail pour client %d.
+[32 00704]
+Pas trouve de groupe de client avec no. %s.
+[32 00804]
+Pas trouve d'heures de travail %d et le type de jour %s pour client.
+[32 00904]
+Type d'ordre %s inconnu.
+[32 01004]
+Pas trouve d'heures intersucc. pour client %d et type de jour %s.
+[32 01104]
+Pas trouve d'heures intersucc. pour client %d.
+[32 01204]
+Examiner limite de credit.
+[32 01304]
+KEINE KONDITIONEN FUER KUNDE %d AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01404]
+KEINE EINTRAG FUER AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01504]
+EINKAUFSGRUPPE %s FUER KUNDE %d  UND SUBAUFTRAGSART %s FEHLT
+[32 01604]
+KUNDE %d  FILIALE %d FUER AE GESPERRT
+;
+;
+;
+;
+; 32 NNN : KUNDEN-OBJEKTE (Bulgaria)
+;
+[32 00105]
+KUNDE MIT DER NUMMER %d NICHT GEFUNDEN.
+[32 00205]
+KONDITIONSGRUPPE %d NICHT GEFUNDEN.
+[32 00305]
+KEINE KONDITIONSGRUPPEN FUER KUNDE %d GEFUNDEN.
+[32 00405]
+KONDITIONEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00505]
+SCHALTER/MERKMALE FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00605]
+BETRIEBSZEITEN FUER DEN KUNDEN %d NICHT GEFUNDEN.
+[32 00705]
+KUNDENGRUPPE MIT DER NUMMER %s NICHT GEFUNDEN.
+[32 00805]
+BETRIEBSZEIT FUER DEN KUNDEN %d UND DEN TAGESTYP %s NICHT GEFUNDEN.
+[32 00905]
+AUFTRAGART %s UNBEKANNT.
+[32 01005]
+KEINE VERBUNDZEITEN FUER KUNDE %d UND TAGESTYP %s GEFUNDEN.
+[32 01105]
+KEINE VERBUNDZEITEN FUER KUNDE %d GEFUNDEN.
+[32 01205]
+KREDITLIMIT UEBERPRUEFEN.
+[32 01305]
+KEINE KONDITIONEN FUER KUNDE %d AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01405]
+KEINE EINTRAG FUER AUFTRAGSART %s UND SUBAUFTRAGSART %s
+[32 01505]
+EINKAUFSGRUPPE %s FUER KUNDE %d  UND SUBAUFTRAGSART %s FEHLT
+[32 01605]
+KUNDE %d  FILIALE %d FUER AE GESPERRT
+;
+;
+; 33 NNN : ARTIKEL-OBJEKTE
+;
+[33 00100]
+PZN %d UNBEKANNT
+[33 00200]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 00300]
+NATURALRABATTSTAFFEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00400]
+NETTOAKTION FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00500]
+BASISPREISE FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00600]
+EINTRAG MIT ARTIKEL-NUMMER %d UND ALTERNATIV-ARTIKEL-NUMMER %d NICHT GEFUNDEN.
+[33 00700]
+EINTRAG MIT ARTIKELNUMMER %d, FILIALNUMMER %d, LAGERBEREICHSNUMMER %d UND LAGERFACHNUMMER %s NICHT GEFUNDEN.
+[33 00800]
+PZN %d UNBEKANNT
+[33 00900]
+PZN %d AUF %s NICHT GEBUCHT
+[33 01000]
+REIMPORTARTIKEL %d NICHT GEFUNDEN
+[33 01100]
+DIESER ARTIKEL WIRD VORUEBERGEHEND VON PHOENIX NICHT VERTRIEBEN
+[33 01200]
+PZN %d EINKAUFSSPERRE.
+[33 01300]
+PZN %d KRANKENKASSENCODE NICHT VORHANDEN.
+[33 01400]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 01500]
+RUECKWAERTS VERKETTETE ARTIKELNUMMER GEFUNDEN.
+[33 01600]
+AUSWEICHARTIKEL HAT KEINEN BESTAND: ARTIKEL %d.
+[33 01700]
+TRANSPORTAUSSCHLUSS - KEINE TOUR FUER ARTIKEL AUTHORISIERT
+;
+; 33 nnn : Artikel-Objekte
+; 33 nnn : Objets-article
+;
+[33 00101]
+Phc %d pas en assortiment
+[33 00201]
+Quantite %d plus en stock, seulement %d disponible: article %d.
+[33 00301]
+Pas trouve echelon rabais avec le no. %d.
+[33 00401]
+Pas trouve action net pour article avec le no. %d.
+[33 00501]
+Pas trouve prix de base pour article avec le no. %d.
+[33 00601]
+Pas trouve entree avec no d'article %d et no d'article de remplacement %d.
+[33 00701]
+Pas trouve entree avec no d'article %d, no de succursale %d, no. de domaine de depÙt %d et no de compartiment de stock %s.
+[33 00801]
+Phc %d pas en assortiment
+[33 00901]
+Phc %d pas enregistre sur %s
+[33 01001]
+Pas trouve article de reimportation %d
+[33 01101]
+Phc %d Article pas en assortiment.
+[33 01201]
+Phc %d bloquage d'achat.
+[33 01301]
+Phc %d KRANKENKASSENCODE NICHT VORHANDEN.
+[33 01401]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 01501]
+RUECKWAERTS VERKETTETE ARTIKELNUMMER GEFUNDEN.
+[33 01601]
+AUSWEICHARTIKEL HAT KEINEN BESTAND: ARTIKEL %d.
+;
+;
+; 33 NNN : ARTIKEL-OBJEKTE  (Croatia)
+;
+[33 00102]
+PZN %d UNBEKANNT
+[33 00202]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 00302]
+NATURALRABATTSTAFFEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00402]
+NETTOAKTION FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00502]
+BASISPREISE FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00602]
+EINTRAG MIT ARTIKEL-NUMMER %d UND ALTERNATIV-ARTIKEL-NUMMER %d NICHT GEFUNDEN.
+[33 00702]
+EINTRAG MIT ARTIKELNUMMER %d, FILIALNUMMER %d, LAGERBEREICHSNUMMER %d UND LAGERFACHNUMMER %s NICHT GEFUNDEN.
+[33 00802]
+PZN %d UNBEKANNT
+[33 00902]
+PZN %d AUF %s NICHT GEBUCHT
+[33 01002]
+REIMPORTARTIKEL %d NICHT GEFUNDEN
+[33 01102]
+PZN %d ARTIKEL NICHT GEFUEHRT.
+[33 01202]
+PZN %d EINKAUFSSPERRE.
+[33 01302]
+PZN %d KRANKENKASSENCODE NICHT VORHANDEN.
+[33 01402]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 01502]
+RUECKWAERTS VERKETTETE ARTIKELNUMMER GEFUNDEN.
+[33 01602]
+AUSWEICHARTIKEL HAT KEINEN BESTAND: ARTIKEL %d.
+;
+;
+; 33 NNN : ARTIKEL-OBJEKTE SWISS/GERMAN
+;
+[33 00103]
+ART. %d UNBEKANNT
+[33 00203]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 00303]
+NATURALRABATTSTAFFEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00403]
+NETTOAKTION FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00503]
+BASISPREISE FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00603]
+EINTRAG MIT ARTIKEL-NUMMER %d UND ALTERNATIV-ARTIKEL-NUMMER %d NICHT GEFUNDEN.
+[33 00703]
+EINTRAG MIT ARTIKELNUMMER %d, FILIALNUMMER %d, LAGERBEREICHSNUMMER %d UND LAGERFACHNUMMER %s NICHT GEFUNDEN.
+[33 00803]
+ART. %d UNBEKANNT
+[33 00903]
+PZN %d AUF %s NICHT GEBUCHT
+[33 01003]
+REIMPORTARTIKEL %d NICHT GEFUNDEN
+[33 01103]
+PZN %d ARTIKEL NICHT GEFUEHRT.
+[33 01203]
+PZN %d EINKAUFSSPERRE.
+[33 01303]
+PZN %d KRANKENKASSENCODE NICHT VORHANDEN.
+[33 01403]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 01503]
+RUECKWAERTS VERKETTETE ARTIKELNUMMER GEFUNDEN.
+[33 01603]
+AUSWEICHARTIKEL HAT KEINEN BESTAND: ARTIKEL %d.
+;
+; 33 nnn : Artikel-Objekte SWISS/FRENCH
+; 33 nnn : Objets-article
+;
+[33 00104]
+ART. %d INCONNU
+[33 00204]
+Quantite %d plus en stock, seulement %d disponible: article %d.
+[33 00304]
+Pas trouve echelon rabais avec le no. %d.
+[33 00404]
+Pas trouve action net pour article avec le no. %d.
+[33 00504]
+Pas trouve prix de base pour article avec le no. %d.
+[33 00604]
+Pas trouve entree avec no d'article %d et no d'article de remplacement %d.
+[33 00704]
+Pas trouve entree avec no d'article %d, no de succursale %d, no. de domaine de depÙt %d et no de compartiment de stock %s.
+[33 00804]
+ART. %d INCONNU
+[33 00904]
+Phc %d pas enregistre sur %s
+[33 01004]
+Pas trouve article de reimportation %d
+[33 01104]
+Phc %d Article pas en assortiment.
+[33 01204]
+Phc %d bloquage d'achat.
+[33 01304]
+PZN %d KRANKENKASSENCODE NICHT VORHANDEN.
+[33 01404]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 01504]
+RUECKWAERTS VERKETTETE ARTIKELNUMMER GEFUNDEN.
+[33 01604]
+AUSWEICHARTIKEL HAT KEINEN BESTAND: ARTIKEL %d.
+;
+;
+; 33 NNN : ARTIKEL-OBJEKTE (Bulgaria)
+;
+[33 00105]
+PZN %d UNBEKANNT
+[33 00205]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 00305]
+NATURALRABATTSTAFFEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00405]
+NETTOAKTION FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00505]
+BASISPREISE FUER DEN ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN.
+[33 00605]
+EINTRAG MIT ARTIKEL-NUMMER %d UND ALTERNATIV-ARTIKEL-NUMMER %d NICHT GEFUNDEN.
+[33 00705]
+EINTRAG MIT ARTIKELNUMMER %d, FILIALNUMMER %d, LAGERBEREICHSNUMMER %d UND LAGERFACHNUMMER %s NICHT GEFUNDEN.
+[33 00805]
+PZN %d UNBEKANNT
+[33 00905]
+PZN %d AUF %s NICHT GEBUCHT
+[33 01005]
+REIMPORTARTIKEL %d NICHT GEFUNDEN
+[33 01105]
+DIESER ARTIKEL WIRD VORUEBERGEHEND VON PHOENIX NICHT VERTRIEBEN
+[33 01205]
+PZN %d EINKAUFSSPERRE.
+[33 01305]
+PZN %d KRANKENKASSENCODE NICHT VORHANDEN.
+[33 01405]
+MENGE %d NICHT MEHR IM BESTAND, NUR NOCH %d VERFUEGBAR: ARTIKEL %d.
+[33 01505]
+RUECKWAERTS VERKETTETE ARTIKELNUMMER GEFUNDEN.
+[33 01605]
+AUSWEICHARTIKEL HAT KEINEN BESTAND: ARTIKEL %d.
+[33 01705]
+TRANSPORTAUSSCHLUSS - KEINE TOUR FUER ARTIKEL AUTHORISIERT
+;
+;
+; 34 NNN : SESSION-OBJEKTE
+;
+[34 00100]
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE EINDEUTIGE FILIALZUORDNUNG MOEGLICH.
+[34 00200]*
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE AUFTRAGSARTEN GEFUNDEN.
+[34 00300]*
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE BUCHUNGSARTEN GEFUNDEN.
+[34 00400]*
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE KOMMISSIONIERUNGSARTEN GEFUNDEN.
+[34 00500]*
+FEHLER BEIM EROEFFNEN DER SITZUNG:
+KEINE KOMBINATIONEN AUFTRAGS-/BUCHUNGS-/KOMMISSIONIERUNGSART GEFUNDEN.
+[34 00600]
+FEHLER (MEMORY ALLOCATION) BEIM EROEFFNEN DER SITZUNG:
+TEXTTABELLE KONNTE NICHT ERSTELLT WERDEN.
+[34 00700]
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE FILIALPARTNER GEFUNDEN.
+[34 00800]
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE MODEM EINTRAEGE GEFUNDEN.
+[34 00900]
+DAS SETZEN DER SYSTEMUHR AUF DEM CLIENT IST NICHT GELUNGEN.
+FEHLERCODE : %d
+[34 01000]
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEINE RECHNER EINTRAEGE GEFUNDEN.
+[34 01100]
+FEHLER BEIM EROEFFNEN DER SITZUNG: KEIN PARAAUFTRAGER EINTRAG GEFUNDEN.
+[34 01400]
+FEHLER BEIM EROEFFNEN DER SITZUNG: DOPPELTE CONNECTION INJECTION (DUPLICATE INJECTION!)
+[34 01500]
+FEHLER BEIM EROEFFNEN DER SITZUNG: CONNECTION NICHT VORHANDEN (NULL-CONNECTION!)
+;
+; 35 NNN : DIREKT-VERBUND
+;
+[35 00100]
+ARTIKEL MIT DER NUMMER %d NICHT GEFUNDEN BEI FILIALE %d.
+[35 00200]
+ARTIKEL MIT DER NUMMER %d SCHREIBFEHLER BEI FILIALE %d.
+[35 00300]
+ARTIKEL MIT DER NUMMER %d UNBOOKFEHLER BEI FILIALE %d.
+[35 00400]
+ARTIKELKONTO %d SCHREIBFEHLER BEI FILIALE %d.
+[35 00500]
+ARTIKELKONTO %d FEHLER BEI FILIALE %d.
+[35 00600]
+VERBUNDKOPF %d NICHT GEFUNDEN.
+[35 00700]
+VERBUNDKOPF %d SCHREIBFEHLER.
+[35 00800]
+VERBUNDPOSITION %d %d NICHT GEFUNDEN.
+[35 00900]
+VERBUNDPOSITION %d %d NICHT LOESCHBAR.
+[35 01000]
+VERBUNDPOSITION %d %d SCHREIBFFEHLER.
+[35 01100]
+VERBUNDSPERRE FILIALE %d NICHT GEFUNDEN.
+;
+;
+; 39 NNN : SONSTIGE OBJEKTE
+;
+[39 00100]
+FILIALE MIT DER NUMMER %d NICHT GEFUNDEN.
+[39 00200]
+EINE AUSNAHME IST AUFGETRETEN: %s
+;
+;              FUNKTIONSKREIS 4N : INFORMATIONS-NACHRICHTEN FUER PROTOKOLLDATEI.
+;
+[40 00100]
+AUFTRAG %d FUER KUNDE %d ZUR ERFASSUNG EROEFFNET.
+[40 00200]
+AUFTRAG %d FUER KUNDE %d ZUR AENDERUNG EROEFFNET.
+[40 00300]
+AUFTRAG %d FUER KUNDE %d ZUR ANZEIGE EROEFFNET.
+;
+;              FUNKTIONSKREIS 50 : GENERELLE TEXTE  German
+;
+;   50 0 : SERIELLE DAFUE
+[50 00100]
+NICHT NUMERISCH
+[50 00200]
+PRUEFZIF FALSCH
+[50 00300]
+N. BERECHTIGT
+[50 00400]
+AHD SEIT  99.99
+[50 00500]
+FEHLT ZUR ZEIT
+[50 00600]
+NICHT LIEF
+[50 00700]
+NICHT LIEF HERS
+[50 00800]
+NICHT GEFUEHRT
+[50 00900]
+NR. UNBEKANNT
+[50 01000]
+AUFTRAGSBESTAETIGUNG<<<AA      WERT PZN ALPHA DEF<>
+LIEFERUNG %H:%M UHR
+%2s  %8.2f%4.1li %4.1li %4.1li<
+VIELEN DANK FUER IHREN AUFTRAG<
+IHR PHOENIX VZ
+PHOENIX  DEFEKTE
+BRIEFE
+[50 01100]
+HEUTE LIEFERN
+[50 01200]
+MORGEN LIEFERN
+[50 01300]
+KUNDENNUMMER FALSCH : %s
+[50 01400]
+AUSW.ARTKL.GEB.
+[50 01500]
+NACHLIEFERN
+[50 01600]
+DISPONIERT
+[50 01700]
+MNG ERHOEHT
+[50 01800]
+VERFUEG
+[50 01900]
+NICHTVE
+[50 02000]
+KEIN AUFTRAG
+[50 02100]
+<<<          AUSWEICHARTIKEL FUER          <%s<%s>
+[50 02200]
+IM VERB.
+[50 02300]
+VB MOEGLICH
+[50 02400]
+VONZENTRALE
+[50 02500]
+NUR DIREKT
+[50 02600]
+<<<          NACHLIEFERN MOEGLICH          <%s>
+[50 02700]
+<<<          VOM HERSTELLER: FIRMA         < %s>
+[50 02800]
+<<<          DISPO MOEGLICH: FIRMA         < %s>
+[50 02900]
+DEFEKTRUECKRUF
+[50 03000]
+NEU:
+[50 03100]
+WIRD BEARBEITET
+[50 03200]
+%d.%m.%y/BEST
+ %H:%M/LIEF
+ %H:%M
+[50 03300]
+VB KOMMT
+[50 03400]
+VB MOEGLICH
+[50 03500]
+ZENTR
+[50 03600]
+NICHT GEFUEHRT
+[50 03700]
+<<<          ALTERNATIV MOEGLICH FUER      <%s<%s>
+[50 03800]
+BITTE UM RUECKRUF
+[50 03801]
+NOUS VOUS PRIONS DE RAPPELER
+[50 03900]
+<<<               ARTIKELTEXT FUER         <%s<%s>
+[50 04000]
+<<<              AUSLIEFERUNG FUER         <%s<%s>
+[50 04100]
+NICHT PER DAFUE
+[50 04200]
+<<<          REIMPORT GEBUCHT FUER         <%s<%s>
+[50 04300]
+REIMP:
+[50 04400]
+MENGENKONTIGENT AUSGESCHOEPFT
+[50 04500]
+RABATTKONTO UEBERSCHRITTEN
+[50 04600]
+KEINE BTMs BEI AUFTRAGSART NR
+[50 04700]
+KUNDE HAT KEINE BERECHTIGUNG FUER BTM'S
+[50 04800]
+KEINE BERECHTIGUNG FUER KRANKENKASSE
+[50 04900]
+KEINE BERECHTIGUNG FUER EINZELHANDEL
+[50 05000]
+PSEUDOLAGERORT
+[50 05100]
+KEINE CHARGE ANGEGEBEN
+[50 05200]
+CHARGENANGABE NICHT ZULAESSIG
+[50 05300]
+NUR FIXE CHARGEN ERLAUBT
+[50 05400]
+FIXE CHARGE NICHT ERLAUBT
+[50 05500]
+CHARGENPROZESS DURCH KONFIGURATION VERHINDERT
+[50 05600]
+ZUR ZEIT NICHT LAGERND
+;
+;              FUNKTIONSKREIS 50 : GENERELLE TEXTE  French
+;
+;   50 0 : SERIELLE DAFUE
+[50 00101]
+NICHT NUMERISCH
+[50 00201]
+PRUEFZIF FALSCH
+[50 00301]
+N. BERECHTIGT
+[50 00401]
+AHD SEIT  99.99
+[50 00501]
+FEHLT ZUR ZEIT
+[50 00601]
+NICHT LIEF
+[50 00701]
+NICHT LIEF HERS
+[50 00801]
+NICHT GEFUEHRT
+[50 00901]
+NR. UNBEKANNT
+[50 01001]
+AUFTRAGSBESTAETIGUNG<<<AA      WERT PZN ALPHA DEF<>
+LIEFERUNG %H:%M UHR
+%2s  %8.2f%4.1li %4.1li %4.1li<
+VIELEN DANK FUER IHREN AUFTRAG<
+IHR PHOENIX VZ
+PHOENIX  DEFEKTE
+BRIEFE
+[50 01101]
+HEUTE LIEFERN
+[50 01201]
+MORGEN LIEFERN
+[50 01301]
+KUNDENNUMMER FALSCH : %s
+[50 01401]
+AUSW.ARTKL.GEB.
+[50 01501]
+NACHLIEFERN
+[50 01601]
+DISPONIERT
+[50 01701]
+MNG ERHOEHT
+[50 01801]
+VERFUEG
+[50 01901]
+NICHTVE
+[50 02001]
+KEIN AUFTRAG
+[50 02101]
+<<<          AUSWEICHARTIKEL FUER          <%s<%s>
+[50 02201]
+IM VERB.
+[50 02301]
+VB MOEGLICH
+[50 02401]
+VONZENTRALE
+[50 02501]
+NUR DIREKT
+[50 02601]
+<<<          NACHLIEFERN MOEGLICH          <%s>
+[50 02701]
+<<<          VOM HERSTELLER: FIRMA         < %s>
+[50 02801]
+<<<          DISPO MOEGLICH: FIRMA         < %s>
+[50 02901]
+DEFEKTRUECKRUF
+[50 03001]
+NEU:
+[50 03101]
+WIRD BEARBEITET
+[50 03201]
+%d.%m.%y/BEST
+ %H:%M/LIEF
+ %H:%M
+[50 03301]
+VB KOMMT
+[50 03401]
+VB MOEGLICH
+[50 03501]
+ZENTR
+[50 03601]
+NICHT GEFUEHRT
+[50 03701]
+<<<          ALTERNATIV MOEGLICH FUER      <%s<%s>
+[50 03801]
+BITTE UM RUECKRUF
+[50 03801]
+NOUS VOUS PRIONS DE RAPPELER
+[50 03901]
+<<<               ARTIKELTEXT FUER         <%s<%s>
+[50 04001]
+<<<              AUSLIEFERUNG FUER         <%s<%s>
+[50 04101]
+NICHT PER DAFUE
+[50 04201]
+<<<          REIMPORT GEBUCHT FUER         <%s<%s>
+[50 04301]
+REIMP:
+[50 04401]
+MENGENKONTIGENT AUSGESCHOEPFT
+[50 04501]
+RABATTKONTO UEBERSCHRITTEN
+[50 04601]
+KEINE BTMs BEI AUFTRAGSART NR
+[50 04701]
+KUNDE HAT KEINE BERECHTIGUNG FUER BTM'S
+[50 04801]
+KEINE BERECHTIGUNG FUER KRANKENKASSE
+[50 04901]
+KEINE BERECHTIGUNG FUER EINZELHANDEL
+[50 05001]
+PSEUDOLAGERORT
+[50 05101]
+KEINE CHARGE ANGEGEBEN
+[50 05201]
+CHARGENANGABE NICHT ZULAESSIG
+[50 05301]
+NUR FIXE CHARGEN ERLAUBT
+[50 05401]
+FIXE CHARGE NICHT ERLAUBT
+[50 05501]
+CHARGENPROZESS DURCH KONFIGURATION VERHINDERT
+[50 05601]
+ZUR ZEIT NICHT LAGERND
+;
+;              FUNKTIONSKREIS 50 : GENERELLE TEXTE  Croatia
+;
+;   50 0 : SERIELLE DAFUE
+[50 00102]
+NICHT NUMERISCH
+[50 00202]
+PRUEFZIF FALSCH
+[50 00302]
+N. BERECHTIGT
+[50 00402]
+AHD SEIT  99.99
+[50 00502]
+FEHLT ZUR ZEIT
+[50 00602]
+NICHT LIEF
+[50 00702]
+NICHT LIEF HERS
+[50 00802]
+NICHT GEFUEHRT
+[50 00902]
+NR. UNBEKANNT
+[50 01002]
+AUFTRAGSBESTAETIGUNG<<<AA      WERT PZN ALPHA DEF<>
+LIEFERUNG %H:%M UHR
+%2s  %8.2f%4.1li %4.1li %4.1li<
+VIELEN DANK FUER IHREN AUFTRAG<
+IHR PHOENIX VZ
+PHOENIX  DEFEKTE
+BRIEFE
+[50 01102]
+HEUTE LIEFERN
+[50 01202]
+MORGEN LIEFERN
+[50 01302]
+KUNDENNUMMER FALSCH : %s
+[50 01402]
+AUSW.ARTKL.GEB.
+[50 01502]
+NACHLIEFERN
+[50 01602]
+DISPONIERT
+[50 01702]
+MNG ERHOEHT
+[50 01802]
+VERFUEG
+[50 01902]
+NICHTVE
+[50 02002]
+KEIN AUFTRAG
+[50 02102]
+<<<          AUSWEICHARTIKEL FUER          <%s<%s>
+[50 02202]
+IM VERB.
+[50 02302]
+VB MOEGLICH
+[50 02402]
+VONZENTRALE
+[50 02502]
+NUR DIREKT
+[50 02602]
+<<<          NACHLIEFERN MOEGLICH          <%s>
+[50 02702]
+<<<          VOM HERSTELLER: FIRMA         < %s>
+[50 02802]
+<<<          DISPO MOEGLICH: FIRMA         < %s>
+[50 02902]
+DEFEKTRUECKRUF
+[50 03002]
+NEU:
+[50 03102]
+WIRD BEARBEITET
+[50 03202]
+%d.%m.%y/BEST
+ %H:%M/LIEF
+ %H:%M
+[50 03302]
+VB KOMMT
+[50 03402]
+VB MOEGLICH
+[50 03502]
+ZENTR
+[50 03602]
+NICHT GEFUEHRT
+[50 03702]
+<<<          ALTERNATIV MOEGLICH FUER      <%s<%s>
+[50 03802]
+BITTE UM RUECKRUF
+[50 03802]
+NOUS VOUS PRIONS DE RAPPELER
+[50 03902]
+<<<               ARTIKELTEXT FUER         <%s<%s>
+[50 04002]
+<<<              AUSLIEFERUNG FUER         <%s<%s>
+[50 04102]
+NICHT PER DAFUE
+[50 04202]
+<<<          REIMPORT GEBUCHT FUER         <%s<%s>
+[50 04302]
+REIMP:
+[50 04402]
+MENGENKONTIGENT AUSGESCHOEPFT
+[50 04502]
+RABATTKONTO UEBERSCHRITTEN
+[50 04602]
+KEINE BTMs BEI AUFTRAGSART NR
+[50 04702]
+KUNDE HAT KEINE BERECHTIGUNG FUER BTM'S
+[50 04802]
+KEINE BERECHTIGUNG FUER KRANKENKASSE
+[50 04902]
+KEINE BERECHTIGUNG FUER EINZELHANDEL
+[50 05002]
+PSEUDOLAGERORT
+[50 05102]
+KEINE CHARGE ANGEGEBEN
+[50 05202]
+CHARGENANGABE NICHT ZULAESSIG
+[50 05302]
+NUR FIXE CHARGEN ERLAUBT
+[50 05402]
+FIXE CHARGE NICHT ERLAUBT
+[50 05502]
+CHARGENPROZESS DURCH KONFIGURATION VERHINDERT
+[50 05602]
+ZUR ZEIT NICHT LAGERND
+;
+;              FUNKTIONSKREIS 50 : GENERELLE TEXTE  Swiss/German
+;
+;   50 0 : SERIELLE DAFUE
+[50 00103]
+Artikelnummer ist nicht numerisch
+[50 00203]
+Pruefziffer der Artikelnummer ist falsch
+[50 00303]
+Keine Bezugsberechtigung
+[50 00403]
+Artikel ausser Handel
+[50 00503]
+Fehlt zur Zeit
+[50 00603]
+Vom Hersteller nicht lieferbar Keine Notas Bitte nachbestellen
+[50 00703]
+Vom Hersteller nicht lieferbar Keine Notas Bitte nachbestellen
+[50 00803]
+Artikel fuehren wir nicht
+[50 00903]
+Artikel unbekannt
+[50 01003]
+AUFTRAGSBESTAETIGUNG<<<AA      WERT PZN ALPHA DEF<>
+LIEFERUNG %H:%M UHR
+%2s  %8.2f%4.1li %4.1li %4.1li<
+VIELEN DANK FUER IHREN AUFTRAG<
+IHR PHOENIX VZ
+PHOENIX  DEFEKTE
+BRIEFE
+[50 01103]
+HEUTE LIEFERN
+[50 01203]
+MORGEN LIEFERN
+[50 01303]
+KUNDENNUMMER FALSCH : %s
+[50 01403]
+Ausweichartikel wurde gebucht
+[50 01503]
+NOTA Ware wird nachgeliefert
+[50 01603]
+DISPONIERT
+[50 01703]
+MNG ERHOEHT
+[50 01803]
+Artikel ist verfuegbar
+[50 01903]
+Artikel ist nicht verfuegbar
+[50 02003]
+KEIN AUFTRAG
+[50 02103]
+<<<          AUSWEICHARTIKEL FUER          <%s<%s>
+[50 02203]
+Wird im Verbund nachgeliefert
+[50 02303]
+Verbund moeglich
+[50 02403]
+VONZENTRALE
+[50 02503]
+Nicht ueber Grosshandel erhaeltlich
+[50 02603]
+<<<          NACHLIEFERN MOEGLICH          <%s>
+[50 02703]
+<<<          VOM HERSTELLER: FIRMA         < %s>
+[50 02803]
+<<<          DISPO MOEGLICH: FIRMA         < %s>
+[50 02903]
+DEFEKTRUECKRUF
+[50 03003]
+NEU:
+[50 03103]
+WIRD BEARBEITET
+[50 03203]
+%d.%m.%y/BEST
+ %H:%M/LIEF
+ %H:%M
+[50 03303]
+VB KOMMT
+[50 03403]
+VB MOEGLICH
+[50 03503]
+ZENTR
+[50 03603]
+Artikel fuehren wir nicht
+[50 03703]
+<<<          ALTERNATIV MOEGLICH FUER      <%s<%s>
+[50 03803]
+BITTE UM RUECKRUF
+[50 03803]
+NOUS VOUS PRIONS DE RAPPELER
+[50 03903]
+<<<               ARTIKELTEXT FUER         <%s<%s>
+[50 04003]
+<<<              AUSLIEFERUNG FUER         <%s<%s>
+[50 04103]
+NICHT PER DAFUE
+[50 04203]
+<<<          REIMPORT GEBUCHT FUER         <%s<%s>
+[50 04303]
+REIMP:
+[50 04403]
+MENGENKONTIGENT AUSGESCHOEPFT
+[50 04503]
+RABATTKONTO UEBERSCHRITTEN
+[50 04603]
+KEINE BTMs BEI AUFTRAGSART NR
+[50 04703]
+KUNDE HAT KEINE BERECHTIGUNG FUER BTM'S
+[50 04803]
+KEINE BERECHTIGUNG FUER KRANKENKASSE
+[50 04903]
+KEINE BERECHTIGUNG FUER EINZELHANDEL
+[50 05003]
+PSEUDOLAGERORT
+[50 05103]
+KEINE CHARGE ANGEGEBEN
+[50 05203]
+CHARGENANGABE NICHT ZULAESSIG
+[50 05303]
+NUR FIXE CHARGEN ERLAUBT
+[50 05403]
+FIXE CHARGE NICHT ERLAUBT
+[50 05503]
+CHARGENPROZESS DURCH KONFIGURATION VERHINDERT
+[50 05603]
+ZUR ZEIT NICHT LAGERND
+;
+;              FUNKTIONSKREIS 50 : GENERELLE TEXTE  Swiss/French
+;
+;   50 0 : SERIELLE DAFUE
+[50 00104]
+Le numero d'article n'est pas numerique
+[50 00204]
+Le chiffre de controle du numero d'article est faux
+[50 00304]
+Vente non autorisee
+[50 00404]
+Article hors commerce
+[50 00504]
+manque grossiste
+[50 00604]
+Manque chez fournisseur Pas pris en Note
+[50 00704]
+Manque chez fournisseur Pas pris en Note
+[50 00804]
+Article pas dans l'assortiment
+[50 00904]
+Article inconnu
+[50 01004]
+AUFTRAGSBESTAETIGUNG<<<AA      WERT PZN ALPHA DEF<>
+LIEFERUNG %H:%M UHR
+%2s  %8.2f%4.1li %4.1li %4.1li<
+VIELEN DANK FUER IHREN AUFTRAG<
+IHR PHOENIX VZ
+PHOENIX  DEFEKTE
+BRIEFE
+[50 01104]
+HEUTE LIEFERN
+[50 01204]
+MORGEN LIEFERN
+[50 01304]
+KUNDENNUMMER FALSCH : %s
+[50 01404]
+Article remplace
+[50 01504]
+Marchandise NOTA sera delivre enregistre
+[50 01604]
+DISPONIERT
+[50 01704]
+MNG ERHOEHT
+[50 01804]
+Article est disponible
+[50 01904]
+Article n'est pas disponible
+[50 02004]
+KEIN AUFTRAG
+[50 02104]
+<<<          AUSWEICHARTIKEL FUER          <%s<%s>
+[50 02204]
+Livraison intersuccursale.
+[50 02304]
+Livrable intersuccursale
+[50 02404]
+VONZENTRALE
+[50 02504]
+Non remis au grossiste
+[50 02604]
+<<<          NACHLIEFERN MOEGLICH          <%s>
+[50 02704]
+<<<          VOM HERSTELLER: FIRMA         < %s>
+[50 02804]
+<<<          DISPO MOEGLICH: FIRMA         < %s>
+[50 02904]
+DEFEKTRUECKRUF
+[50 03004]
+NEU:
+[50 03104]
+WIRD BEARBEITET
+[50 03204]
+%d.%m.%y/BEST
+ %H:%M/LIEF
+ %H:%M
+[50 03304]
+VB KOMMT
+[50 03404]
+VB MOEGLICH
+[50 03504]
+ZENTR
+[50 03604]
+Article pas dans l'assortiment
+[50 03704]
+<<<          ALTERNATIV MOEGLICH FUER      <%s<%s>
+[50 03804]
+BITTE UM RUECKRUF
+[50 03804]
+NOUS VOUS PRIONS DE RAPPELER
+[50 03904]
+<<<               ARTIKELTEXT FUER         <%s<%s>
+[50 04004]
+<<<              AUSLIEFERUNG FUER         <%s<%s>
+[50 04104]
+NICHT PER DAFUE
+[50 04204]
+<<<          REIMPORT GEBUCHT FUER         <%s<%s>
+[50 04304]
+REIMP:
+[50 04404]
+MENGENKONTIGENT AUSGESCHOEPFT
+[50 04504]
+RABATTKONTO UEBERSCHRITTEN
+[50 04604]
+KEINE BTMs BEI AUFTRAGSART NR
+[50 04704]
+KUNDE HAT KEINE BERECHTIGUNG FUER BTM'S
+[50 04804]
+KEINE BERECHTIGUNG FUER KRANKENKASSE
+[50 04904]
+KEINE BERECHTIGUNG FUER EINZELHANDEL
+[50 05004]
+PSEUDOLAGERORT
+[50 05104]
+KEINE CHARGE ANGEGEBEN
+[50 05204]
+CHARGENANGABE NICHT ZULAESSIG
+[50 05304]
+NUR FIXE CHARGEN ERLAUBT
+[50 05404]
+FIXE CHARGE NICHT ERLAUBT
+[50 05504]
+CHARGENPROZESS DURCH KONFIGURATION VERHINDERT
+[50 05604]
+ZUR ZEIT NICHT LAGERND
+;
+;              FUNKTIONSKREIS 50 : GENERELLE TEXTE   Bulgaria
+;
+;   50 0 : SERIELLE DAFUE
+[50 00105]
+NICHT NUMERISCH
+[50 00205]
+PRUEFZIF FALSCH
+[50 00305]
+N. BERECHTIGT
+[50 00405]
+AHD SEIT  99.99
+[50 00505]
+FEHLT ZUR ZEIT
+[50 00605]
+NICHT LIEF
+[50 00705]
+NICHT LIEF HERS
+[50 00805]
+NICHT GEFUEHRT
+[50 00905]
+NR. UNBEKANNT
+[50 01005]
+AUFTRAGSBESTAETIGUNG<<<AA      WERT PZN ALPHA DEF<>
+LIEFERUNG %H:%M UHR
+%2s  %8.2f%4.1li %4.1li %4.1li<
+VIELEN DANK FUER IHREN AUFTRAG<
+IHR PHOENIX VZ
+PHOENIX  DEFEKTE
+BRIEFE
+[50 01105]
+HEUTE LIEFERN
+[50 01205]
+MORGEN LIEFERN
+[50 01305]
+KUNDENNUMMER FALSCH : %s
+[50 01405]
+AUSW.ARTKL.GEB.
+[50 01505]
+NACHLIEFERN
+[50 01605]
+DISPONIERT
+[50 01705]
+MNG ERHOEHT
+[50 01805]
+VERFUEG
+[50 01905]
+NICHTVE
+[50 02005]
+KEIN AUFTRAG
+[50 02105]
+<<<          AUSWEICHARTIKEL FUER          <%s<%s>
+[50 02205]
+IM VERB.
+[50 02305]
+VB MOEGLICH
+[50 02405]
+VONZENTRALE
+[50 02505]
+NUR DIREKT
+[50 02605]
+<<<          NACHLIEFERN MOEGLICH          <%s>
+[50 02705]
+<<<          VOM HERSTELLER: FIRMA         < %s>
+[50 02805]
+<<<          DISPO MOEGLICH: FIRMA         < %s>
+[50 02905]
+DEFEKTRUECKRUF
+[50 03005]
+NEU:
+[50 03105]
+WIRD BEARBEITET
+[50 03205]
+%d.%m.%y/BEST
+ %H:%M/LIEF
+ %H:%M
+[50 03305]
+VB KOMMT
+[50 03405]
+VB MOEGLICH
+[50 03505]
+ZENTR
+[50 03605]
+NICHT GEFUEHRT
+[50 03705]
+<<<          ALTERNATIV MOEGLICH FUER      <%s<%s>
+[50 03805]
+BITTE UM RUECKRUF
+[50 03905]
+<<<               ARTIKELTEXT FUER         <%s<%s>
+[50 04005]
+<<<              AUSLIEFERUNG FUER         <%s<%s>
+[50 04105]
+NICHT PER DAFUE
+[50 04205]
+<<<          REIMPORT GEBUCHT FUER         <%s<%s>
+[50 04305]
+REIMP:
+[50 04405]
+MENGENKONTIGENT AUSGESCHOEPFT
+[50 04505]
+RABATTKONTO UEBERSCHRITTEN
+[50 04605]
+KEINE BTMs BEI AUFTRAGSART NR
+[50 04705]
+KUNDE HAT KEINE BERECHTIGUNG FUER BTM'S
+[50 04805]
+KEINE BERECHTIGUNG FUER KRANKENKASSE
+[50 04905]
+KEINE BERECHTIGUNG FUER EINZELHANDEL
+[50 05005]
+PSEUDOLAGERORT
+[50 05105]
+KEINE CHARGE ANGEGEBEN
+[50 05205]
+CHARGENANGABE NICHT ZULAESSIG
+[50 05305]
+NUR FIXE CHARGEN ERLAUBT
+[50 05405]
+FIXE CHARGE NICHT ERLAUBT
+[50 05505]
+CHARGENPROZESS DURCH KONFIGURATION VERHINDERT
+[50 05605]
+ZUR ZEIT NICHT LAGERND
+;
+;   51 NNN : ANRUFPLAN TERMINAL POOL
+;
+[51 00100]
+TERMINALPOOLEINTRAG %s NICHT GEFUNDEN
+;
+;   52 NNN : LOCKMANAGER
+;
+[52 00100]
+UNIX-SYSTEMFEHLER BEIM ZUGRIFF AUF SEMAPHOR ODER SHARED MEMORY
+[52 00200]
+LOCK-TABELLE IST VOLL, NEUER LOCKEINTRAG WURDE NICHT ERSTELLT.
+;
+;   53 NNN : ARTFIL(ARTIKELLIEFERANT)
+;
+[5300100]
+ARTIKELLIEFERANTEINTRAG MIT DER ARTIKELNUMMER  %d NICHT GEFUNDEN.
+;
+;   54 NNN : BLIEFER(LIEFERANT)
+;
+[5400100]
+LIEFERANT MIT DER NUMMER  %d NICHT GEFUNDEN.
+;
+;   60 NNN : ZEITARTEN
+;
+[60 00100]
+TABELLE ZEITARTEN: ZEITART %d, ZEITSCHLUESSEL %s, TAGESTYP %s NICHT GEFUNDEN.
+[60 00200]
+KEINE VERBUNDZEITEN FUER KUNDE  %d GEFUNDEN.
+[60 00300]
+KEINE VERBUNDZEITEN FUER FILIALE  %d GEFUNDEN.
+;
+;   61 NNN : VERBUNDSYSTEM
+;
+[61 00100]
+VERBUNDFILIALE  %d NICHT GEFUNDEN.
+[61 00200]
+VOM AUFTRAG  %d  VERBUNDLIEFERPOSITION %d NICHT GEFUNDEN.
+[61 00300]
+KUNDE %d NICHT IM VERBUND.
+[61 00400]
+ARTIKEL %d KEIN VERBUNDARTIKEL.
+[61 00500]
+BUCHEN IM VERBUND NICHT MOEGLICH
+[61 00600]
+FILIALE %d NICHT IM VERBUND
+[61 00700]
+BESTAND IN VERBUNDFILIALE %d REICHT NICHT AUS
+[61 00800]
+VERBUNDKOPF %d NICHT GEFUNDEN
+[61 00900]
+VERBUNDPOSITION %d %d NICHT GEFUNDEN
+[61 01000]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 01100]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 01200]
+VERBUNDSPERRE FILIALE %d NICHT GEFUNDEN
+[61 01300]
+KUNDE %d IST KEIN WAFO/NOTA TEILNEHMER
+[61 01400]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSSER HANDEL
+[61 01500]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSLAUFARTIKEL
+[61 01600]
+KEIN WAFO/NOTA ARTIKEL %d HAT EINKAUFSPERRE
+[61 01700]
+KEIN WAFO/NOTA ARTIKEL %d IST BTM ARTIKEL
+[61 01800]
+KEIN WAFO/NOTA ARTIKEL
+[61 01900]
+KEIN WAFO/NOTA FUER AUFTRAGART %s
+[61 02000]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 02100]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 02200]
+VERBUNDRABATTPOSITION %d %d FEHLER BEIM SCHREIBEN
+;
+;   61 nnn : Verbundsystem
+;   61 nnn : Systeme intersucc.
+;
+[61 00101]
+Pas trouve succursale intersucc. %d.
+[61 00201]
+Pas trouve position livraison intersucc. %d de l'ordre %d.
+[61 00301]
+Client %d pas dans intersucc.
+[61 00401]
+Article %d n'est pas article intersucc.
+[61 00501]
+Enregistration en intersucc. pas possible.
+[61 00601]
+Succursale %d pas dans intersucc.
+[61 00701]
+Pas suffisament de stock en succ. intersucc %d.
+[61 00801]
+Pas trouve de tete intersucc. %d
+[61 00901]
+Pas trouve de position intersucc. %d %d.
+[61 01001]
+Position intersucc. %d %d faute lors d'annulation.
+[61 01101]
+Position intersucc. %d %d faute lors d'ecriture.
+[61 01201]
+Pas trouve blocage intersucc. %d.
+[61 01301]
+Client %d n'est pas de participant de Wafo/Nota
+[61 01401]
+Pas article Wafo/Nota %d est hors commerce
+[61 01501]
+Pas article Wafo/Nota %d est article de sortie.
+[61 01601]
+Pas article Wafo/Nota %d a blocage d'achat.
+[61 01701]
+Pas article Wafo/Nota %d est unt stup.
+[61 01801]
+Pas article Wafo/Nota
+[61 01901]
+Pas de Wafo/Nota pour type d'ordre %s
+[61 02001]
+Position intersucc. %d %d faute lors d'annulation.
+[61 02101]
+Position intersucc. %d %d faute lors d'ecriture.
+[61 02201]
+Position discount intersucc. %d %d faute lors d'ecriture.
+;
+;   61 NNN : VERBUNDSYSTEM  (Croatia)
+;
+[61 00102]
+VERBUNDFILIALE  %d NICHT GEFUNDEN.
+[61 00202]
+VOM AUFTRAG  %d  VERBUNDLIEFERPOSITION %d NICHT GEFUNDEN.
+[61 00302]
+KUNDE %d NICHT IM VERBUND.
+[61 00402]
+ARTIKEL %d KEIN VERBUNDARTIKEL.
+[61 00502]
+BUCHEN IM VERBUND NICHT MOEGLICH
+[61 00602]
+FILIALE %d NICHT IM VERBUND
+[61 00702]
+BESTAND IN VERBUNDFILIALE %d REICHT NICHT AUS
+[61 00802]
+VERBUNDKOPF %d NICHT GEFUNDEN
+[61 00902]
+VERBUNDPOSITION %d %d NICHT GEFUNDEN
+[61 01002]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 01102]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 01202]
+VERBUNDSPERRE FILIALE %d NICHT GEFUNDEN
+[61 01302]
+KUNDE %d IST KEIN WAFO/NOTA TEILNEHMER
+[61 01402]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSSER HANDEL
+[61 01502]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSLAUFARTIKEL
+[61 01602]
+KEIN WAFO/NOTA ARTIKEL %d HAT EINKAUFSPERRE
+[61 01702]
+KEIN WAFO/NOTA ARTIKEL %d IST BTM ARTIKEL
+[61 01802]
+KEIN WAFO/NOTA ARTIKEL
+[61 01902]
+KEIN WAFO/NOTA FUER AUFTRAGART %s
+[61 02002]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 02102]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 02202]
+VERBUNDRABATTPOSITION %d %d FEHLER BEIM SCHREIBEN
+;
+;   61 NNN : VERBUNDSYSTEM SWISS/GERMAN
+;
+[61 00103]
+VERBUNDFILIALE  %d NICHT GEFUNDEN.
+[61 00203]
+VOM AUFTRAG  %d  VERBUNDLIEFERPOSITION %d NICHT GEFUNDEN.
+[61 00303]
+KUNDE %d NICHT IM VERBUND.
+[61 00403]
+ARTIKEL %d KEIN VERBUNDARTIKEL.
+[61 00503]
+BUCHEN IM VERBUND NICHT MOEGLICH
+[61 00603]
+FILIALE %d NICHT IM VERBUND
+[61 00703]
+BESTAND IN VERBUNDFILIALE %d REICHT NICHT AUS
+[61 00803]
+VERBUNDKOPF %d NICHT GEFUNDEN
+[61 00903]
+VERBUNDPOSITION %d %d NICHT GEFUNDEN
+[61 01003]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 01103]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 01203]
+VERBUNDSPERRE FILIALE %d NICHT GEFUNDEN
+[61 01303]
+KUNDE %d IST KEIN WAFO/NOTA TEILNEHMER
+[61 01403]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSSER HANDEL
+[61 01503]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSLAUFARTIKEL
+[61 01603]
+KEIN WAFO/NOTA ARTIKEL %d HAT EINKAUFSPERRE
+[61 01703]
+KEIN WAFO/NOTA ARTIKEL %d IST BTM ARTIKEL
+[61 01803]
+KEIN WAFO/NOTA ARTIKEL
+[61 01903]
+KEIN WAFO/NOTA FUER AUFTRAGART %s
+[61 02003]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 02103]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 02203]
+VERBUNDRABATTPOSITION %d %d FEHLER BEIM SCHREIBEN
+;
+;   61 nnn : Verbundsystem      SWISS/FRENCH
+;   61 nnn : Systeme intersucc.
+;
+[61 00104]
+Pas trouve succursale intersucc. %d.
+[61 00204]
+Pas trouve position livraison intersucc. %d de l'ordre %d.
+[61 00304]
+Client %d pas dans intersucc.
+[61 00404]
+Article %d n'est pas article intersucc.
+[61 00504]
+Enregistration en intersucc. pas possible.
+[61 00604]
+Succursale %d pas dans intersucc.
+[61 00704]
+Pas suffisament de stock en succ. intersucc %d.
+[61 00804]
+Pas trouve de tete intersucc. %d
+[61 00904]
+Pas trouve de position intersucc. %d %d.
+[61 01004]
+Position intersucc. %d %d faute lors d'annulation.
+[61 01104]
+Position intersucc. %d %d faute lors d'ecriture.
+[61 01204]
+Pas trouve blocage intersucc. %d.
+[61 01304]
+Client %d n'est pas de participant de Wafo/Nota
+[61 01404]
+Pas article Wafo/Nota %d est hors commerce
+[61 01504]
+Pas article Wafo/Nota %d est article de sortie.
+[61 01604]
+Pas article Wafo/Nota %d a blocage d'achat.
+[61 01704]
+Pas article Wafo/Nota %d est unt stup.
+[61 01804]
+Pas article Wafo/Nota
+[61 01904]
+Pas de Wafo/Nota pour type d'ordre %s
+[61 02004]
+Position intersucc. %d %d faute lors d'annulation.
+[61 02104]
+Position intersucc. %d %d faute lors d'ecriture.
+[61 02204]
+Position discount intersucc. %d %d faute lors d'ecriture.
+;
+;   61 NNN : VERBUNDSYSTEM  (Bulgaria)
+;
+[61 00105]
+VERBUNDFILIALE  %d NICHT GEFUNDEN.
+[61 00205]
+VOM AUFTRAG  %d  VERBUNDLIEFERPOSITION %d NICHT GEFUNDEN.
+[61 00305]
+KUNDE %d NICHT IM VERBUND.
+[61 00405]
+ARTIKEL %d KEIN VERBUNDARTIKEL.
+[61 00505]
+BUCHEN IM VERBUND NICHT MOEGLICH
+[61 00605]
+FILIALE %d NICHT IM VERBUND
+[61 00705]
+BESTAND IN VERBUNDFILIALE %d REICHT NICHT AUS
+[61 00805]
+VERBUNDKOPF %d NICHT GEFUNDEN
+[61 00905]
+VERBUNDPOSITION %d %d NICHT GEFUNDEN
+[61 01005]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 01105]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 01205]
+VERBUNDSPERRE FILIALE %d NICHT GEFUNDEN
+[61 01305]
+KUNDE %d IST KEIN WAFO/NOTA TEILNEHMER
+[61 01405]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSSER HANDEL
+[61 01505]
+KEIN WAFO/NOTA ARTIKEL %d IST AUSLAUFARTIKEL
+[61 01605]
+KEIN WAFO/NOTA ARTIKEL %d HAT EINKAUFSPERRE
+[61 01705]
+KEIN WAFO/NOTA ARTIKEL %d IST BTM ARTIKEL
+[61 01805]
+KEIN WAFO/NOTA ARTIKEL
+[61 01905]
+KEIN WAFO/NOTA FUER AUFTRAGART %s
+[61 02005]
+VERBUNDPOSITION %d %d FEHLER BEIM LOESCHEN
+[61 02105]
+VERBUNDPOSITION %d %d FEHLER BEIM SCHREIBEN
+[61 02205]
+VERBUNDRABATTPOSITION %d %d FEHLER BEIM SCHREIBEN
+;
+;
+;   62 NNN : ARTIKEL KONTO
+;
+[62 00100]
+ARTIKELKONTO MIT DER LAUFENDE NUMMER %d NICHT GEFUNDEN.
+;
+;   63 NNN : FILIALPARTNER
+;
+[63 00100]
+FILIALPARTNER %d NICHT GEFUNDEN.
+;
+;   64 NNN : MODEMTABELLE
+;
+[64 00100]
+EINTRAG FUER FILIALE %d NICHT GEFUNDEN.
+;
+;   65 NNN : AKTIVEPROZESSE TABELLE
+;
+[65 00100]
+EINTRAG FUER PROGRAMM %s PARTNER %s  NICHT GEFUNDEN.
+;
+;   66 NNN : TASKCONTROL TABELLE
+;
+[66 00100]
+EINTRAG FUER FILIALE  %d PROGRAMMNAME  %s NICHT GEFUNDEN.
+;
+;   67 NNN : HOST DATA EXCHANGE
+;
+[67 00100]
+CICS DATEI DEBVZ:  KEIN RECORD GEFUNDEN
+[67 00200]
+CICS DATEI DEBVZ:  NICHT GEOEFFNET
+[67 00300]
+CICS DATEI DEBVZ:  DATEN VOM VORTAG, BITTE PRUEFEN
+[67 00400]
+CICS DATEI DEBVZ:  AUFSETZPUNKT RBA IM KONTROLLSATZ FALSCH
+[67 00500]
+CICS DATEI DEBAZ:  KEIN RECORD GEFUNDEN
+[67 00600]
+CICS DATEI DEBAZ:  NICHT GEOEFFNET
+[67 00700]
+CICS DATEI DEBAZ:  DATEN VOM VORTAG, BITTE PRUEFEN
+[67 00800]
+CICS DATEI DEBAZ:  AUFSETZPUNKT RBA IM KONTROLLSATZ FALSCH
+[67 00900]
+CICS TASKCONTROL:  PARAMETEREINTRAG PA40 NICHT VORHANDEN
+[67 01000]
+CICS TASKCONTROL:  FILE DKPAR NICHT GEOEFFNET
+[67 01100]
+CICS TASKCONTROL:  EINTRAG HDX005 IN DKPAR NICHT VORHANDEN
+;
+;   68 NNN : CUSTOMERORDERNR
+;
+[68 00100]
+EINTRAG FUER FILIALE %d KUNDE %d BESTELLNUMMER %s NICHT GEFUNDEN.
+;
+;   69 NNN : KDAUFTRAGINFO
+;
+[69 00100]
+EINTRAG FUER AUFTRAGNUMMER %d NICHT GEFUNDEN.
+;
+;   70 NNN : ARTIKELNUMMERN
+;
+[70 00100]
+EANNUMMER  %s NICHT GEFUNDEN.
+;
+;   71 NNN : ARTICLEPREDELIVERY
+;
+[71 00100]
+ARTIKELNUMMER %d FUER KUNDE %d IN FILIALE %d NICHT GEFUNDEN.
+;
+;   72 NNN : CUSTOMERRECODE
+;
+[72 00100]
+KUNDE %d FILIALE %d NICHT GEFUNDEN.
+;
+;   73 NNN : CUSTOMERROUTING
+;
+[73 00100]
+KUNDE %d FILIALE %d NICHT GEFUNDEN.
+;
+;   74 NNN : CUSTOMERPHARMACYGROUP
+;
+[74 00100]
+PHARMACYGROUPID %s FUER KUNDE %d IN FILIALE %d NICHT GEFUNDEN.
+;
+;   75 NNN : VALIDDISCOUNTINFO
+;
+[75 00100]
+VALIDDISCOUNTINFO FUER ARTIKEL %d , EINKAUFSGRUPPE %s IN FILIALE %d NICHT GEFUNDEN.
+;
+;   76 NNN : STOCKENTRY
+;
+[76 00100]
+STOCKENTRY FUER ARTIKEL %d ,IN FILIALE %d NICHT GEFUNDEN.
+;
+;   77 NNN : DEBTLIMIT
+;
+[77 00100]
+DEBTLIMITEINTRAG MIT DER PARTNERNUMMER %d NICHT GEFUNDEN.
+;
+;   78 NNN : ARTICLEQUOTA
+;
+[78 00100]
+ARTICLEQUOTA EINTRAG FUER FILIALE %d, KUNDE %d, ARTIKEL %d NICHT GEFUNDEN.
+;
+;   79 NNN : KDAUFTRAGPOSRAB
+;
+[79 00100]
+KDAUFTRAGPOSRAB-EINTRAG FUER KDAUFTRAGNR %d, POSNR %d FEHLGESCHALGEN.
+;
+;   80 NNN : TCACCESS
+;
+[80 00100]
+TCACCESS: KEINE VERBINDUNG ZUM MAINFRAME
+[80 00200]
+TCACCESS: KEIN INI-FILE FUER FILIALE %d GEFUNDEN
+;
+;   81 NNN : CALLBACK
+;
+[81 00100]
+Ansprechpartner
+[81 00200]
+Eingestellt von
+[81 00300]
+Telefon
+[81 00400]
+Kurzwahl
+[81 00500]
+IDF-Nummer
+[81 00600]
+Zus‰tzliche Info
+[81 00700]
+Um den R¸ckruf zu bearbeiten, folgen Sie bitte diesem Link
+[81 00800]
+Information / Nicht kritisch
+[81 00900]
+Kritisch
+[81 01000]
+Reklamation / Sehr kritisch
+;
+;              FUNKTIONSKREIS 9N : DATENBANKHANDLING.
+;
+;   90 NNN : TABELLENNAMEN
+;
+[90 00000]
+ALLGEMEINE FUNKTIONSGRUPPE
+[90 00100]
+TABELLE ARTIKELALTERN
+[90 00200]
+TABELLE ARTIKELPREIS
+[90 00300]
+TABELLE ARTIKEL
+[90 00400]
+TABELLE ARTIKELLAGERORT
+[90 00500]
+TABELLE ARTIKELMGPREIS
+[90 00600]
+TABELLE ARTIKELNATRA
+[90 00700]
+TABELLE ARTIKELSEKBEZ
+[90 00800]
+TABELLE KDAUFTRAGART
+[90 00900]
+TABELLE AUFTRAGARTKD
+[90 01000]
+TABELLE KDAUFTRAGEREIGNIS
+[90 01100]
+TABELLE AUFTRAGARTKOMB
+[90 01200]
+TABELLE KDAUFTRAGSCHALTER
+[90 01300]
+TABELLE BEARBEITER
+[90 01400]
+TABELLE BUCHUNGSART
+[90 01500]
+TABELLE FILIALE
+[90 01600]
+TABELLE KOMMIARTEN
+[90 01700]
+TABELLE KDBETRIEBSENDE
+[90 01800]
+TABELLE KUNDE
+[90 01900]
+TABELLE KUNDEKONDI
+[90 02000]
+TABELLE KUNDESCHALTER
+[90 02100]
+TABELLE LIEFERPOS
+[90 02200]
+TABELLE NUMMER
+[90 02300]
+TABELLE PARAAUFTRAGBEARB
+[90 02400]
+TABELLE KDAUFTRAGPOS
+[90 02500]
+TABELLE TOURROUTE
+[90 02600]
+TABELLE TAGESTYP
+[90 02700]
+TABELLE TOUR
+[90 02800]
+TABELLE TOURPLANGEN
+[90 02900]
+TABELLE TOURPLANTAG
+[90 03000]
+TABELLE KDKONDITIONGRUPPE
+[90 03100]
+TABELLE KONDITIONGRUPPE
+[90 03200]
+TABELLE KDAUFTRAG
+[90 03300]
+TABELLE KUNDENGRUPPE
+[90 03400]
+TABELLE DISPOARTIKEL
+[90 03500]
+LOCKMANAGER
+[90 03600]
+TABELLE FKWARTESCHLANGE
+[90 03700]
+TABELLE GERAETEANRUFPLAN
+[90 03800]
+TABELLE KDAUFTRAGBEM
+[90 03900]
+TABELLE ALTERNATIVFILIALE
+[90 04000]
+TABELLE ZEITARTEN
+[90 04100]
+TABELLE KDAUFTRAGENDEZEIT
+[90 04200]
+TABELLE BLIEFER
+[90 04300]
+TABELLE ARTFIL
+[90 04400]
+TABELLE NACHLIEFPROT
+[90 04500]
+TABELLE ARTIKELKONTO
+[90 04600]
+TABELLE KUNDEMODUMS
+[90 04700]
+TABELLE FILIALPARTNER
+[90 04800]
+TABELLE MODEMTAB
+[90 04900]
+TABELLE KDVERBUNDPOS
+[90 05000]
+TABELLE KDVERBUND
+[90 05100]
+TABELLE RECHNER
+[90 05200]
+TABELLE PARAAUFTRAGER
+[90 05300]
+TABELLE ARTIKELREIMPORT
+[90 05400]
+TABELLE VERBUNDSPERRE
+[90 05500]
+TABELLE ARTIKELZENTRAL
+[90 05600]
+TABELLE ARTIKELLOKAL
+[90 05700]
+TABELLE MODEMANRUFPLAN
+[90 05800]
+TABELLE VSEDATEIEN
+[90 05900]
+TABELLE AKTIVEPROZESSE
+[90 06000]
+TABELLE REGIONARTEN
+[90 06100]
+TABELLE TOURFOLGETAG
+[90 06200]
+TABELLE KDVERBUNDFILIALE
+[90 06300]
+TABELLE LAGERREVISION
+[90 06400]
+TABELLE ARTIKELF
+[90 06500]
+TABELLE TASKCONTROL
+[90 06600]
+TABELLE ARTIKELNUMMERN
+[90 06700]
+TABELLE CUSTOMERORDERNR
+[90 06800]
+TABELLE KDAUFTRAGINFO
+[90 06900]
+TABELLE ARTICLEPREDELIVERY
+[90 07000]
+TABELLE CUSTOMERRECODE
+[90 07100]
+TABELLE CUSTOMERROUTING
+[90 07200]
+TABELLE CUSTOMERPHARMACYGROUP
+[90 07300]
+TABELLE VALIDDISCOUNTINFO
+[90 07400]
+TABELLE STOCKENTRY
+[90 07500]
+TABELLE DEBTLIMIT
+[90 07600]
+TABELLE ARTICLEQUOTA
+[90 07700]
+TABELLE PARAMETER
+[90 07800]
+TABELLE ARTICLETEXT
+[90 07900]
+TABELLE DELAYEDDELIVERYART
+[90 08000]
+TABELLE DELAYEDDELIVERYCST
+[90 08100]
+TABELLE FEIERTAG
+[90 08200]
+TABELLE DISCOUNT
+[90 08300]
+TABELLE ARTICLERESERVATION
+[90 08400]
+TABELLE KDAUFTRAGPOSRAB
+[90 08500]
+TABELLE DISCOUNTGRP
+[90 08600]
+TABELLE DISCOUNTGRPMEM
+[90 08700]
+TABELLE DISCOUNTORDERTYP
+[90 08800]
+TABELLE DISCOUNTPHARMAGRP
+[90 08900]
+TABELLE NARCTRANSACTIONTRANSFER
+[90 09000]
+TABELLE POSITIONPARKING
+[90 09100]
+TABELLE ARTICLEPACKUNIT
+[90 09200]
+TABELLE TOURPLANTAGWOCHE
+[90 09300]
+TABELLE TOURCONSTIME
+[90 09400]
+TABELLE TOURPLANCONSTIME
+[90 09500]
+TABELLE TOURPLANWOCHE
+[90 09600]
+TABELLE KOBEHAELTERTYP
+[90 09700]
+TABELLE CSTSTOCKRESERVED
+[90 09800]
+TABELLE ACSTSTOCKRESERVED
+[90 09900]
+TABELLE DISCOUNTLIST
+[90 10000]
+TABELLE CSTDISCOUNTCONT
+[90 10100]
+TABELLE TAXRATES
+[90 10200]
+TABELLE SEPORDERART
+[90 10300]
+TABELLE SEPORDERARTGRP
+[90 10400]
+TABELLE ARTICLEOLDPRICE
+[90 10500]
+TABELLE COUNTRYCODES
+[90 10600]
+TABELLE ARTICLELPPR
+[90 10700]
+TABELLE AKDVERBUND
+[90 10800]
+TABELLE ORDERCRITERIA
+[90 10900]
+TABELLE SHIPAUXNO
+[90 11000]
+TABELLE KNDAUSKU
+[90 11100]
+TABELLE CLEARWAFO
+[90 11200]
+TABELLE ARTICLEAUXBRANCH
+[90 11300]
+TABELLE CSTSEPORDERARTGRP
+[90 11400]
+TABELLE ARTICLEGROUP
+[90 11500]
+TABELLE ARTCOMPACK
+[90 11600]
+TABELLE CSTDISCACC
+[90 11700]
+TABELLE DEALERVOLUME
+[90 11800]
+TABELLE CPVALIDITYPERIOD
+[90 11900]
+TABELLE TENDERHEAD
+[90 12000]
+TABELLE TENDERPOS
+[90 12100]
+TABELLE TENDERPROGRESS
+[90 12200]
+TABELLE ARTIKELZENTRALFR
+[90 12300]
+TABELLE KDAUFTRAGDISCACC
+[90 12400]
+TABELLE ARTSPECIALCOND
+[90 12500]
+TABELLE PROMOTIONS
+[90 12600]
+TABELLE SERVICES
+[90 12700]
+TABELLE SERVICETYPES
+[90 12800]
+TABELLE CSTPAYMENTTERMS
+[90 12900]
+TABELLE KDAUFTRAGWERTE
+[90 13000]
+TABELLE KDAUFTRAGPOSCHARGE
+[90 13100]
+TABELLE ARTICLECHARGE
+[90 13200]
+TABELLE KDAUFTRAGRECHART
+[90 13300]
+TABELLE KDAUFTRPOSRECHART
+[90 13400]
+TABELLE GENERALCALCAVP
+[90 13500]
+TABELLE CSTCALCAVP
+[90 13600]
+TABELLE CSTPRINT
+[90 13700]
+TABELLE TAXTAB
+[90 13800]
+TABELLE KDAUFTRAGPOSREFUND
+[90 13900]
+TABELLE KDAUFTRAGPOSPROMO
+[90 14000]
+TABELLE KDAUFTRAGPOSCHANGE
+[90 14100]
+TABELLE ARTICLECODES
+[90 14200]
+TABELLE KDAUFTRAGPROLINK
+[90 14300]
+TABELLE KDVERBUNDPOSRAB
+[90 14400]
+TABELLE TENDERCUSTOMER
+[90 14500]
+TABELLE ENCLOSERSCALE
+[90 14600]
+TABELLE PROMOTIONQUOTA
+[90 14700]
+TABELLE PROMOTIONQUOTACST
+[90 14800]
+TABELLE CUSTOMERSURCHARGE
+[90 14900]
+TABELLE KDAUFTRAGPOSXML
+[90 15000]
+TABELLE VARTIKELLOKAL
+[90 15100]
+TABELLE VARTICLEQUOTA
+[90 15200]
+TABELLE MANUFACTURERGROUP
+[90 15300]
+TABELLE SMTPUSERGROUPS
+[90 15400]
+TABELLE KDAUFTRAGDEBTREL
+[90 15500]
+TABELLE VKDVERBUNDPOS
+[90 15600]
+TABELLE PROMOTIONSCALE
+[90 15700]
+TABELLE CSTTOUREXCLUSIONS
+[90 15800]
+TABELLE ORDERREMARKTYPES
+[90 15900]
+TABELLE ORDERREMARKS
+[90 16000]
+TABELLE CUSTOMERGROUP
+[90 16100]
+TABELLE CUSTOMERGRPFLAGS
+[90 16200]
+TABELLE CUSTGRPFLAGTYPES
+[90 16300]
+TABELLE CUSTOMERTOUR
+[90 16400]
+TABELLE OEORIGINTYPES
+[90 16500]
+TABELLE OERESTRICTIONTYPES
+[90 16600]
+TABELLE ORDERENTRYRESTRICTIONS
+[90 16700]
+TABELLE EVENTREASONS
+[90 16800]
+TABELLE KDAUFTRAGPOSEREIGNIS
+[90 16900]
+TABELLE TOTEINFO
+[90 17000]
+TABELLE KDAUFTRAGPOSTOUR
+[90 17100]
+TABELLE IBTBRANCHES
+[90 17200]
+TABELLE CUSTOMERBUSINESSHOURS
+[90 17300]
+TABELLE CSCCUSTOMER
+[90 17400]
+TABELLE CUSTOMERSPECIALS
+[90 17500]
+TABELLE ORDERRELATIONNOTYPES
+[90 17600]
+TABELLE ORDERRELATIONNO
+[90 17700]
+TABELLE IBTTYPE
+[90 17800]
+TABELLE SALESMAN
+[90 17900]
+TABELLE SUPPLDELIVERYINFO
+;
+;   91 NNN : FUNKTIONSNAMEN
+;
+[91 00000]
+FUNKTION STARTBROWSE
+[91 00100]
+FUNKTION GETNEXT
+[91 00200]
+FUNKTION ENDBROWSE
+[91 00300]
+FUNKTION READ
+[91 00400]
+FUNKTION READLOCK
+[91 00500]
+FUNKTION INSERT
+[91 00600]
+FUNKTION UPDATE
+[91 00700]
+FUNKTION DELETE
+[91 01000]
+FUNKTION CONNECT
+[91 01100]
+FUNKTION DISCONNECT
+[91 01200]
+FUNKTION SQLCODE
+[91 01300]
+FUNKTION SQLMESSAGE
+[91 01400]
+FUNKTION BEGIN
+[91 01500]
+FUNKTION COMMIT
+[91 01600]
+FUNKTION ROLLBACK
+[91 02000]
+FUNKTION LOCK
+[91 02100]
+FUNKTION ISLOCKED
+[91 02200]
+FUNKTION UNLOCK
+[91 02300]
+FUNKTION RELEASELOCK
+[91 02400]
+FUNKTION RELEASEALLLOCKS
+[91 02500]
+FUNKTION LOCKMANAGERSTARTBROWSE
+[91 02600]
+FUNKTION LOCKMANAGERGETNEXT
+[91 02700]
+FUNKTION GETSERVERTIME

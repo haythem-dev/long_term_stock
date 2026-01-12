@@ -1,0 +1,91 @@
+#! /usr/bin/ksh
+
+# cremaonoff
+
+#--------------------------------------------------------------------#
+# READ IN GLOBAL VARIABLES --> using variable DATABASE_AE from there
+#--------------------------------------------------------------------#
+. $(dirname $0)/../vars/ksc_server_global.vars
+. $(dirname $0)/../vars/cremaonoff.vars
+ 
+VZ=$1
+WERT=$2
+TMPF=/tmp/`basename $0`_$$
+trap "rm -f $TMPF" 0 1 2 15
+URGENCY="unknown"
+readonly URGENCY_OFF_TEXT="CreMa check is active."
+readonly URGENCY_ON_TEXT="Attention! CreMa check is inactive - please check it ASAP."
+URGENCY_TEXT="Urgency status of CreMa could not be found."
+
+readonly STARTMSG="START";
+
+ #====================================#
+ # PRINT START-/ STOP-MELDUNG
+ #====================================#
+ function printStartStop
+ {
+ 	 if [[ "$2" == "" ]]; then set $1 `date +"%d.%m.%y-%H:%M:%S"`; fi
+ 	 echo "=====================================================================================" | tee -a $LOG_RESOURCE
+ 	 echo "SH: $1 `pwd`/${PROCNAME} $2" | tee -a $LOG_RESOURCE
+ 	 echo "=====================================================================================" | tee -a $LOG_RESOURCE
+ }
+ #====================================#
+ # LOG START-/ STOP-MELDUNG
+ #====================================#
+ function logging
+ {
+ 	 local _branchno=0;
+ 	 if [[ "${branchno}" != "" ]]; then
+ 		 _branchno=${branchno};
+ 	 fi
+
+ 	 echo `log "O" "$_branchno" "================================================" "${LOG_RESOURCE}"`
+ 	 echo `log "O" "$_branchno" "$1" "${LOG_RESOURCE}"`
+ 	 echo `log "O" "$_branchno" "================================================" "${LOG_RESOURCE}"`
+ }
+ #======================================================#
+ # logging start - printing on console
+ #======================================================#
+ function print_msg
+ {
+ 	 if [[ "$1" == "$STARTMSG" ]]; then 
+ 		 printStartStop "$1" "$2" 
+ 		 logging "$1"; 
+ 	 else 
+ 		 local readonly MSG="$1 with Return-Code: <${3}>."
+ 		 logging "${MSG}";
+ 		 printStartStop "$1" "$2"
+ 	 fi
+ }
+ #====================================#
+
+print_msg "$STARTMSG" "$*"
+
+case $WERT in
+-start|-stop) if [ "$WERT" == "-start" ]; then
+		WERT=1;
+		URGENCY="ON";
+		URGENCY_TEXT=$URGENCY_ON_TEXT;
+	else
+		WERT=0;
+		URGENCY="OFF";
+		URGENCY_TEXT=$URGENCY_OFF_TEXT;
+	fi;
+    echo "begin work; update paraauftragbearb set sstopcrema=$WERT where filialnr = $VZ; commit work;"|dbaccess $DATABASE_AE;
+    echo "to: $CREMAONOFF_MAIL_RECIPIENTS\nsubject: CREMA Urgency was changed to <$URGENCY> in branch $VZ\n$URGENCY_TEXT"|sendmail -t;;
+
+-status) echo "unload to $TMPF select sstopcrema from paraauftragbearb where filialnr = $VZ;"|dbaccess $DATABASE_AE 2>/dev/null;
+        status=`cat $TMPF`;status="${status%?}";
+        case $status in
+        0)      URGENCY="OFF";
+                URGENCY_TEXT=$URGENCY_OFF_TEXT;;
+        1)      URGENCY="ON";
+                URGENCY_TEXT=$URGENCY_ON_TEXT;;
+        *)      ;;
+        esac;
+        echo "Urgency STATUS=$URGENCY";;
+
+*) echo "usage: vz [-start|-stop|-status]";;
+esac
+
+echo $URGENCY_TEXT

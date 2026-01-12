@@ -1,0 +1,13 @@
+# qual
+. /software/etc/profile_prz
+VZ=$1
+IDFNR=$2
+WERT=$3
+DB=ode21
+
+dbaccess $DB -<<%
+begin work;
+update kundeschalter set skdkundeaegesperrt=$WERT 
+       where idfnr = $IDFNR and vertriebszentrumnr = $VZ;
+commit work;
+%

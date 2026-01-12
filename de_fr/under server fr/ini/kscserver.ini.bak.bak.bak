@@ -1,0 +1,16 @@
+;
+;               Order Entry Server initialization parameters.
+;
+[Generic]
+MessageFile        = $INI_PATH/message.txt
+LogFile            = $LOG_PATH/kscserver.log
+LogMode            = 1
+
+[Session]
+Computer           =
+DataSource         = zpos2fr${BACKUPFLAG}@db1${BACKUPFLAG}_zpos2_shm
+DeviceName         = ZZZZ
+DeviceType         = 2
+Country            = FR
+
+[Dummy]

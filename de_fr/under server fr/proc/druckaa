@@ -1,0 +1,31 @@
+. /software/etc/profile_prz
+
+if [ $2 = 30 ]
+then
+    /transfer/tools/winmail -e s.kuespert@phoenix-ag.de \
+            -c stephane.reautey@phoenixpharma.fr \
+            -b $1 \
+            -d $1 \
+            -dos \
+            -t /software/zpos2/wss/fr/ksc/server/ini/anredeaa.txt
+fi
+if [ $2 = 34 ]
+then
+    /transfer/tools/winmail -e s.kuespert@phoenix-ag.de \
+            -c stephane.reautey@phoenixpharma.fr \
+            -b $1 \
+            -d $1 \
+            -dos \
+            -t /software/zpos2/wss/fr/ksc/server/ini/anredeaa.txt
+fi
+if [ $2 = 38 ]
+then
+    /transfer/tools/winmail -e s.kuespert@phoenix-ag.de \
+            -c stephane.reautey@phoenixpharma.fr \
+            -b $1 \
+            -d $1 \
+            -dos \
+            -t /software/zpos2/wss/fr/ksc/server/ini/anredeaa.txt
+fi
+
+cat $(1} > /transfer/mail/druckaa/$(basename ${1}).${2}.$(date '+%Y%m%d%H%M%S') 2> /transfer/mail/druckaa/error.${2}.$(date '+%Y%m%d%H%M%S')

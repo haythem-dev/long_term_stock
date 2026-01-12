@@ -1,0 +1,12 @@
+# qual
+. /software/etc/profile_prz
+VZ=$1
+WERT=$2
+DB=ofr21
+
+dbaccess $DB -<<%
+begin work;
+update paraauftragbearb set sstopcrema=$WERT
+       where filialnr = $VZ;
+commit work;
+%
